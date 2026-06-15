@@ -388,13 +388,7 @@ footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
 
 <!-- Яндекс.Директ — Лидерборд (728x90) -->
 <!-- Заменить на реальный код из кабинета Яндекс.Директ после регистрации -->
-<div class="ya-ad ya-ad-leaderboard" id="yandex_rtb_R-A-XXXXXXX-1">
-  <!-- 
-  <script>window.yaContextCb=window.yaContextCb||[];window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({renderTo:"yandex_rtb_R-A-XXXXXXX-1",blockId:"R-A-XXXXXXX-1"})})</script>
-  <script src="https://yandex.ru/ads/system/context.js" async></script>
-  -->
-  <span>Рекламный блок 728×90 · Яндекс РСЯ</span>
-</div>
+
 
 <main id="events">
   <div class="results-header">
@@ -416,13 +410,7 @@ footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
 
 <!-- Яндекс.Директ — Прямоугольник (300x250) между контентом и FAQ -->
 <div style="text-align:center;padding:8px 0 32px">
-  <div class="ya-ad ya-ad-rectangle" id="yandex_rtb_R-A-XXXXXXX-2" style="margin:0 auto">
-    <!--
-    <script>window.yaContextCb=window.yaContextCb||[];window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({renderTo:"yandex_rtb_R-A-XXXXXXX-2",blockId:"R-A-XXXXXXX-2"})})</script>
-    <script src="https://yandex.ru/ads/system/context.js" async></script>
-    -->
-    <span>Рекламный блок 300×250 · Яндекс РСЯ</span>
-  </div>
+  
 </div>
 
 <section class="faq" id="faq">
@@ -843,5 +831,10 @@ function showMissionSuccess(){
 function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
 function toggleFaq(el){const item=el.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.display='none'});if(!isOpen){item.classList.add('open');item.querySelector('.faq-a').style.display='block'}}
 </script>
+
+<!-- Yandex Autoplacement 19447599 -->
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+<script data-page-id="19447599" src="https://yandex.ru/ads/system/ap-loader.js" async></script>
+
 </body>
 </html>
