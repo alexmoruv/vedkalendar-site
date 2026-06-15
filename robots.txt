@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vedexpo.ru/sitemap.xml
+
+# Яндекс
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
