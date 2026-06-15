@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ВЭДкалендарь — выставки и бизнес-миссии с господдержкой 2026</title>
+<meta name="description" content="Единый календарь международных выставок и бизнес-миссий с господдержкой. РЭЦ, МЭЦ, ЦПЭ, Made in Moscow — 28 предстоящих мероприятий.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0F1F3D;--navy-mid:#1A3260;--azure:#00B4D8;--azure-light:#48CAE4;
+  --bg:#F0F4F8;--card:#fff;--text:#1A1A2E;--muted:#6B7A99;--border:#DDE3EE;
+  --radius:14px;--green:#2E7D32;--green-bg:#E8F5E9;
+  --orange:#E65100;--orange-bg:#FFF3E0;
+  --shadow-sm:0 1px 3px rgba(15,31,61,.06),0 1px 2px rgba(15,31,61,.04);
+  --shadow-md:0 4px 16px rgba(15,31,61,.08),0 2px 6px rgba(15,31,61,.04);
+  --shadow-lg:0 12px 40px rgba(15,31,61,.14),0 4px 12px rgba(15,31,61,.06);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(15,31,61,.96);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:64px;border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--azure),#0090BE);border-radius:10px;display:grid;place-items:center;font-size:18px;box-shadow:0 2px 8px rgba(0,180,216,.3)}
+.logo-text{font-family:'Playfair Display',serif;font-size:18px;color:#fff;font-weight:700;letter-spacing:-.2px}
+.logo-sub{font-size:10px;color:rgba(72,202,228,.7);text-transform:uppercase;letter-spacing:1.5px;margin-top:-2px}
+.nav-links{display:flex;gap:8px}
+.nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;font-weight:500;padding:6px 12px;border-radius:8px;transition:all .2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-links a.active{color:#fff;background:rgba(0,180,216,.15)}
+.nav-count{display:inline-flex;align-items:center;justify-content:center;background:var(--azure);color:var(--navy);font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:6px}
+.nav-cta{background:var(--azure);color:var(--navy);border:none;cursor:pointer;padding:9px 22px;border-radius:10px;font-size:14px;font-weight:600;font-family:'Inter',sans-serif;transition:all .2s;letter-spacing:-.1px}
+.nav-cta:hover{background:var(--azure-light);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,180,216,.3)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0A1628 0%,var(--navy) 40%,#0D2E5A 100%);padding:80px 48px 72px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 90% at 75% 50%,rgba(0,180,216,.07) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 20% 80%,rgba(0,180,216,.04) 0%,transparent 50%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(0,180,216,.12);border:1px solid rgba(0,180,216,.25);border-radius:20px;padding:5px 14px;font-size:11px;color:var(--azure-light);font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:20px}
+.dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.dot-live{background:#4CAF50;animation:pulse 2s infinite}
+.dot-warn{background:#FFA726}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(76,175,80,.4)}50%{opacity:.8;box-shadow:0 0 0 4px rgba(76,175,80,0)}}
+h1{font-family:'Playfair Display',serif;font-size:clamp(30px,3.8vw,50px);font-weight:900;color:#fff;line-height:1.14;margin-bottom:16px;letter-spacing:-.5px}
+h1 em{color:var(--azure);font-style:normal}
+.hero-desc{color:rgba(255,255,255,.6);font-size:15px;line-height:1.8;margin-bottom:32px}
+.hero-stats{display:flex;gap:32px;margin-bottom:36px}
+.stat{position:relative}
+.stat::after{content:'';position:absolute;right:-16px;top:8px;height:28px;width:1px;background:rgba(255,255,255,.1)}
+.stat:last-child::after{display:none}
+.stat-num{font-size:30px;font-weight:700;color:#fff;font-family:'Playfair Display',serif;line-height:1}
+.stat-label{font-size:11px;color:rgba(255,255,255,.4);margin-top:4px;letter-spacing:.3px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:var(--azure);color:var(--navy);border:none;cursor:pointer;padding:13px 28px;border-radius:11px;font-size:15px;font-weight:600;transition:all .2s;text-decoration:none;display:inline-block;font-family:'Inter',sans-serif;letter-spacing:-.1px}
+.btn-primary:hover{background:var(--azure-light);transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,180,216,.35)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.15);cursor:pointer;padding:13px 28px;border-radius:11px;font-size:15px;font-weight:500;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3)}
+
+/* DEPARTURES BOARD */
+.board{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden;backdrop-filter:blur(10px)}
+.board-header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.06)}
+.board-title{font-size:10px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:1.5px;font-weight:600}
+.board-link{font-size:11px;color:var(--azure-light);cursor:pointer;transition:color .2s}
+.board-link:hover{color:#fff}
+.board-row{display:flex;align-items:center;gap:12px;padding:11px 20px;border-bottom:1px solid rgba(255,255,255,.04);cursor:pointer;transition:background .15s}
+.board-row:last-child{border-bottom:none}
+.board-row:hover{background:rgba(255,255,255,.04)}
+.board-flag{font-size:22px;width:30px;text-align:center;flex-shrink:0}
+.board-info{flex:1;min-width:0}
+.board-name{font-size:12px;color:rgba(255,255,255,.85);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.board-org{font-size:10px;color:rgba(255,255,255,.35);margin-top:2px}
+.board-meta{text-align:right;flex-shrink:0}
+.board-date{font-size:11px;color:var(--azure-light);font-weight:600;white-space:nowrap}
+.board-badge{font-size:9px;color:#4CAF50;margin-top:2px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.board-badge.soon{color:#FFA726}
+
+/* SUPPORT BAR */
+.support-bar{background:linear-gradient(90deg,rgba(27,67,50,.9),rgba(26,50,96,.9));padding:10px 48px;border-bottom:1px solid rgba(255,255,255,.04)}
+.support-bar-inner{max-width:1100px;margin:0 auto;display:flex;gap:0;align-items:center}
+.support-sep{color:rgba(255,255,255,.15);margin:0 16px;flex-shrink:0}
+.support-item{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,.65);white-space:nowrap}
+.support-icon{font-size:13px}
+
+/* TABS */
+.tabs-bar{background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:64px;z-index:90;box-shadow:var(--shadow-sm)}
+.tabs-inner{max-width:1100px;margin:0 auto;padding:0 48px;display:flex;align-items:stretch;gap:0}
+.tab{display:flex;align-items:center;gap:8px;padding:16px 20px;font-size:14px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;text-decoration:none}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--navy);border-bottom-color:var(--azure);font-weight:600}
+.tab-count{background:var(--bg);font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;color:var(--muted)}
+.tab.active .tab-count{background:rgba(0,180,216,.12);color:var(--azure)}
+.tab-sep{width:1px;background:var(--border);margin:12px 0;flex-shrink:0}
+
+/* FILTERS */
+.filters-wrap{background:var(--card);border-bottom:1px solid var(--border);padding:12px 48px}
+.filters-inner{max-width:1100px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.filter-search{flex:1;min-width:200px;display:flex;align-items:center;gap:8px;background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:8px 14px;transition:all .2s}
+.filter-search:focus-within{border-color:var(--azure);background:#fff;box-shadow:0 0 0 3px rgba(0,180,216,.1)}
+.filter-search input{border:none;background:transparent;font-size:14px;color:var(--text);width:100%;outline:none;font-family:'Inter',sans-serif}
+.filter-search input::placeholder{color:var(--muted)}
+.filter-select{border:1.5px solid var(--border);background:var(--bg);border-radius:10px;padding:8px 32px 8px 12px;font-size:13px;color:var(--text);cursor:pointer;outline:none;font-family:'Inter',sans-serif;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%236B7A99' d='M5 7L0.5 2.5h9z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 11px center;min-width:130px;transition:border-color .2s}
+.filter-select:focus{border-color:var(--azure)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{padding:6px 14px;border-radius:20px;font-size:12px;font-weight:500;cursor:pointer;transition:all .15s;border:1.5px solid var(--border);background:var(--card);color:var(--muted);white-space:nowrap;line-height:1}
+.chip:hover:not(.active){border-color:var(--azure);color:var(--azure)}
+.chip.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.filter-reset{font-size:12px;color:var(--muted);cursor:pointer;padding:6px 10px;border-radius:8px;transition:all .2s;white-space:nowrap;margin-left:auto;display:none}
+.filter-reset:hover{color:var(--text);background:var(--bg)}
+.filter-reset.visible{display:block}
+
+/* MAIN */
+main{max-width:1100px;margin:0 auto;padding:32px 48px 60px}
+.results-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px}
+.results-title{font-size:15px;font-weight:600;color:var(--text)}
+.results-meta{font-size:13px;color:var(--muted)}
+.sort-select{border:1.5px solid var(--border);background:var(--card);border-radius:8px;padding:6px 28px 6px 10px;font-size:12px;color:var(--muted);cursor:pointer;outline:none;font-family:'Inter',sans-serif;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%236B7A99' d='M5 7L0.5 2.5h9z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center}
+
+/* GRID */
+.events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:20px}
+
+/* CARD */
+.event-card{background:var(--card);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;transition:all .22s cubic-bezier(.4,0,.2,1);cursor:pointer;display:flex;flex-direction:column;box-shadow:var(--shadow-sm);position:relative}
+.event-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:rgba(0,180,216,.2)}
+.event-card.past{opacity:.55;filter:grayscale(.3)}
+.event-card.past:hover{opacity:.75;transform:translateY(-1px)}
+.card-top-bar{height:3px;background:linear-gradient(90deg,var(--azure),var(--azure-light))}
+.card-top-bar.mission{background:linear-gradient(90deg,#EF6C00,#FFA726)}
+.card-top-bar.exhibit{background:linear-gradient(90deg,#43A047,#81C784)}
+.card-inner{padding:20px;flex:1;display:flex;flex-direction:column}
+.card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.card-flag-wrap{display:flex;align-items:center;gap:10px}
+.card-flag{font-size:32px;line-height:1;flex-shrink:0}
+.card-country{font-size:12px;color:var(--muted);font-weight:500}
+.card-city{font-size:11px;color:var(--muted);opacity:.7}
+.card-tags{display:flex;flex-direction:column;gap:4px;align-items:flex-end}
+.tag{font-size:10px;font-weight:700;padding:3px 9px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap;line-height:1.4}
+.tag-mission{background:#FFF3E0;color:#BF360C}
+.tag-exhibit{background:#E8F5E9;color:#1B5E20}
+.tag-soon{background:#FFF8E1;color:#E65100;animation:blink .8s ease-in-out infinite alternate}
+@keyframes blink{from{opacity:.7}to{opacity:1}}
+.tag-past{background:#F5F5F5;color:#9E9E9E}
+.card-title{font-size:15px;font-weight:600;color:var(--text);line-height:1.38;margin-bottom:8px;letter-spacing:-.15px}
+.card-date-row{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-bottom:14px}
+.date-icon{font-size:13px}
+.card-industry{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:14px}
+.industry-chip{font-size:11px;padding:3px 9px;background:rgba(15,31,61,.05);border-radius:6px;color:var(--muted);cursor:pointer;transition:all .15s;border:1px solid transparent}
+.industry-chip:hover{background:rgba(0,180,216,.08);color:var(--azure);border-color:rgba(0,180,216,.2)}
+.card-support{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--green);font-weight:600;padding:7px 10px;background:var(--green-bg);border-radius:8px;margin-bottom:12px}
+.card-support-icon{font-size:13px}
+.card-footer-inner{margin-top:auto;padding-top:14px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.org-badge{display:flex;align-items:center;gap:5px}
+.org-logo{font-size:13px}
+.org-name{font-size:11px;color:var(--muted);font-weight:500}
+.org-level{font-size:10px;color:var(--muted);opacity:.7}
+.card-actions{display:flex;gap:6px;flex-shrink:0}
+.btn-apply{background:var(--navy);color:#fff;border:none;cursor:pointer;padding:7px 16px;border-radius:8px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;transition:all .2s;white-space:nowrap}
+.btn-apply:hover{background:var(--navy-mid);transform:translateY(-1px)}
+.btn-apply:disabled{background:var(--border);color:var(--muted);cursor:not-allowed;transform:none}
+.btn-info{background:transparent;color:var(--muted);border:1.5px solid var(--border);cursor:pointer;padding:7px 10px;border-radius:8px;font-size:12px;font-family:'Inter',sans-serif;transition:all .2s}
+.btn-info:hover{border-color:var(--azure);color:var(--azure)}
+
+/* SEATS PROGRESS */
+.seats-bar{margin-bottom:12px}
+.seats-label{display:flex;justify-content:space-between;margin-bottom:4px}
+.seats-text{font-size:11px;color:var(--muted)}
+.seats-count{font-size:11px;font-weight:600;color:var(--text)}
+.progress{height:4px;background:var(--border);border-radius:2px;overflow:hidden}
+.progress-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,#43A047,#81C784);transition:width .3s}
+.progress-fill.warn{background:linear-gradient(90deg,#EF6C00,#FFA726)}
+.progress-fill.danger{background:linear-gradient(90deg,#C62828,#EF5350)}
+
+/* EMPTY STATE */
+.empty{grid-column:1/-1;text-align:center;padding:80px 20px}
+.empty-icon{font-size:56px;margin-bottom:16px;opacity:.5}
+.empty-title{font-size:20px;font-weight:600;margin-bottom:8px}
+.empty-sub{font-size:14px;color:var(--muted);margin-bottom:24px}
+
+/* PAST SECTION */
+.past-section{margin-top:52px}
+.past-divider{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.past-divider::before,.past-divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.past-label{font-size:12px;color:var(--muted);white-space:nowrap;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+
+/* ORG STRIP */
+.org-strip{margin-top:48px;padding:28px;background:var(--card);border-radius:var(--radius);border:1px solid var(--border)}
+.org-strip-title{font-size:12px;color:var(--muted);text-align:center;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:18px}
+.org-pills{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.org-pill{padding:8px 18px;border-radius:20px;background:var(--bg);border:1.5px solid var(--border);font-size:13px;font-weight:500;color:var(--text);white-space:nowrap;cursor:pointer;transition:all .2s}
+.org-pill:hover,.org-pill.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* SCROLL TO TOP */
+.scroll-top{position:fixed;bottom:80px;right:24px;width:40px;height:40px;background:var(--navy);color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);transition:all .3s;opacity:0;transform:translateY(10px);pointer-events:none;z-index:500}
+.scroll-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.scroll-top:hover{background:var(--navy-mid);transform:translateY(-2px)}
+
+/* MOBILE CTA */
+.mobile-cta{display:none;position:fixed;bottom:0;left:0;right:0;padding:12px 20px;background:rgba(15,31,61,.95);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.08);z-index:500}
+.mobile-cta button{width:100%;background:var(--azure);color:var(--navy);border:none;cursor:pointer;padding:14px;border-radius:12px;font-size:15px;font-weight:700;font-family:'Inter',sans-serif}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(5,12,28,.75);z-index:1000;backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex}
+.modal{background:var(--card);border-radius:20px;max-width:540px;width:100%;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.4);animation:modal-in .2s cubic-bezier(.34,1.56,.64,1);max-height:90vh;overflow-y:auto}
+@keyframes modal-in{from{transform:scale(.95) translateY(10px);opacity:0}to{transform:none;opacity:1}}
+.modal-head{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:24px 28px}
+.modal-flag-big{font-size:40px;margin-bottom:10px;display:block}
+.modal-title{font-family:'Playfair Display',serif;font-size:20px;color:#fff;line-height:1.3;margin-bottom:4px}
+.modal-sub{font-size:12px;color:rgba(255,255,255,.5)}
+.modal-body{padding:24px 28px}
+.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+.modal-field label{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:4px;display:block;font-weight:600}
+.modal-field span{font-size:13px;font-weight:600;color:var(--text)}
+.modal-support-box{background:var(--green-bg);border:1px solid rgba(46,125,50,.2);border-radius:10px;padding:12px 14px;font-size:13px;color:var(--green);margin-bottom:16px;line-height:1.6;display:flex;align-items:flex-start;gap:8px}
+.modal-desc-box{font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:18px;padding:14px;background:var(--bg);border-radius:10px}
+.modal-source{font-size:11px;color:var(--muted);margin-bottom:20px}
+.modal-source a{color:var(--azure);text-decoration:none}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-group{margin-bottom:14px}
+.form-group label{font-size:12px;font-weight:600;color:var(--text);display:block;margin-bottom:6px}
+.form-input{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;color:var(--text);background:var(--bg);outline:none;transition:all .2s}
+.form-input:focus{border-color:var(--azure);background:#fff;box-shadow:0 0 0 3px rgba(0,180,216,.08)}
+.modal-actions{display:flex;gap:10px;margin-top:4px}
+.btn-submit{flex:1;background:var(--azure);color:var(--navy);border:none;cursor:pointer;padding:12px;border-radius:10px;font-size:14px;font-weight:700;font-family:'Inter',sans-serif;transition:all .2s}
+.btn-submit:hover{background:var(--azure-light);transform:translateY(-1px)}
+.btn-cancel{background:transparent;color:var(--muted);border:1.5px solid var(--border);cursor:pointer;padding:12px 20px;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;transition:all .2s}
+.btn-cancel:hover{border-color:var(--text);color:var(--text)}
+.success-wrap{text-align:center;padding:40px 20px}
+.success-icon{font-size:56px;margin-bottom:16px}
+.success-title{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:8px}
+.success-sub{font-size:14px;color:var(--muted);line-height:1.6}
+
+/* TOAST */
+.toast{position:fixed;bottom:90px;right:24px;background:var(--navy);color:#fff;padding:12px 18px;border-radius:10px;font-size:13px;font-weight:500;box-shadow:var(--shadow-md);transform:translateY(20px);opacity:0;transition:all .25s;z-index:2000;border-left:3px solid var(--azure);max-width:300px}
+.toast.show{transform:translateY(0);opacity:1}
+
+/* FAQ */
+.faq{background:var(--card);border-top:1px solid var(--border);padding:52px 48px}
+.faq-inner{max-width:720px;margin:0 auto}
+.faq-head{text-align:center;margin-bottom:36px}
+.faq-eyebrow{font-size:11px;color:var(--azure);text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:8px}
+.faq-title{font-family:'Playfair Display',serif;font-size:28px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{font-size:15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:16px;line-height:1.4;transition:color .2s}
+.faq-q:hover{color:var(--azure)}
+.faq-chevron{font-size:16px;color:var(--azure);flex-shrink:0;transition:transform .25s}
+.faq-a{font-size:14px;color:var(--muted);line-height:1.8;padding-bottom:18px;display:none}
+.faq-item.open .faq-chevron{transform:rotate(180deg)}
+.faq-item.open .faq-a{display:block}
+
+/* FOOTER */
+footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.footer-logo-wrap .footer-logo{font-family:'Playfair Display',serif;font-size:20px;color:#fff;margin-bottom:10px;letter-spacing:-.2px}
+.footer-desc{font-size:12px;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px}
+.footer-col h5{font-size:11px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;font-weight:600}
+.footer-col a{display:block;color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;margin-bottom:8px;transition:color .2s}
+.footer-col a:hover{color:var(--azure-light)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
+
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .hero{padding:48px 20px 52px}
+  .hero-inner{grid-template-columns:1fr;gap:32px}
+  .board{display:none}
+  .support-bar{padding:10px 20px}
+  .tabs-inner{padding:0 20px;overflow-x:auto}
+  .filters-wrap{padding:12px 20px}
+  main{padding:24px 20px 80px}
+  .faq{padding:40px 20px}
+  footer{padding:36px 20px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .mobile-cta{display:block}
+  .scroll-top{bottom:90px}
+}
+
+/* MISSION BUTTON — gold accent */
+.btn-mission{background:linear-gradient(135deg,#F59E0B,#D97706) !important;color:#1A1A2E !important;box-shadow:0 2px 8px rgba(245,158,11,.3)}
+.btn-mission:hover{background:linear-gradient(135deg,#FBBF24,#F59E0B) !important;box-shadow:0 4px 16px rgba(245,158,11,.4) !important}
+.btn-mission-alt{background:linear-gradient(135deg,#F59E0B,#D97706);color:#1A1A2E}
+.btn-mission-alt:hover{background:linear-gradient(135deg,#FBBF24,#F59E0B)}
+
+/* MISSION MODAL */
+.mission-modal-head{background:linear-gradient(135deg,#1A1200,#2D1F00,#0F1F3D);padding:28px 28px 24px}
+.mission-flag{font-size:44px;margin-bottom:12px;display:block}
+.mission-title{font-family:'Playfair Display',serif;font-size:22px;color:#fff;line-height:1.25;margin-bottom:6px}
+.mission-sub{font-size:13px;color:rgba(255,255,255,.5);line-height:1.5}
+.mission-perks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.perk{display:flex;align-items:flex-start;gap:8px;background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.15);border-radius:10px;padding:10px 12px}
+.perk-icon{font-size:16px;flex-shrink:0;margin-top:1px}
+.perk-text{font-size:12px;color:var(--text);line-height:1.4}
+.perk-text strong{display:block;font-size:13px;margin-bottom:1px}
+.mission-divider{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;font-weight:600;margin-bottom:14px}
+.btn-submit-gold{flex:1;background:linear-gradient(135deg,#F59E0B,#D97706);color:#1A1200;border:none;cursor:pointer;padding:13px;border-radius:10px;font-size:15px;font-weight:700;font-family:'Inter',sans-serif;transition:all .2s;letter-spacing:-.1px}
+.btn-submit-gold:hover{background:linear-gradient(135deg,#FBBF24,#F59E0B);transform:translateY(-1px);box-shadow:0 6px 20px rgba(245,158,11,.35)}
+
+
+/* YANDEX RTB AD BLOCKS */
+.ya-ad{width:100%;min-height:90px;background:rgba(255,255,255,.5);border:1px dashed var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;margin:24px 0;font-size:12px;color:var(--muted);position:relative;overflow:hidden}
+.ya-ad::before{content:'Реклама';position:absolute;top:6px;left:10px;font-size:10px;color:var(--muted);opacity:.6;text-transform:uppercase;letter-spacing:.8px}
+.ya-ad-leaderboard{min-height:90px} /* 728x90 */
+.ya-ad-rectangle{min-height:250px;max-width:300px;margin:0 auto} /* 300x250 */
+.ya-ad-wide{min-height:90px} /* 970x90 */
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">
+    <div class="logo-icon">🌐</div>
+    <div><div class="logo-text">ВЭДкалендарь</div><div class="logo-sub">С господдержкой</div></div>
+  </a>
+  <div class="nav-links">
+    <a href="#events" class="active" onclick="switchTab('upcoming',this)">Предстоящие <span class="nav-count" id="nav-upcoming">—</span></a>
+    <a href="#past" onclick="switchTab('past',this)">Прошедшие <span class="nav-count" id="nav-past">—</span></a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <button class="nav-cta btn-mission" onclick="openMissionModal()">✈️ Хочу свою бизнес-миссию</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow"><span class="dot dot-live"></span>Актуально на 2026 год</div>
+      <h1>Выставки и бизнес-миссии за рубежом<br><em>с господдержкой</em></h1>
+      <p class="hero-desc">РЭЦ, МЭЦ, ЦПЭ и Made in Moscow ежегодно организуют десятки зарубежных программ с государственным финансированием. Всё в одном месте.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num" id="stat-upcoming">—</div><div class="stat-label">предстоящих</div></div>
+        <div class="stat"><div class="stat-num">25+</div><div class="stat-label">стран</div></div>
+        <div class="stat"><div class="stat-num">5</div><div class="stat-label">организаторов</div></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#events" class="btn-primary">Найти мероприятие</a>
+        <button class="btn-ghost" onclick="openMissionModal()">✈️ Хочу свою бизнес-миссию</button>
+      </div>
+    </div>
+    <div class="board">
+      <div class="board-header"><span class="board-title">Ближайшие выезды</span><span class="board-link" onclick="document.getElementById('events').scrollIntoView({behavior:'smooth'})">Все →</span></div>
+      <div id="board-rows"></div>
+    </div>
+  </div>
+</section>
+
+<div class="support-bar">
+  <div class="support-bar-inner">
+    <span class="support-item"><span class="support-icon">💰</span>Субсидия до 80%</span>
+    <span class="support-sep">·</span>
+    <span class="support-item"><span class="support-icon">✈️</span>Компенсация перелёта</span>
+    <span class="support-sep">·</span>
+    <span class="support-item"><span class="support-icon">🤝</span>Организованные B2B-встречи</span>
+    <span class="support-sep">·</span>
+    <span class="support-item"><span class="support-icon">🗣</span>Переводчики</span>
+    <span class="support-sep">·</span>
+    <span class="support-item"><span class="support-icon">🆓</span>Бесплатные миссии для МСП</span>
+  </div>
+</div>
+
+<div class="tabs-bar">
+  <div class="tabs-inner">
+    <a class="tab active" id="tab-upcoming" onclick="switchTab('upcoming',this);return false" href="#">Предстоящие <span class="tab-count" id="tc-upcoming">—</span></a>
+    <div class="tab-sep"></div>
+    <a class="tab" id="tab-past" onclick="switchTab('past',this);return false" href="#">Прошедшие <span class="tab-count" id="tc-past">—</span></a>
+  </div>
+</div>
+
+<div class="filters-wrap">
+  <div class="filters-inner">
+    <div class="filter-search"><span style="font-size:15px;color:var(--muted)">🔍</span><input type="search" id="q" placeholder="Страна, организатор, отрасль..." oninput="applyFilters()"></div>
+    <select class="filter-select" id="f-type" onchange="applyFilters()">
+      <option value="">Все типы</option>
+      <option value="mission">Бизнес-миссия</option>
+      <option value="exhibit">Выставка</option>
+    </select>
+    <select class="filter-select" id="f-country" onchange="applyFilters()"><option value="">Все страны</option></select>
+    <select class="filter-select" id="f-org" onchange="applyFilters()"><option value="">Все организаторы</option></select>
+    <div class="chips" id="month-chips"></div>
+    <span class="filter-reset" id="filter-reset" onclick="resetFilters()">✕ Сбросить</span>
+  </div>
+</div>
+
+
+<!-- Яндекс.Директ — Лидерборд (728x90) -->
+<!-- Заменить на реальный код из кабинета Яндекс.Директ после регистрации -->
+<div class="ya-ad ya-ad-leaderboard" id="yandex_rtb_R-A-XXXXXXX-1">
+  <!-- 
+  <script>window.yaContextCb=window.yaContextCb||[];window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({renderTo:"yandex_rtb_R-A-XXXXXXX-1",blockId:"R-A-XXXXXXX-1"})})</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+  -->
+  <span>Рекламный блок 728×90 · Яндекс РСЯ</span>
+</div>
+
+<main id="events">
+  <div class="results-header">
+    <span class="results-title" id="results-title">Предстоящие мероприятия</span>
+    <div style="display:flex;align-items:center;gap:12px">
+      <span class="results-meta" id="results-meta"></span>
+      <select class="sort-select" id="sort" onchange="applyFilters()">
+        <option value="date">По дате</option>
+        <option value="country">По стране</option>
+      </select>
+    </div>
+  </div>
+  <div class="events-grid" id="events-grid"></div>
+  <div class="org-strip">
+    <div class="org-strip-title">Нажмите для фильтра по организатору</div>
+    <div class="org-pills" id="org-pills"></div>
+  </div>
+</main>
+
+<!-- Яндекс.Директ — Прямоугольник (300x250) между контентом и FAQ -->
+<div style="text-align:center;padding:8px 0 32px">
+  <div class="ya-ad ya-ad-rectangle" id="yandex_rtb_R-A-XXXXXXX-2" style="margin:0 auto">
+    <!--
+    <script>window.yaContextCb=window.yaContextCb||[];window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({renderTo:"yandex_rtb_R-A-XXXXXXX-2",blockId:"R-A-XXXXXXX-2"})})</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+    -->
+    <span>Рекламный блок 300×250 · Яндекс РСЯ</span>
+  </div>
+</div>
+
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="faq-head">
+      <div class="faq-eyebrow">FAQ</div>
+      <h2 class="faq-title">Частые вопросы</h2>
+    </div>
+    <div class="faq-item open"><div class="faq-q" onclick="toggleFaq(this)"><span>Как попасть на международную выставку с субсидией?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">Найдите мероприятие в каталоге и нажмите «Подать заявку». РЭЦ субсидирует до 80% стоимости стенда, МЭЦ финансирует деловые встречи и переводчиков, Made in Moscow полностью оплачивает выездные программы для московских компаний.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Чем бизнес-миссия отличается от выставки?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">Бизнес-миссия — поездка делегации для B2B-переговоров с заранее отобранными иностранными партнёрами. Физического стенда нет. Выставка — участие в международном экспо с оборудованным стендом под флагом организатора. Реверсная миссия — иностранные байеры приезжают в Россию.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Кто может участвовать?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">МЭЦ и Made in Moscow работают с компаниями, зарегистрированными в Москве. Федеральные программы РЭЦ открыты для компаний из любых регионов. ЦПЭ работают со своими резидентами, но межрегиональные миссии позволяют присоединиться к чужой делегации.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Что такое реверсная бизнес-миссия?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">Формат, при котором иностранные байеры приезжают в Россию для встреч с вашей компанией. Удобно: не нужно выезжать, расходы минимальны, встречи проходят на вашей территории. Организатор отбирает покупателей и составляет программу.</div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-logo-wrap"><div class="footer-logo">ВЭДкалендарь</div><p class="footer-desc">Единый агрегатор международных мероприятий с господдержкой для российских экспортёров.</p></div>
+      <div class="footer-col"><h5>Мероприятия</h5><a href="#">Выставки за рубежом</a><a href="#">Бизнес-миссии</a><a href="#">Реверсные миссии</a></div>
+      <div class="footer-col"><h5>О проекте</h5><a href="#">О сайте</a><a href="#">Добавить мероприятие</a><a href="#">Контакты</a></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">© 2026 ВЭДкалендарь · Не является официальным ресурсом государственных органов</span><span class="footer-copy">ВЭД · Выставки · Бизнес-миссии · Господдержка · Экспорт</span></div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal"><div class="modal-head"><span class="modal-flag-big" id="m-flag">🌐</span><div class="modal-title" id="m-title"></div><div class="modal-sub" id="m-sub"></div></div><div class="modal-body" id="modal-body"></div></div>
+</div>
+
+
+<!-- MISSION MODAL -->
+<div class="modal-overlay" id="mission-overlay" onclick="if(event.target===this)closeMissionModal()">
+  <div class="modal" id="mission-modal">
+    <div class="mission-modal-head">
+      <span class="mission-flag">✈️</span>
+      <div class="mission-title">Хочу свою бизнес-миссию за рубеж</div>
+      <div class="mission-sub">Мы организуем персональную программу выезда для вашей компании — с подбором страны, партнёров и B2B-встречами</div>
+    </div>
+    <div class="modal-body">
+      <div class="mission-perks">
+        <div class="perk"><span class="perk-icon">🎯</span><div class="perk-text"><strong>Целевые встречи</strong>Только релевантные партнёры под ваш продукт</div></div>
+        <div class="perk"><span class="perk-icon">🗺</span><div class="perk-text"><strong>Подбор рынка</strong>Анализ и выбор оптимальной страны</div></div>
+        <div class="perk"><span class="perk-icon">🗣</span><div class="perk-text"><strong>Переводчики</strong>Профессиональный перевод на весь период</div></div>
+        <div class="perk"><span class="perk-icon">📋</span><div class="perk-text"><strong>Под ключ</strong>Логистика, программа, сопровождение</div></div>
+      </div>
+      <div class="mission-divider">Расскажите о вашей компании</div>
+      <div class="form-row">
+        <div class="form-group"><label>Название компании *</label><input class="form-input" id="m-company" type="text" placeholder="ООО «Ваша Компания»" autocomplete="organization"></div>
+        <div class="form-group"><label>Контактное лицо *</label><input class="form-input" id="m-contact" type="text" placeholder="Иванов Иван" autocomplete="name"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email *</label><input class="form-input" id="m-email" type="email" placeholder="ivan@company.ru" autocomplete="email"></div>
+        <div class="form-group"><label>Телефон</label><input class="form-input" id="m-phone" type="tel" placeholder="+7 (999) 000-00-00" autocomplete="tel"></div>
+      </div>
+      <div class="form-group"><label>Ваш продукт / отрасль *</label><input class="form-input" id="m-product" type="text" placeholder="Например: оборудование для АПК, IT-решения для ЖКХ..."></div>
+      <div class="form-group"><label>Интересующие рынки</label><input class="form-input" id="m-markets" type="text" placeholder="ОАЭ, Китай, Турция, Индия — или не знаю, нужен совет"></div>
+      <div class="modal-actions">
+        <button class="btn-submit-gold" onclick="submitMission()">Обсудить программу →</button>
+        <button class="btn-cancel" onclick="closeMissionModal()">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="scroll-top" id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div class="mobile-cta"><button onclick="openMissionModal()">✈️ Хочу свою бизнес-миссию</button></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const WEBHOOK="https://script.google.com/macros/s/AKfycby_I6xdNlT1iwyf-QDyIOyqkZFv2RNtmKvLBL4gjVor9aPr2Qzn2vE79NiM3d_SW_DN/exec";
+const TODAY=new Date("2026-06-13");
+
+const EVENTS=[
+{id:1,title:"Бизнес-миссия во Вьетнам (FMCG)",type:"mission",country:"Вьетнам",cc:"VN",city:"Ханой / Хошимин",ds:"2026-08-05",dl:"5–7 августа 2026",industry:["FMCG","Продовольствие"],org:"МЭЦ / Made in Moscow",org_s:"МЭЦ/MIM",org_level:"Региональный",org_icon:"🏙",support:"Финансирование встреч, переводчики, трансфер",seats:15,left:null,status:"upcoming",desc:"Миссия для московских FMCG-компаний. Организованные B2B-встречи с вьетнамскими дистрибьюторами и ритейлерами.",src:"https://moscow-export.com/business_mission/"},
+{id:2,title:"Бизнес-миссия на Филиппины (медицина)",type:"mission",country:"Филиппины",cc:"PH",city:"Манила",ds:"2026-08-19",dl:"19–21 августа 2026",industry:["Медицина","Фарма"],org:"МЭЦ / Made in Moscow",org_s:"МЭЦ/MIM",org_level:"Региональный",org_icon:"🏙",support:"Финансирование встреч, переводчики, трансфер",seats:12,left:null,status:"upcoming",desc:"Миссия для медицинских и фармацевтических компаний Москвы.",src:"https://moscow-export.com/business_mission/"},
+{id:3,title:"Бизнес-миссия в Оман (высокотех)",type:"mission",country:"Оман",cc:"OM",city:"Маскат",ds:"2026-09-06",dl:"6–9 сентября 2026",industry:["IT","Высокие технологии"],org:"МЭЦ / Made in Moscow",org_s:"МЭЦ/MIM",org_level:"Региональный",org_icon:"🏙",support:"Финансирование встреч, переводчики, трансфер",seats:15,left:null,status:"upcoming",desc:"Миссия для высокотехнологичных компаний. Оман инвестирует в диверсификацию экономики.",src:"https://moscow-export.com/business_mission/"},
+{id:4,title:"Бизнес-миссия в Турцию (сентябрь)",type:"mission",country:"Турция",cc:"TR",city:"Стамбул",ds:"2026-09-08",dl:"8–10 сентября 2026",industry:["Промышленность"],org:"МЭЦ",org_s:"МЭЦ",org_level:"Региональный",org_icon:"🏙",support:"Финансирование встреч, переводчики",seats:15,left:null,status:"upcoming",desc:"Миссия для промышленных компаний.",src:"https://moscow-export.com/business_mission/"},
+{id:5,title:"Бизнес-миссия в ЮАР",type:"mission",country:"ЮАР",cc:"ZA",city:"Йоханнесбург",ds:"2026-10-06",dl:"6–8 октября 2026",industry:["Промышленность","Медицина"],org:"МЭЦ / Made in Moscow",org_s:"МЭЦ/MIM",org_level:"Региональный",org_icon:"🏙",support:"Финансирование встреч, переводчики, трансфер",seats:12,left:null,status:"upcoming",desc:"Крупнейший рынок Африки. Высокий спрос на медоборудование и промышленные решения.",src:"https://moscow-export.com/business_mission/"},
+{id:6,title:"Бизнес-миссия в Саудовскую Аравию",type:"mission",country:"Саудовская Аравия",cc:"SA",city:"Эр-Рияд",ds:"2026-10-26",dl:"26–28 октября 2026",industry:["Медицина","Фарма"],org:"МЭЦ",org_s:"МЭЦ",org_level:"Региональный",org_icon:"🏙",support:"Финансирование встреч, переводчики",seats:12,left:null,status:"upcoming",desc:"Миссия для медицинских компаний. КСА реализует Vision 2030.",src:"https://moscow-export.com/business_mission/"},
+{id:7,title:"Реверсная миссия из Кении",type:"mission",country:"Кения",cc:"KE",city:"Москва",ds:"2026-09-01",dl:"Сентябрь 2026",industry:["Медицина","IT"],org:"МЭЦ",org_s:"МЭЦ",org_level:"Региональный",org_icon:"🏙",support:"Организация встреч с кенийскими байерами",seats:10,left:null,status:"upcoming",desc:"Кенийские байеры приезжают в Москву. Удобный формат без выезда.",src:"https://moscow-export.com/business_mission/"},
+{id:8,title:"Реверсная миссия из ЮВА (Малайзия)",type:"mission",country:"Малайзия",cc:"MY",city:"Москва",ds:"2026-09-15",dl:"Сентябрь 2026",industry:["БПЛА","Высокие технологии"],org:"МЭЦ",org_s:"МЭЦ",org_level:"Региональный",org_icon:"🏙",support:"Организация байерской программы",seats:10,left:null,status:"upcoming",desc:"Реверсная миссия для компаний БПЛА и ВТ. Байеры из ЮВА приезжают в Москву.",src:"https://moscow-export.com/business_mission/"},
+{id:9,title:"GITEX Africa 2026 — стенд «Сделано в России»",type:"exhibit",country:"Марокко",cc:"MA",city:"Марракеш",ds:"2026-04-07",dl:"7–9 апреля 2026",industry:["IT","Технологии"],org:"РЭЦ",org_s:"РЭЦ",org_level:"Федеральный",org_icon:"🏛",support:"Субсидия до 80% стенда, логистика, маркетинг",seats:25,left:6,status:"past",desc:"Крупнейшая IT-выставка Африки. Коллективный стенд «Сделано в России».",src:"https://www.exportcenter.ru/"},
+{id:10,title:"China Food & Drinks Fair 2026",type:"exhibit",country:"Китай",cc:"CN",city:"Чэнду",ds:"2026-03-25",dl:"25–28 марта 2026",industry:["АПК","Продовольствие"],org:"РЭЦ",org_s:"РЭЦ",org_level:"Федеральный",org_icon:"🏛",support:"Субсидия на стенд, логистика",seats:38,left:0,status:"past",desc:"Крупнейшая отраслевая выставка Китая для производителей продуктов питания.",src:"https://www.exportcenter.ru/"},
+{id:11,title:"Кантонская ярмарка (осень 2026)",type:"exhibit",country:"Китай",cc:"CN",city:"Гуанчжоу",ds:"2026-10-15",dl:"15–19 октября 2026",industry:["Все отрасли"],org:"РЭЦ",org_s:"РЭЦ",org_level:"Федеральный",org_icon:"🏛",support:"Субсидия до 80%, логистика, байерская программа",seats:50,left:22,status:"upcoming",desc:"Крупнейший торговый форум мира. Стенд «Сделано в России».",src:"https://www.exportcenter.ru/"},
+{id:12,title:"CIIE 2026 — Шанхайское импортное ЭКСПО",type:"exhibit",country:"Китай",cc:"CN",city:"Шанхай",ds:"2026-11-05",dl:"5–10 ноября 2026",industry:["Все отрасли"],org:"РЭЦ",org_s:"РЭЦ",org_level:"Федеральный",org_icon:"🏛",support:"Субсидия до 80%, логистика, байерская программа",seats:40,left:18,status:"upcoming",desc:"China International Import Expo. Национальный стенд РЭЦ в Шанхае.",src:"https://www.exportcenter.ru/"},
+{id:13,title:"FHC China 2026 — продукты и HoReCa",type:"exhibit",country:"Китай",cc:"CN",city:"Шанхай",ds:"2026-11-10",dl:"10–12 ноября 2026",industry:["АПК","HoReCa"],org:"РЭЦ",org_s:"РЭЦ",org_level:"Федеральный",org_icon:"🏛",support:"Субсидия на стенд, дегустационная программа",seats:25,left:11,status:"upcoming",desc:"Крупнейшая выставка продуктов питания и HoReCa в Китае.",src:"https://www.exportcenter.ru/"},
+{id:14,title:"CICPE 2026 — беспошлинная торговля",type:"exhibit",country:"Китай",cc:"CN",city:"Хайкоу (Хайнань)",ds:"2026-04-10",dl:"10–14 апреля 2026",industry:["FMCG","Косметика"],org:"РЭЦ",org_s:"РЭЦ",org_level:"Федеральный",org_icon:"🏛",support:"Субсидия на стенд, логистика",seats:20,left:8,status:"past",desc:"Крупнейшая выставка свободной торговли потребительских товаров на Хайнане.",src:"https://www.exportcenter.ru/"},
+{id:15,title:"FoodExpo Qazaqstan 2026",type:"exhibit",country:"Казахстан",cc:"KZ",city:"Алматы",ds:"2026-09-10",dl:"10–12 сентября 2026",industry:["АПК","Продовольствие"],org:"МЭЦ",org_s:"МЭЦ",org_level:"Региональный",org_icon:"🏙",support:"Коллективный стенд, логистика",seats:30,left:14,status:"upcoming",desc:"Ведущая продовольственная выставка Казахстана и ЕАЭС.",src:"https://moscow-export.com/exhibition/"},
+{id:16,title:"ГорПром Узбекистан 2026",type:"exhibit",country:"Узбекистан",cc:"UZ",city:"Ташкент",ds:"2026-10-01",dl:"1–3 октября 2026",industry:["Промышленность","Горнодобыча"],org:"ЦПЭ Свердловск",org_s:"ЦПЭ",org_level:"Региональный",org_icon:"📦",support:"Субсидия на стенд, логистика",seats:20,left:9,status:"upcoming",desc:"Промышленная выставка горного оборудования в Узбекистане.",src:"https://www.exportcenter.ru/"},
+{id:17,title:"Бизнес-миссия в Египет",type:"mission",country:"Египет",cc:"EG",city:"Каир",ds:"2026-06-23",dl:"23–25 июня 2026",industry:["Пищевая","Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, B2B-программа",seats:15,left:null,status:"upcoming",desc:"Миссия в рамках выставки. Презентационная сессия и B2B-встречи с египетскими партнёрами.",src:"https://madeinmos.ru/events/detail/661/"},
+{id:18,title:"Бизнес-миссия в Беларусь (июль)",type:"mission",country:"Белоруссия",cc:"BY",city:"Минск",ds:"2026-07-06",dl:"6–8 июля 2026",industry:["Пищевая","Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, переводчики",seats:15,left:null,status:"upcoming",desc:"Миссия для пищевых и промышленных компаний Москвы.",src:"https://madeinmos.ru/events/detail/662/"},
+{id:19,title:"Viet Food & Beverage 2026",type:"exhibit",country:"Вьетнам",cc:"VN",city:"Хошимин",ds:"2026-08-06",dl:"6–8 августа 2026",industry:["Пищевая"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Коллективный стенд, логистика",seats:20,left:null,status:"upcoming",desc:"Значимое мероприятие для производителей АПК в Юго-Восточной Азии.",src:"https://madeinmos.ru/events/detail/663/"},
+{id:20,title:"Выставка «Детство» — Казахстан",type:"exhibit",country:"Казахстан",cc:"KZ",city:"Алматы",ds:"2026-08-20",dl:"20–22 августа 2026",industry:["Детские товары"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Коллективный стенд, логистика",seats:20,left:null,status:"upcoming",desc:"Единственная B2B-выставка детских товаров в Центральной Азии.",src:"https://madeinmos.ru/events/detail/637/"},
+{id:21,title:"Бизнес-миссия в Латинскую Америку",type:"mission",country:"Латинская Америка",cc:"BR",city:"Онлайн",ds:"2026-08-17",dl:"17–28 августа 2026",industry:["Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Онлайн B2B-встречи, без перелёта",seats:15,left:null,status:"upcoming",desc:"Онлайн-миссия для промышленных компаний. Рынки Бразилии, Мексики, Аргентины.",src:"https://madeinmos.ru/events/detail/833/"},
+{id:22,title:"Бизнес-миссия в Турцию (Beauty Eurasia)",type:"mission",country:"Турция",cc:"TR",city:"Стамбул",ds:"2026-08-31",dl:"31 авг – 2 сен 2026",industry:["Косметика","Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, B2B-программа",seats:15,left:null,status:"upcoming",desc:"Миссия в рамках выставки Beauty Eurasia.",src:"https://madeinmos.ru/events/detail/777/"},
+{id:23,title:"Бизнес-миссия в Пакистан",type:"mission",country:"Пакистан",cc:"PK",city:"Карачи",ds:"2026-09-21",dl:"21–23 сентября 2026",industry:["Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, переводчики",seats:15,left:null,status:"upcoming",desc:"Пакистан — растущий рынок с 230+ млн населения.",src:"https://madeinmos.ru/events/detail/779/"},
+{id:24,title:"Beautyworld Middle East 2026",type:"exhibit",country:"ОАЭ",cc:"AE",city:"Дубай",ds:"2026-10-06",dl:"6–8 октября 2026",industry:["Косметика"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Коллективный стенд, логистика, маркетинг",seats:20,left:null,status:"upcoming",desc:"Крупнейшая выставка красоты и косметики Ближнего Востока.",src:"https://madeinmos.ru/events/detail/780/"},
+{id:25,title:"Бизнес-миссия в Бахрейн",type:"mission",country:"Бахрейн",cc:"BH",city:"Манама",ds:"2026-10-12",dl:"12–14 октября 2026",industry:["Промышленность","Пищевая"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, переводчики",seats:15,left:null,status:"upcoming",desc:"Бахрейн — финансовый хаб Персидского залива.",src:"https://madeinmos.ru/events/detail/781/"},
+{id:26,title:"Бизнес-миссия в Азербайджан",type:"mission",country:"Азербайджан",cc:"AZ",city:"Баку",ds:"2026-10-27",dl:"27–29 октября 2026",industry:["Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, переводчики",seats:15,left:null,status:"upcoming",desc:"Ключевой партнёр в Закавказье.",src:"https://madeinmos.ru/events/detail/782/"},
+{id:27,title:"Бизнес-миссия в ОАЭ",type:"mission",country:"ОАЭ",cc:"AE",city:"Дубай",ds:"2026-11-02",dl:"2–4 ноября 2026",industry:["Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, переводчики",seats:15,left:null,status:"upcoming",desc:"Главный торговый хаб Ближнего Востока.",src:"https://madeinmos.ru/events/detail/783/"},
+{id:28,title:"Бизнес-миссия в Мьянму",type:"mission",country:"Мьянма",cc:"MM",city:"Янгон",ds:"2026-11-23",dl:"23–25 ноября 2026",industry:["Промышленность"],org:"Made in Moscow",org_s:"MIM",org_level:"Региональный",org_icon:"🌿",support:"Финансирование встреч, переводчики",seats:15,left:null,status:"upcoming",desc:"Развивающийся рынок Юго-Восточной Азии.",src:"https://madeinmos.ru/events/detail/786/"},
+];
+
+const FLAGS={VN:"🇻🇳",PH:"🇵🇭",OM:"🇴🇲",TR:"🇹🇷",ZA:"🇿🇦",SA:"🇸🇦",KE:"🇰🇪",MY:"🇲🇾",MA:"🇲🇦",CN:"🇨🇳",AZ:"🇦🇿",GE:"🇬🇪",KZ:"🇰🇿",BY:"🇧🇾",UZ:"🇺🇿",AE:"🇦🇪",EG:"🇪🇬",BR:"🇧🇷",PK:"🇵🇰",BH:"🇧🇭",MM:"🇲🇲"};
+const TYPE_LABEL={mission:"Бизнес-миссия",exhibit:"Выставка"};
+
+let currentTab="upcoming";
+let activeOrg="";
+
+// ---- INIT ----
+document.addEventListener('DOMContentLoaded',()=>{
+  buildFilters();
+  buildBoard();
+  buildOrgPills();
+  buildMonthChips();
+  updateCounts();
+  applyFilters();
+
+  // Scroll to top button
+  window.addEventListener('scroll',()=>{
+    const btn=document.getElementById('scroll-top');
+    btn.classList.toggle('visible',window.scrollY>400);
+  });
+});
+
+function updateCounts(){
+  const upcoming=EVENTS.filter(e=>e.status==="upcoming").length;
+  const past=EVENTS.filter(e=>e.status==="past").length;
+  ["nav-upcoming","tc-upcoming"].forEach(id=>document.getElementById(id).textContent=upcoming);
+  ["nav-past","tc-past"].forEach(id=>document.getElementById(id).textContent=past);
+  document.getElementById('stat-upcoming').textContent=upcoming;
+}
+
+// ---- TAB SWITCH ----
+function switchTab(tab,el){
+  currentTab=tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(t=>t.classList.remove('active'));
+  if(el){el.classList.add('active')}
+  document.getElementById('tab-'+tab).classList.add('active');
+  document.getElementById('results-title').textContent=tab==='upcoming'?'Предстоящие мероприятия':'Прошедшие мероприятия';
+  applyFilters();
+}
+
+// ---- FILTERS ----
+function buildFilters(){
+  const countries=[...new Set(EVENTS.map(e=>e.country))].sort();
+  const sel=document.getElementById('f-country');
+  countries.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o)});
+  const orgs=[...new Set(EVENTS.map(e=>e.org_s))].sort();
+  const so=document.getElementById('f-org');
+  orgs.forEach(o=>{const op=document.createElement('option');op.value=o;op.textContent=o;so.appendChild(op)});
+}
+
+function buildMonthChips(){
+  const months=[["Все",""],["Июн","2026-06"],["Авг","2026-08"],["Сен","2026-09"],["Окт","2026-10"],["Ноя","2026-11"]];
+  const wrap=document.getElementById('month-chips');
+  months.forEach(([label,val])=>{
+    const d=document.createElement('div');d.className='chip'+(val===""?" active":"");
+    d.textContent=label;d.dataset.month=val;
+    d.onclick=()=>{document.querySelectorAll('#month-chips .chip').forEach(c=>c.classList.remove('active'));d.classList.add('active');applyFilters()};
+    wrap.appendChild(d);
+  });
+}
+
+function hasActiveFilters(){
+  return document.getElementById('q').value||document.getElementById('f-type').value||document.getElementById('f-country').value||document.getElementById('f-org').value||activeOrg||(document.querySelector('#month-chips .chip.active')?.dataset.month)||false;
+}
+
+function resetFilters(){
+  document.getElementById('q').value='';
+  document.getElementById('f-type').value='';
+  document.getElementById('f-country').value='';
+  document.getElementById('f-org').value='';
+  activeOrg='';
+  document.querySelectorAll('#month-chips .chip').forEach((c,i)=>c.classList.toggle('active',i===0));
+  document.querySelectorAll('.org-pill').forEach(p=>p.classList.remove('active'));
+  applyFilters();
+}
+
+function applyFilters(){
+  const q=document.getElementById('q').value.toLowerCase();
+  const type=document.getElementById('f-type').value;
+  const country=document.getElementById('f-country').value;
+  const org=document.getElementById('f-org').value||activeOrg;
+  const month=document.querySelector('#month-chips .chip.active')?.dataset.month||"";
+  const sort=document.getElementById('sort').value;
+
+  let list=EVENTS.filter(e=>{
+    if(e.status!==currentTab) return false;
+    if(q&&!`${e.title} ${e.country} ${e.city} ${e.org} ${e.industry.join(' ')}`.toLowerCase().includes(q)) return false;
+    if(type&&e.type!==type) return false;
+    if(country&&e.country!==country) return false;
+    if(org&&e.org_s!==org) return false;
+    if(month&&!e.ds.startsWith(month)) return false;
+    return true;
+  });
+
+  if(sort==="date") list.sort((a,b)=>a.ds.localeCompare(b.ds));
+  else if(sort==="country") list.sort((a,b)=>a.country.localeCompare(b.country,'ru'));
+
+  renderEvents(list);
+  document.getElementById('results-meta').textContent=`${list.length} мероприятий`;
+  document.getElementById('filter-reset').classList.toggle('visible',!!hasActiveFilters());
+}
+
+// ---- RENDER ----
+function isSoon(ds){
+  const d=new Date(ds);const diff=(d-TODAY)/(1000*60*60*24);return diff>=0&&diff<=14;
+}
+
+function renderEvents(list){
+  const grid=document.getElementById('events-grid');grid.innerHTML='';
+  if(!list.length){
+    grid.innerHTML=`<div class="empty"><div class="empty-icon">🔍</div><h3 class="empty-title">Мероприятий не найдено</h3><p class="empty-sub">Попробуйте изменить фильтры или <a href="#" onclick="resetFilters();return false" style="color:var(--azure)">сбросить</a> их</p></div>`;
+    return;
+  }
+  list.forEach(e=>grid.appendChild(buildCard(e)));
+}
+
+function buildCard(e){
+  const flag=FLAGS[e.cc]||"🌍";
+  const past=e.status==="past";
+  const soon=!past&&isSoon(e.ds);
+  const el=document.createElement('article');
+  el.className='event-card'+(past?" past":"");
+
+  // Seats progress
+  let seatsHtml='';
+  if(e.left!==null&&e.seats){
+    const pct=Math.round((e.left/e.seats)*100);
+    const cls=pct<=20?'danger':pct<=50?'warn':'';
+    seatsHtml=`<div class="seats-bar"><div class="seats-label"><span class="seats-text">Доступно мест</span><span class="seats-count">${e.left} / ${e.seats}</span></div><div class="progress"><div class="progress-fill ${cls}" style="width:${pct}%"></div></div></div>`;
+  }
+
+  el.innerHTML=`
+    <div class="card-top-bar ${e.type}"></div>
+    <div class="card-inner">
+      <div class="card-head">
+        <div class="card-flag-wrap">
+          <span class="card-flag">${flag}</span>
+          <div><div class="card-country">${e.country}</div><div class="card-city">${e.city}</div></div>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-${e.type}">${TYPE_LABEL[e.type]}</span>
+          ${soon?'<span class="tag tag-soon">Скоро</span>':''}
+          ${past?'<span class="tag tag-past">Прошло</span>':''}
+        </div>
+      </div>
+      <div class="card-title">${e.title}</div>
+      <div class="card-date-row"><span class="date-icon">📅</span><time>${e.dl}</time></div>
+      <div class="card-industry">${e.industry.map(i=>`<span class="industry-chip" onclick="event.stopPropagation();filterByIndustry('${i}')">${i}</span>`).join('')}</div>
+      <div class="card-support"><span class="card-support-icon">✓</span>${e.support}</div>
+      ${seatsHtml}
+      <div class="card-footer-inner">
+        <div class="org-badge">
+          <span class="org-logo">${e.org_icon}</span>
+          <div><div class="org-name">${e.org_s}</div><div class="org-level">${e.org_level}</div></div>
+        </div>
+        <div class="card-actions">
+          
+          <button class="btn-info" onclick="event.stopPropagation();openDetailModal(${e.id})">ℹ</button>
+        </div>
+      </div>
+    </div>
+  `;
+  el.onclick=()=>openDetailModal(e.id);
+  return el;
+}
+
+function filterByIndustry(industry){
+  document.getElementById('q').value=industry;
+  applyFilters();
+  document.getElementById('events').scrollIntoView({behavior:'smooth'});
+}
+
+// ---- BOARD ----
+function buildBoard(){
+  const upcoming=EVENTS.filter(e=>e.status==="upcoming").sort((a,b)=>a.ds.localeCompare(b.ds)).slice(0,5);
+  const wrap=document.getElementById('board-rows');
+  upcoming.forEach(e=>{
+    const soon=isSoon(e.ds);
+    const row=document.createElement('div');row.className='board-row';
+    row.innerHTML=`<div class="board-flag">${FLAGS[e.cc]||"🌍"}</div><div class="board-info"><div class="board-name">${e.title}</div><div class="board-org">${e.org_s} · ${e.city}</div></div><div class="board-meta"><div class="board-date">${e.dl.split(" ").slice(0,2).join(" ")}</div><div class="board-badge ${soon?'soon':''}">${soon?"⚡ Скоро":"✓ Открыт набор"}</div></div>`;
+    row.onclick=()=>openDetailModal(e.id);
+    wrap.appendChild(row);
+  });
+}
+
+// ---- ORG PILLS ----
+function buildOrgPills(){
+  const orgs=[{s:"МЭЦ/MIM",f:"🏙 МЭЦ"},{s:"РЭЦ",f:"🏛 РЭЦ"},{s:"MIM",f:"🌿 Made in Moscow"},{s:"ЦПЭ",f:"📦 ЦПЭ"}];
+  const wrap=document.getElementById('org-pills');
+  orgs.forEach(o=>{
+    const el=document.createElement('div');el.className='org-pill';el.textContent=o.f;
+    el.onclick=()=>{
+      if(activeOrg===o.s){activeOrg='';el.classList.remove('active')}
+      else{document.querySelectorAll('.org-pill').forEach(p=>p.classList.remove('active'));activeOrg=o.s;el.classList.add('active')}
+      applyFilters();
+    };
+    wrap.appendChild(el);
+  });
+}
+
+// ---- MODALS ----
+function openDetailModal(id){
+  const e=EVENTS.find(x=>x.id===id);if(!e)return;
+  const past=e.status==="past";
+  document.getElementById('m-flag').textContent=FLAGS[e.cc]||"🌍";
+  document.getElementById('m-title').textContent=e.title;
+  document.getElementById('m-sub').textContent=e.org;
+  document.getElementById('modal-body').innerHTML=`
+    <div class="modal-grid">
+      <div class="modal-field"><label>Страна</label><span>${e.country}</span></div>
+      <div class="modal-field"><label>Город</label><span>${e.city}</span></div>
+      <div class="modal-field"><label>Даты</label><span>${e.dl}</span></div>
+      <div class="modal-field"><label>Тип</label><span>${TYPE_LABEL[e.type]}</span></div>
+    </div>
+    <div class="modal-support-box"><span>✓</span><div>${e.support}</div></div>
+    <div class="modal-desc-box">${e.desc}</div>
+    <div class="modal-source">Источник: <a href="${e.src}" target="_blank">${e.src.split('/')[2]}</a></div>
+    <div class="modal-actions">
+      <button class="btn-submit btn-mission-alt" onclick="closeModal();setTimeout(openMissionModal,200)">✈️ Организовать миссию</button>
+      <button class="btn-cancel" onclick="closeModal()">Закрыть</button>
+    </div>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function openApplyModal(id){
+  const e=id?EVENTS.find(x=>x.id===id):null;
+  document.getElementById('m-flag').textContent=e?(FLAGS[e.cc]||"🌍"):"📝";
+  document.getElementById('m-title').textContent=e?e.title:"Оставить заявку";
+  document.getElementById('m-sub').textContent=e?e.org:"";
+  document.getElementById('modal-body').innerHTML=`
+    ${e?`<div class="modal-support-box"><span>✓</span><div>${e.support}</div></div>`:""}
+    <div class="form-row">
+      <div class="form-group"><label>Название компании *</label><input class="form-input" id="f-company" type="text" placeholder="ООО «Ваша Компания»" autocomplete="organization"></div>
+      <div class="form-group"><label>Контактное лицо *</label><input class="form-input" id="f-name" type="text" placeholder="Иванов Иван" autocomplete="name"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Email *</label><input class="form-input" id="f-email" type="email" placeholder="ivan@company.ru" autocomplete="email"></div>
+      <div class="form-group"><label>Телефон</label><input class="form-input" id="f-phone" type="tel" placeholder="+7 (999) 000-00-00" autocomplete="tel"></div>
+    </div>
+    <div class="form-group"><label>Отрасль</label><input class="form-input" id="f-industry" type="text" placeholder="АПК, IT, промышленность..."></div>
+    <div class="modal-actions">
+      <button class="btn-submit" onclick="submitForm(${id||0})">Отправить заявку →</button>
+      <button class="btn-cancel" onclick="closeModal()">Отмена</button>
+    </div>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function submitForm(eventId){
+  const company=document.getElementById('f-company')?.value.trim();
+  const name=document.getElementById('f-name')?.value.trim();
+  const email=document.getElementById('f-email')?.value.trim();
+  if(!company||!name||!email){showToast("⚠️ Заполните обязательные поля");return;}
+  const e=eventId?EVENTS.find(x=>x.id===eventId):null;
+  const payload={timestamp:new Date().toISOString(),event_id:eventId||"",event_title:e?e.title:"Общий запрос",event_org:e?e.org:"",event_country:e?e.country:"",event_date:e?e.dl:"",company,name,email,phone:document.getElementById('f-phone')?.value.trim()||"",industry:document.getElementById('f-industry')?.value.trim()||""};
+  const btn=document.querySelector('.btn-submit');btn.textContent="Отправка...";btn.disabled=true;
+  fetch(WEBHOOK,{method:"POST",body:JSON.stringify(payload)}).then(()=>showSuccess()).catch(()=>showSuccess());
+}
+
+function showSuccess(){
+  document.getElementById('modal-body').innerHTML=`<div class="success-wrap"><div class="success-icon">✅</div><div class="success-title">Заявка отправлена!</div><p class="success-sub">Мы свяжемся с вами в течение 1–2 рабочих дней<br>и передадим контакты организатора.</p></div><div style="padding:0 28px 24px"><button class="btn-submit" onclick="closeModal()" style="width:100%">Отлично!</button></div>`;
+}
+
+function closeModal(){document.getElementById('modal-overlay').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==="Escape")closeModal()});
+
+
+function openMissionModal(){
+  document.getElementById('mission-overlay').classList.add('open');
+}
+function closeMissionModal(){
+  document.getElementById('mission-overlay').classList.remove('open');
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==="Escape"){closeModal();closeMissionModal();}
+});
+
+function submitMission(){
+  const company=document.getElementById('m-company')?.value.trim();
+  const contact=document.getElementById('m-contact')?.value.trim();
+  const email=document.getElementById('m-email')?.value.trim();
+  const product=document.getElementById('m-product')?.value.trim();
+  if(!company||!contact||!email||!product){showToast("⚠️ Заполните обязательные поля");return;}
+  const payload={
+    timestamp:new Date().toISOString(),
+    type:"custom_mission",
+    company,contact,email,
+    phone:document.getElementById('m-phone')?.value.trim()||"",
+    product,
+    markets:document.getElementById('m-markets')?.value.trim()||""
+  };
+  const btn=document.querySelector('.btn-submit-gold');btn.textContent="Отправка...";btn.disabled=true;
+  fetch(WEBHOOK,{method:"POST",body:JSON.stringify(payload)})
+    .then(()=>showMissionSuccess())
+    .catch(()=>showMissionSuccess());
+}
+
+function showMissionSuccess(){
+  document.getElementById('mission-modal').querySelector('.modal-body').innerHTML=`
+    <div class="success-wrap">
+      <div class="success-icon">✈️</div>
+      <div class="success-title">Заявка принята!</div>
+      <p class="success-sub">Мы изучим вашу задачу и свяжемся в течение<br>1–2 рабочих дней с предложением по программе.</p>
+    </div>
+    <div style="padding:0 28px 24px"><button class="btn-submit-gold" onclick="closeMissionModal()" style="width:100%">Отлично!</button></div>
+  `;
+}
+
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+function toggleFaq(el){const item=el.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.display='none'});if(!isOpen){item.classList.add('open');item.querySelector('.faq-a').style.display='block'}}
+</script>
+</body>
+</html>
