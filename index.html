@@ -330,7 +330,7 @@ footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
     <div>
       <div class="hero-eyebrow"><span class="dot dot-live"></span>Актуально на 2026 год</div>
       <h1>Выставки и бизнес-миссии за рубежом<br><em>с господдержкой</em></h1>
-      <p class="hero-desc">РЭЦ, МЭЦ, ЦПЭ и Made in Moscow ежегодно организуют десятки зарубежных программ с государственным финансированием. Всё в одном месте.</p>
+      <p class="hero-desc">Институты развития — РЭЦ, МЭЦ, ЦПЭ, Аgroexport, Made in Moscow и другие — ежегодно организуют десятки зарубежных программ с государственным финансированием. Всё в одном месте.</p>
       <div class="hero-stats">
         <div class="stat"><div class="stat-num" id="stat-upcoming">—</div><div class="stat-label">предстоящих</div></div>
         <div class="stat"><div class="stat-num">25+</div><div class="stat-label">стран</div></div>
@@ -747,7 +747,8 @@ function openDetailModal(id){
     <div class="modal-desc-box">${e.desc}</div>
     <div class="modal-source">Источник: <a href="${e.src}" target="_blank">${e.src.split('/')[2]}</a></div>
     <div class="modal-actions">
-      <button class="btn-submit btn-mission-alt" onclick="closeModal();setTimeout(openMissionModal,200)">✈️ Организовать миссию</button>
+      <button class="btn-submit btn-mission-alt" onclick="closeModal();setTimeout(openMissionModal,200)">✈️ Хочу такое же мероприятие</button>
+      <a class="btn-cancel" href="\${e.src}" target="_blank" rel="noopener" style="text-decoration:none;text-align:center">🔗 На сайт организатора</a>
       <button class="btn-cancel" onclick="closeModal()">Закрыть</button>
     </div>
   `;
