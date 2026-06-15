@@ -784,7 +784,7 @@ function submitForm(eventId){
   const email=document.getElementById('f-email')?.value.trim();
   if(!company||!name||!email){showToast("⚠️ Заполните обязательные поля");return;}
   const e=eventId?EVENTS.find(x=>x.id===eventId):null;
-  const payload={timestamp:new Date().toISOString(),event_id:eventId||"",event_title:e?e.title:"Общий запрос",event_org:e?e.org:"",event_country:e?e.country:"",event_date:e?e.dl:"",company,name,email,phone:document.getElementById('f-phone')?.value.trim()||"",industry:document.getElementById('f-industry')?.value.trim()||""};
+  const payload={token:"f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3",timestamp:new Date().toISOString(),event_id:eventId||"",event_title:e?e.title:"Общий запрос",event_org:e?e.org:"",event_country:e?e.country:"",event_date:e?e.dl:"",company,name,email,phone:document.getElementById('f-phone')?.value.trim()||"",industry:document.getElementById('f-industry')?.value.trim()||""};
   const btn=document.querySelector('.btn-submit');btn.textContent="Отправка...";btn.disabled=true;
   fetch(WEBHOOK,{method:"POST",body:JSON.stringify(payload)}).then(()=>showSuccess()).catch(()=>showSuccess());
 }
@@ -814,6 +814,7 @@ function submitMission(){
   const product=document.getElementById('m-product')?.value.trim();
   if(!company||!contact||!email||!product){showToast("⚠️ Заполните обязательные поля");return;}
   const payload={
+    token:"f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3",
     timestamp:new Date().toISOString(),
     type:"custom_mission",
     company,contact,email,
