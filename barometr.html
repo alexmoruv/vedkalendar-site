@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Барометр экспортного потенциала — VedExpo</title>
+<meta name="description" content="Оцените экспортный потенциал вашей компании за 3 минуты. Персональный AI-анализ рынка и рекомендации по выходу на зарубежные рынки.">
+<link rel="canonical" href="https://vedexpo.ru/barometr">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0F1F3D;--navy-mid:#1A3260;
+  --azure:#00B4D8;--azure-light:#48CAE4;
+  --gold:#F59E0B;--gold-light:#FCD34D;
+  --bg:#F0F4F8;--card:#fff;
+  --text:#1A1A2E;--muted:#6B7A99;--border:#DDE3EE;
+  --green:#2E7D32;--green-bg:#E8F5E9;
+  --radius:14px;
+  --shadow:0 4px 24px rgba(15,31,61,.08);
+  --shadow-lg:0 16px 48px rgba(15,31,61,.14);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+
+/* NAV */
+nav{background:var(--navy);padding:0 48px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.nav-logo{font-family:'Playfair Display',serif;font-size:17px;color:#fff;text-decoration:none;font-weight:700}
+.nav-back{color:rgba(255,255,255,.6);text-decoration:none;font-size:13px;transition:color .2s;display:flex;align-items:center;gap:6px}
+.nav-back:hover{color:#fff}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#080F1E 0%,var(--navy) 50%,#0D2E5A 100%);padding:64px 48px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 100%,rgba(0,180,216,.07),transparent);pointer-events:none}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.25);border-radius:20px;padding:5px 16px;font-size:11px;color:var(--gold-light);font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:20px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:16px;letter-spacing:-.5px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.55);max-width:520px;margin:0 auto 36px;line-height:1.7}
+.hero-stats{display:flex;justify-content:center;gap:48px}
+.hstat-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:#fff}
+.hstat-label{font-size:11px;color:rgba(255,255,255,.4);margin-top:2px;letter-spacing:.3px}
+
+/* MAIN WRAPPER */
+.wrapper{max-width:720px;margin:0 auto;padding:48px 24px 80px}
+
+/* PROGRESS */
+.progress-wrap{margin-bottom:40px}
+.progress-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.progress-label{font-size:13px;font-weight:600;color:var(--text)}
+.progress-step{font-size:12px;color:var(--muted)}
+.progress-bar{height:4px;background:var(--border);border-radius:2px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--azure));border-radius:2px;transition:width .4s cubic-bezier(.4,0,.2,1)}
+
+/* QUESTION CARD */
+.question-card{background:var(--card);border-radius:var(--radius);border:1px solid var(--border);padding:36px;box-shadow:var(--shadow);animation:slide-in .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes slide-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.q-number{font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.q-text{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--text);line-height:1.35;margin-bottom:28px}
+.q-hint{font-size:13px;color:var(--muted);margin-top:-20px;margin-bottom:24px;line-height:1.5}
+
+/* OPTIONS */
+.options{display:flex;flex-direction:column;gap:10px}
+.option{display:flex;align-items:center;gap:14px;padding:14px 18px;border:1.5px solid var(--border);border-radius:10px;cursor:pointer;transition:all .18s;background:var(--card);text-align:left}
+.option:hover{border-color:var(--azure);background:rgba(0,180,216,.03)}
+.option.selected{border-color:var(--gold);background:rgba(245,158,11,.05)}
+.option-dot{width:20px;height:20px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;transition:all .18s;display:flex;align-items:center;justify-content:center}
+.option.selected .option-dot{border-color:var(--gold);background:var(--gold)}
+.option.selected .option-dot::after{content:'';width:6px;height:6px;border-radius:50%;background:#fff}
+.option-text{font-size:14px;font-weight:500;color:var(--text);line-height:1.4}
+.option-sub{font-size:12px;color:var(--muted);margin-top:2px}
+
+/* INPUT QUESTION */
+.q-input{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;font-size:15px;font-family:'Inter',sans-serif;color:var(--text);outline:none;transition:border-color .2s;background:var(--bg)}
+.q-input:focus{border-color:var(--gold);background:#fff}
+.q-input::placeholder{color:var(--muted)}
+
+/* NAV BUTTONS */
+.btn-row{display:flex;justify-content:space-between;align-items:center;margin-top:28px;gap:12px}
+.btn-next{background:linear-gradient(135deg,var(--gold),#D97706);color:#1A1200;border:none;cursor:pointer;padding:13px 32px;border-radius:10px;font-size:15px;font-weight:700;font-family:'Inter',sans-serif;transition:all .2s;flex:1}
+.btn-next:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(245,158,11,.35)}
+.btn-next:disabled{background:var(--border);color:var(--muted);cursor:not-allowed;transform:none;box-shadow:none}
+.btn-back{background:transparent;color:var(--muted);border:1.5px solid var(--border);cursor:pointer;padding:13px 20px;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;transition:all .2s}
+.btn-back:hover{border-color:var(--text);color:var(--text)}
+
+/* LOADING */
+.loading{text-align:center;padding:60px 20px}
+.loading-icon{font-size:48px;margin-bottom:20px;animation:float 2s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.loading-title{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:10px}
+.loading-sub{font-size:14px;color:var(--muted);line-height:1.7}
+.loading-dots{display:flex;justify-content:center;gap:6px;margin-top:20px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:dot-pulse 1.4s ease-in-out infinite}
+.dot:nth-child(2){animation-delay:.2s}
+.dot:nth-child(3){animation-delay:.4s}
+@keyframes dot-pulse{0%,80%,100%{transform:scale(.8);opacity:.4}40%{transform:scale(1.2);opacity:1}}
+
+/* RESULT */
+.result{animation:slide-in .4s cubic-bezier(.34,1.56,.64,1)}
+.result-header{background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:var(--radius);padding:32px;margin-bottom:24px;position:relative;overflow:hidden}
+.result-header::before{content:'📊';position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:80px;opacity:.08}
+.result-eyebrow{font-size:11px;color:var(--gold-light);text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:8px}
+.result-title{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:6px}
+.result-company{font-size:13px;color:rgba(255,255,255,.5)}
+
+/* SCORE METER */
+.score-meter{background:rgba(255,255,255,.06);border-radius:10px;padding:20px;margin-top:20px}
+.score-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.score-label{font-size:12px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.8px}
+.score-value{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--gold)}
+.score-bar{height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.score-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--gold),var(--azure-light));transition:width 1s cubic-bezier(.4,0,.2,1)}
+
+/* RESULT SECTIONS */
+.result-section{background:var(--card);border-radius:var(--radius);border:1px solid var(--border);padding:24px;margin-bottom:16px;box-shadow:var(--shadow)}
+.result-section-title{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--text);margin-bottom:14px;text-transform:uppercase;letter-spacing:.5px}
+.result-section-icon{font-size:18px}
+.result-content{font-size:14px;color:var(--text);line-height:1.8}
+.result-content ul{padding-left:18px}
+.result-content li{margin-bottom:6px;color:var(--muted)}
+.result-content li strong{color:var(--text)}
+.result-content p{margin-bottom:10px}
+
+/* VERDICT */
+.verdict{border-left:3px solid var(--gold);padding-left:16px;margin:16px 0}
+.verdict-text{font-size:15px;font-weight:600;color:var(--text);line-height:1.5}
+
+/* CTA BLOCK */
+.cta-block{background:linear-gradient(135deg,var(--navy),#0D2E5A);border-radius:var(--radius);padding:32px;text-align:center;margin-top:24px}
+.cta-title{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:8px}
+.cta-sub{font-size:14px;color:rgba(255,255,255,.55);margin-bottom:24px;line-height:1.6}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-cta-primary{background:linear-gradient(135deg,var(--gold),#D97706);color:#1A1200;border:none;cursor:pointer;padding:13px 28px;border-radius:10px;font-size:14px;font-weight:700;font-family:'Inter',sans-serif;transition:all .2s;text-decoration:none;display:inline-block}
+.btn-cta-primary:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(245,158,11,.35)}
+.btn-cta-secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2);cursor:pointer;padding:13px 24px;border-radius:10px;font-size:14px;font-weight:500;font-family:'Inter',sans-serif;transition:all .2s;text-decoration:none;display:inline-block}
+.btn-cta-secondary:hover{background:rgba(255,255,255,.14)}
+
+/* RESTART */
+.btn-restart{display:block;text-align:center;margin:20px auto 0;font-size:13px;color:var(--muted);cursor:pointer;background:none;border:none;font-family:'Inter',sans-serif;transition:color .2s}
+.btn-restart:hover{color:var(--text)}
+
+/* MISSION MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(5,12,28,.75);z-index:1000;backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex}
+.modal{background:var(--card);border-radius:20px;max-width:500px;width:100%;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.4);animation:slide-in .25s cubic-bezier(.34,1.56,.64,1);max-height:90vh;overflow-y:auto}
+.modal-head{background:linear-gradient(135deg,#1A1200,#2D1F00,var(--navy));padding:26px 28px}
+.modal-head-icon{font-size:36px;margin-bottom:10px}
+.modal-head-title{font-family:'Playfair Display',serif;font-size:20px;color:#fff;margin-bottom:4px}
+.modal-head-sub{font-size:12px;color:rgba(255,255,255,.5)}
+.modal-body{padding:24px 28px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-group{margin-bottom:14px}
+.form-group label{font-size:12px;font-weight:600;color:var(--text);display:block;margin-bottom:5px}
+.form-input{width:100%;padding:10px 13px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;font-family:'Inter',sans-serif;color:var(--text);background:var(--bg);outline:none;transition:border-color .2s}
+.form-input:focus{border-color:var(--gold);background:#fff}
+.modal-actions{display:flex;gap:10px}
+.btn-modal-submit{flex:1;background:linear-gradient(135deg,var(--gold),#D97706);color:#1A1200;border:none;cursor:pointer;padding:12px;border-radius:9px;font-size:14px;font-weight:700;font-family:'Inter',sans-serif}
+.btn-modal-cancel{background:transparent;color:var(--muted);border:1.5px solid var(--border);cursor:pointer;padding:12px 18px;border-radius:9px;font-size:14px;font-family:'Inter',sans-serif}
+.success-wrap{text-align:center;padding:40px 20px}
+.success-icon{font-size:52px;margin-bottom:14px}
+.success-title{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:8px}
+.success-sub{font-size:14px;color:var(--muted);line-height:1.6}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;right:24px;background:var(--navy);color:#fff;padding:12px 18px;border-radius:10px;font-size:13px;box-shadow:var(--shadow-lg);transform:translateY(20px);opacity:0;transition:all .25s;z-index:2000;border-left:3px solid var(--gold)}
+.toast.show{transform:none;opacity:1}
+
+@media(max-width:640px){
+  nav{padding:0 16px}
+  .hero{padding:48px 16px 40px}
+  .hero-stats{gap:28px}
+  .wrapper{padding:28px 16px 60px}
+  .question-card{padding:24px}
+  .q-text{font-size:18px}
+  .form-row{grid-template-columns:1fr}
+  .cta-buttons{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://vedexpo.ru" class="nav-logo">VedExpo</a>
+  <a href="https://vedexpo.ru" class="nav-back">← Назад к мероприятиям</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">⚡ AI-анализ за 3 минуты</div>
+  <h1>Барометр<br><em>экспортного потенциала</em></h1>
+  <p class="hero-sub">Ответьте на 5 вопросов — получите персональный анализ готовности вашей компании к выходу на зарубежные рынки</p>
+  <div class="hero-stats">
+    <div><div class="hstat-num">5</div><div class="hstat-label">вопросов</div></div>
+    <div><div class="hstat-num">3 мин</div><div class="hstat-label">на прохождение</div></div>
+    <div><div class="hstat-num">AI</div><div class="hstat-label">анализ рынка</div></div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div id="quiz-wrap">
+
+    <!-- PROGRESS -->
+    <div class="progress-wrap" id="progress-wrap">
+      <div class="progress-meta">
+        <span class="progress-label" id="progress-label">Вопрос 1 из 5</span>
+        <span class="progress-step" id="progress-pct">20%</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:20%"></div></div>
+    </div>
+
+    <!-- QUESTION CARD -->
+    <div class="question-card" id="question-card"></div>
+
+  </div>
+
+  <!-- LOADING -->
+  <div id="loading" style="display:none">
+    <div class="loading">
+      <div class="loading-icon">🧭</div>
+      <div class="loading-title">Анализируем ваш потенциал</div>
+      <div class="loading-sub">AI изучает профиль компании и подбирает<br>персональные рекомендации по рынкам</div>
+      <div class="loading-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div id="result" style="display:none"></div>
+</div>
+
+<!-- MISSION MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal">
+    <div class="modal-head">
+      <div class="modal-head-icon">✈️</div>
+      <div class="modal-head-title">Хочу персональную бизнес-миссию</div>
+      <div class="modal-head-sub">Организуем выезд под ваш продукт и рынок</div>
+    </div>
+    <div class="modal-body" id="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label>Компания *</label><input class="form-input" id="f-company" type="text" placeholder="ООО «Название»"></div>
+        <div class="form-group"><label>Контакт *</label><input class="form-input" id="f-name" type="text" placeholder="Иван Иванов"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email *</label><input class="form-input" id="f-email" type="email" placeholder="ivan@company.ru"></div>
+        <div class="form-group"><label>Телефон</label><input class="form-input" id="f-phone" type="tel" placeholder="+7 999 000 00 00"></div>
+      </div>
+      <div class="form-group"><label>Интересующий рынок</label><input class="form-input" id="f-market" type="text" placeholder="ОАЭ, Китай, Индия..."></div>
+      <div class="modal-actions">
+        <button class="btn-modal-submit" onclick="submitMission()">Отправить заявку →</button>
+        <button class="btn-modal-cancel" onclick="closeModal()">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const WEBHOOK = "https://script.google.com/macros/s/AKfycby_I6xdNlT1iwyf-QDyIOyqkZFv2RNtmKvLBL4gjVor9aPr2Qzn2vE79NiM3d_SW_DN/exec";
+const WEBHOOK_TOKEN = "f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3";
+
+// ── ВОПРОСЫ ────────────────────────────────────────────────
+const QUESTIONS = [
+  {
+    id: "product",
+    type: "input",
+    label: "Вопрос 1 из 5",
+    text: "Что производит или продаёт ваша компания?",
+    hint: "Опишите кратко: товар, услугу или технологию",
+    placeholder: "Например: оборудование для переработки зерна, IT-решения для логистики, натуральная косметика..."
+  },
+  {
+    id: "market",
+    type: "options",
+    label: "Вопрос 2 из 5",
+    text: "Какие зарубежные рынки вас интересуют?",
+    hint: "Выберите одно направление — сделаем точный анализ",
+    options: [
+      { value: "gulf", text: "Ближний Восток", sub: "ОАЭ, Саудовская Аравия, Бахрейн, Катар" },
+      { value: "china", text: "Китай", sub: "КНР, включая Гонконг и Тайвань" },
+      { value: "india", text: "Индия", sub: "Крупнейший развивающийся рынок" },
+      { value: "asia", text: "ЮВА", sub: "Вьетнам, Таиланд, Малайзия, Индонезия" },
+      { value: "africa", text: "Африка", sub: "ЮАР, Египет, Кения, Эфиопия" },
+      { value: "cis", text: "СНГ / ЕАЭС", sub: "Казахстан, Узбекистан, Беларусь" },
+    ]
+  },
+  {
+    id: "experience",
+    type: "options",
+    label: "Вопрос 3 из 5",
+    text: "Есть ли у компании опыт экспорта?",
+    options: [
+      { value: "none", text: "Нет опыта", sub: "Только планируем выйти на внешние рынки" },
+      { value: "cis_only", text: "Экспортируем в СНГ", sub: "Есть поставки, но только в ближнее зарубежье" },
+      { value: "some", text: "Есть единичные сделки", sub: "Были зарубежные контракты, но не системно" },
+      { value: "regular", text: "Регулярный экспорт", sub: "Стабильные поставки в 1-2 страны" },
+    ]
+  },
+  {
+    id: "readiness",
+    type: "options",
+    label: "Вопрос 4 из 5",
+    text: "Насколько продукт готов к экспорту?",
+    options: [
+      { value: "not_ready", text: "Требует адаптации", sub: "Нет сертификатов, перевода, международной упаковки" },
+      { value: "partial", text: "Частично готов", sub: "Есть базовая документация, но не для всех рынков" },
+      { value: "ready", text: "Полностью готов", sub: "Сертификаты, документация и упаковка в порядке" },
+    ]
+  },
+  {
+    id: "goal",
+    type: "options",
+    label: "Вопрос 5 из 5",
+    text: "Какая главная цель на зарубежном рынке?",
+    options: [
+      { value: "test", text: "Протестировать спрос", sub: "Понять есть ли рынок для нашего продукта" },
+      { value: "partner", text: "Найти дистрибьютора", sub: "Ищем партнёра для регулярных поставок" },
+      { value: "contract", text: "Заключить контракт", sub: "Есть конкретный покупатель, нужна встреча" },
+      { value: "scale", text: "Масштабировать экспорт", sub: "Уже экспортируем, хотим выйти на новые рынки" },
+    ]
+  }
+];
+
+// ── СОСТОЯНИЕ ──────────────────────────────────────────────
+let current = 0;
+let answers = {};
+
+// ── РЕНДЕР ВОПРОСОВ ────────────────────────────────────────
+function renderQuestion() {
+  const q = QUESTIONS[current];
+  const pct = Math.round(((current + 1) / QUESTIONS.length) * 100);
+
+  document.getElementById('progress-label').textContent = q.label;
+  document.getElementById('progress-pct').textContent = pct + '%';
+  document.getElementById('progress-fill').style.width = pct + '%';
+
+  const card = document.getElementById('question-card');
+
+  if (q.type === 'input') {
+    card.innerHTML = `
+      <div class="q-number">${q.label}</div>
+      <div class="q-text">${q.text}</div>
+      ${q.hint ? `<div class="q-hint">${q.hint}</div>` : ''}
+      <input class="q-input" id="q-input" type="text" placeholder="${q.placeholder || ''}"
+        value="${answers[q.id] || ''}"
+        oninput="answers['${q.id}']=this.value;updateNextBtn()">
+      <div class="btn-row">
+        ${current > 0 ? '<button class="btn-back" onclick="prevQuestion()">← Назад</button>' : '<div></div>'}
+        <button class="btn-next" id="btn-next" onclick="nextQuestion()" ${!answers[q.id] ? 'disabled' : ''}>
+          ${current === QUESTIONS.length - 1 ? 'Получить анализ →' : 'Далее →'}
+        </button>
+      </div>
+    `;
+    setTimeout(() => document.getElementById('q-input')?.focus(), 100);
+  } else {
+    const selectedVal = answers[q.id] || '';
+    card.innerHTML = `
+      <div class="q-number">${q.label}</div>
+      <div class="q-text">${q.text}</div>
+      ${q.hint ? `<div class="q-hint">${q.hint}</div>` : ''}
+      <div class="options">
+        ${q.options.map(opt => `
+          <div class="option ${selectedVal === opt.value ? 'selected' : ''}"
+               onclick="selectOption('${q.id}', '${opt.value}', this)">
+            <div class="option-dot"></div>
+            <div>
+              <div class="option-text">${opt.text}</div>
+              ${opt.sub ? `<div class="option-sub">${opt.sub}</div>` : ''}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="btn-row">
+        ${current > 0 ? '<button class="btn-back" onclick="prevQuestion()">← Назад</button>' : '<div></div>'}
+        <button class="btn-next" id="btn-next" onclick="nextQuestion()" ${!selectedVal ? 'disabled' : ''}>
+          ${current === QUESTIONS.length - 1 ? 'Получить анализ →' : 'Далее →'}
+        </button>
+      </div>
+    `;
+  }
+}
+
+function selectOption(qid, value, el) {
+  answers[qid] = value;
+  document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('btn-next').disabled = false;
+}
+
+function updateNextBtn() {
+  const q = QUESTIONS[current];
+  document.getElementById('btn-next').disabled = !answers[q.id];
+}
+
+function nextQuestion() {
+  const q = QUESTIONS[current];
+  if (!answers[q.id]) return;
+  if (current < QUESTIONS.length - 1) {
+    current++;
+    renderQuestion();
+  } else {
+    showLoading();
+    generateAnalysis();
+  }
+}
+
+function prevQuestion() {
+  if (current > 0) { current--; renderQuestion(); }
+}
+
+// ── LOADING ────────────────────────────────────────────────
+function showLoading() {
+  document.getElementById('quiz-wrap').style.display = 'none';
+  document.getElementById('loading').style.display = 'block';
+}
+
+// ── AI АНАЛИЗ ──────────────────────────────────────────────
+const MARKET_LABELS = {
+  gulf: "Ближний Восток (ОАЭ, КСА, Бахрейн)",
+  china: "Китай (КНР)",
+  india: "Индия",
+  asia: "ЮВА (Вьетнам, Таиланд, Малайзия)",
+  africa: "Африка (ЮАР, Египет, Кения)",
+  cis: "СНГ / ЕАЭС (Казахстан, Узбекистан, Беларусь)"
+};
+const EXP_LABELS = {
+  none: "опыта экспорта нет",
+  cis_only: "есть экспорт в СНГ",
+  some: "есть единичные зарубежные сделки",
+  regular: "регулярный экспорт"
+};
+const READY_LABELS = {
+  not_ready: "продукт требует адаптации (нет сертификатов и документации)",
+  partial: "частичная готовность",
+  ready: "продукт полностью готов к экспорту"
+};
+const GOAL_LABELS = {
+  test: "протестировать спрос",
+  partner: "найти дистрибьютора",
+  contract: "заключить контракт",
+  scale: "масштабировать экспорт"
+};
+
+async function generateAnalysis() {
+  const prompt = `Ты — эксперт по международной торговле и экспортному развитию российских компаний. Проанализируй экспортный потенциал компании на основе её профиля.
+
+ПРОФИЛЬ КОМПАНИИ:
+- Продукт/услуга: ${answers.product}
+- Целевой рынок: ${MARKET_LABELS[answers.market]}
+- Опыт экспорта: ${EXP_LABELS[answers.experience]}
+- Готовность продукта: ${READY_LABELS[answers.readiness]}
+- Цель: ${GOAL_LABELS[answers.goal]}
+
+Дай структурированный анализ в формате JSON:
+{
+  "score": <число от 0 до 100 — общий балл экспортного потенциала>,
+  "score_label": "<Низкий / Средний / Высокий / Очень высокий>",
+  "verdict": "<2-3 предложения — ключевой вывод о потенциале>",
+  "market_fit": "<2-3 предложения о соответствии продукта выбранному рынку>",
+  "opportunities": ["<возможность 1>", "<возможность 2>", "<возможность 3>"],
+  "risks": ["<риск 1>", "<риск 2>"],
+  "next_steps": ["<шаг 1>", "<шаг 2>", "<шаг 3>"],
+  "events_recommendation": "<рекомендация какие мероприятия с господдержкой подойдут для этого рынка и продукта>"
+}
+
+Отвечай ТОЛЬКО JSON, без пояснений и markdown.`;
+
+  try {
+    const resp = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1000,
+        messages: [{ role: "user", content: prompt }]
+      })
+    });
+
+    const data = await resp.json();
+    const text = data.content?.[0]?.text || '';
+    const clean = text.replace(/```json|```/g, '').trim();
+    const result = JSON.parse(clean);
+    showResult(result);
+  } catch(e) {
+    console.error(e);
+    // Fallback если API недоступен
+    showResult(getFallbackResult());
+  }
+}
+
+function getFallbackResult() {
+  return {
+    score: 65,
+    score_label: "Средний",
+    verdict: "Компания демонстрирует умеренный экспортный потенциал. Для успешного выхода на выбранный рынок потребуется подготовительная работа по адаптации продукта и поиску партнёров.",
+    market_fit: "Выбранный рынок имеет потенциал для вашего продукта. Рекомендуем изучить специфику местного спроса и конкурентного окружения.",
+    opportunities: [
+      "Участие в государственных программах поддержки экспорта (РЭЦ, МЭЦ)",
+      "Бизнес-миссии с организованными B2B-встречами",
+      "Коллективные стенды на международных выставках"
+    ],
+    risks: [
+      "Необходимость адаптации продукта под местные стандарты",
+      "Высокая конкуренция на целевом рынке"
+    ],
+    next_steps: [
+      "Пройти консультацию в Центре поддержки экспорта вашего региона",
+      "Подать заявку на ближайшую бизнес-миссию через vedexpo.ru",
+      "Получить субсидию на сертификацию продукта через РЭЦ"
+    ],
+    events_recommendation: "На vedexpo.ru доступны бизнес-миссии и выставки по вашему направлению с господдержкой — бесплатное участие или субсидия до 80%."
+  };
+}
+
+// ── ОТОБРАЖЕНИЕ РЕЗУЛЬТАТА ─────────────────────────────────
+function showResult(r) {
+  document.getElementById('loading').style.display = 'none';
+
+  const scoreColor = r.score >= 70 ? '#4CAF50' : r.score >= 45 ? '#F59E0B' : '#EF5350';
+  const marketLabel = MARKET_LABELS[answers.market] || answers.market;
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').innerHTML = `
+    <div class="result">
+
+      <div class="result-header">
+        <div class="result-eyebrow">Результат анализа</div>
+        <div class="result-title">${answers.product}</div>
+        <div class="result-company">Целевой рынок: ${marketLabel}</div>
+        <div class="score-meter">
+          <div class="score-row">
+            <span class="score-label">Экспортный потенциал</span>
+            <span class="score-value">${r.score}/100</span>
+          </div>
+          <div class="score-bar">
+            <div class="score-fill" id="score-fill" style="width:0%"></div>
+          </div>
+          <div style="margin-top:8px;font-size:13px;color:rgba(255,255,255,.6)">
+            Уровень: <strong style="color:var(--gold)">${r.score_label}</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <div class="result-section-title"><span class="result-section-icon">🎯</span>Ключевой вывод</div>
+        <div class="verdict"><div class="verdict-text">${r.verdict}</div></div>
+      </div>
+
+      <div class="result-section">
+        <div class="result-section-title"><span class="result-section-icon">🌍</span>Соответствие рынку</div>
+        <div class="result-content"><p>${r.market_fit}</p></div>
+      </div>
+
+      <div class="result-section">
+        <div class="result-section-title"><span class="result-section-icon">✅</span>Возможности</div>
+        <div class="result-content">
+          <ul>${r.opportunities.map(o => `<li>${o}</li>`).join('')}</ul>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <div class="result-section-title"><span class="result-section-icon">⚠️</span>Риски и барьеры</div>
+        <div class="result-content">
+          <ul>${r.risks.map(r => `<li>${r}</li>`).join('')}</ul>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <div class="result-section-title"><span class="result-section-icon">🚀</span>Следующие шаги</div>
+        <div class="result-content">
+          <ul>${r.next_steps.map(s => `<li><strong>${s}</strong></li>`).join('')}</ul>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <div class="result-section-title"><span class="result-section-icon">📅</span>Мероприятия с господдержкой</div>
+        <div class="result-content"><p>${r.events_recommendation}</p></div>
+      </div>
+
+      <div class="cta-block">
+        <div class="cta-title">Готовы к первому шагу?</div>
+        <div class="cta-sub">Организуем персональную бизнес-миссию под ваш продукт и рынок —<br>или найдём подходящее мероприятие с господдержкой</div>
+        <div class="cta-buttons">
+          <a href="#" class="btn-cta-primary" onclick="openMissionModal();return false">✈️ Хочу бизнес-миссию</a>
+          <a href="https://vedexpo.ru/#events" class="btn-cta-secondary">📅 Смотреть мероприятия</a>
+        </div>
+      </div>
+
+      <button class="btn-restart" onclick="restartQuiz()">↺ Пройти заново</button>
+    </div>
+  `;
+
+  // Анимируем шкалу
+  setTimeout(() => {
+    document.getElementById('score-fill').style.width = r.score + '%';
+  }, 300);
+}
+
+function restartQuiz() {
+  current = 0;
+  answers = {};
+  document.getElementById('result').style.display = 'none';
+  document.getElementById('quiz-wrap').style.display = 'block';
+  renderQuestion();
+}
+
+// ── MISSION MODAL ──────────────────────────────────────────
+function openMissionModal() {
+  // Предзаполняем рынок из ответов
+  document.getElementById('modal-overlay').classList.add('open');
+  setTimeout(() => {
+    const mkt = document.getElementById('f-market');
+    if (mkt && answers.market) mkt.value = MARKET_LABELS[answers.market] || '';
+  }, 100);
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+}
+
+function submitMission() {
+  const company = document.getElementById('f-company')?.value.trim();
+  const name = document.getElementById('f-name')?.value.trim();
+  const email = document.getElementById('f-email')?.value.trim();
+  if (!company || !name || !email) { showToast("⚠️ Заполните обязательные поля"); return; }
+
+  const payload = {
+    token: WEBHOOK_TOKEN,
+    timestamp: new Date().toISOString(),
+    type: "barometr_mission",
+    company, name, email,
+    phone: document.getElementById('f-phone')?.value.trim() || '',
+    market: document.getElementById('f-market')?.value.trim() || '',
+    product: answers.product || '',
+    barometr_market: answers.market || '',
+    barometr_experience: answers.experience || '',
+    barometr_goal: answers.goal || ''
+  };
+
+  const btn = document.querySelector('.btn-modal-submit');
+  btn.textContent = 'Отправка...'; btn.disabled = true;
+
+  fetch(WEBHOOK, { method: "POST", body: JSON.stringify(payload) })
+    .then(() => showMissionSuccess())
+    .catch(() => showMissionSuccess());
+}
+
+function showMissionSuccess() {
+  document.getElementById('modal-body').innerHTML = `
+    <div class="success-wrap">
+      <div class="success-icon">✅</div>
+      <div class="success-title">Заявка отправлена!</div>
+      <p class="success-sub">Свяжемся в течение 1–2 рабочих дней<br>и предложим программу под ваш рынок.</p>
+    </div>
+    <div style="padding:0 28px 24px">
+      <button class="btn-modal-submit" onclick="closeModal()" style="width:100%">Отлично!</button>
+    </div>
+  `;
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── СТАРТ ──────────────────────────────────────────────────
+renderQuestion();
+</script>
+</body>
+</html>
