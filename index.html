@@ -323,7 +323,7 @@ footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
     <a href="#faq">FAQ</a>
     <a href="/barometr.html" style="color:var(--gold-light,#FCD34D);font-weight:600">⚡ Барометр</a>
   </div>
-  <button class="nav-cta btn-mission" onclick="openMissionModal()">✈️ Хочу свою бизнес-миссию</button>
+  
 </nav>
 
 <section class="hero">
@@ -340,7 +340,6 @@ footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
       </div>
       <div class="hero-actions">
         <a href="#events" class="btn-primary">Найти мероприятие</a>
-        <button class="btn-ghost" onclick="openMissionModal()">✈️ Хочу свою бизнес-миссию</button>
       </div>
     </div>
     <div class="board">
@@ -450,7 +449,7 @@ footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
       <div class="footer-col"><h5>Мероприятия</h5><a href="#">Выставки за рубежом</a><a href="#">Бизнес-миссии</a><a href="#">Реверсные миссии</a></div>
       <div class="footer-col"><h5>О проекте</h5><a href="#">О сайте</a><a href="#">Добавить мероприятие</a><a href="#">Контакты</a></div>
     </div>
-    <div class="footer-bottom"><span class="footer-copy">© 2026 VedExpo · Не является официальным ресурсом государственных органов</span><span class="footer-copy">ВЭД · Выставки · Бизнес-миссии · Господдержка · Экспорт</span></div>
+    <div class="footer-bottom"><span class="footer-copy">© 2026 VedExpo · Не является официальным ресурсом государственных органов</span><span class="footer-copy">ВЭД · Выставки · Бизнес-миссии · Господдержка · <a href="/privacy.html" style="color:rgba(255,255,255,.4);text-decoration:none" target="_blank">Политика конфиденциальности</a></span></div>
   </div>
 </footer>
 
@@ -495,7 +494,7 @@ footer{background:linear-gradient(135deg,#080F1E,var(--navy));padding:48px}
 </div>
 
 <button class="scroll-top" id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<div class="mobile-cta"><button onclick="openMissionModal()">✈️ Хочу свою бизнес-миссию</button></div>
+
 <div class="toast" id="toast"></div>
 
 <script>
@@ -752,8 +751,7 @@ function openDetailModal(id){
     <div class="modal-desc-box">${e.desc}</div>
     <div class="modal-source">Источник: <a href="${e.src}" target="_blank">${e.src.split('/')[2]}</a></div>
     <div class="modal-actions">
-      <button class="btn-submit btn-mission-alt" onclick="closeModal();setTimeout(openMissionModal,200)">✈️ Хочу такое же мероприятие</button>
-      <a class="btn-cancel" href="\${e.src}" target="_blank" rel="noopener" style="text-decoration:none;text-align:center">🔗 На сайт организатора</a>
+      <a class="btn-submit" href="${e.src}" target="_blank" rel="noopener" style="text-decoration:none;text-align:center;display:flex;align-items:center;justify-content:center;gap:6px">🔗 На сайт организатора</a>
       <button class="btn-cancel" onclick="closeModal()">Закрыть</button>
     </div>
   `;
@@ -788,7 +786,9 @@ function submitForm(eventId){
   const company=document.getElementById('f-company')?.value.trim();
   const name=document.getElementById('f-name')?.value.trim();
   const email=document.getElementById('f-email')?.value.trim();
+  const consent=document.getElementById('f-consent')?.checked;
   if(!company||!name||!email){showToast("⚠️ Заполните обязательные поля");return;}
+  if(!consent){showToast("⚠️ Необходимо согласие на обработку данных");return;}
   const e=eventId?EVENTS.find(x=>x.id===eventId):null;
   const payload={token:"f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3",timestamp:new Date().toISOString(),event_id:eventId||"",event_title:e?e.title:"Общий запрос",event_org:e?e.org:"",event_country:e?e.country:"",event_date:e?e.dl:"",company,name,email,phone:document.getElementById('f-phone')?.value.trim()||"",industry:document.getElementById('f-industry')?.value.trim()||""};
   const btn=document.querySelector('.btn-submit');btn.textContent="Отправка...";btn.disabled=true;
