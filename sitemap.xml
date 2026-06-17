@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-
-  <!-- Главная страница -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vedexpo.ru/</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Предстоящие мероприятия -->
   <url>
-    <loc>https://vedexpo.ru/#events</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://vedexpo.ru/barometr.html</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
-  <!-- FAQ -->
   <url>
-    <loc>https://vedexpo.ru/#faq</loc>
+    <loc>https://vedexpo.ru/privacy.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.3</priority>
   </url>
-
 </urlset>
