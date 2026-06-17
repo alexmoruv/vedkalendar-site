@@ -66,14 +66,6 @@ body::after{
   background-size:200px 200px;
 }
 
-/* ── SCROLL REVEAL ──────────────────────────────────────────────────────────── */
-.reveal-up{
-  opacity:0;
-  transform:translateY(24px);
-  transition:opacity .7s var(--ease-out), transform .7s var(--ease-out);
-}
-.reveal-up.visible{opacity:1;transform:translateY(0)}
-
 /* ── NAV — floating glass pill ──────────────────────────────────────────────── */
 nav{
   position:sticky;
@@ -795,6 +787,32 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
   .stat-num{font-size:26px}
   h1{font-size:clamp(26px,7vw,40px)}
 }
+
+/* ── CARD ENTRY ANIMATION (простая, надёжная) ──────────────────────────────── */
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.event-card {
+  animation: card-in 0.4s cubic-bezier(0.22,1,0.36,1) both;
+}
+.event-card:nth-child(1)  { animation-delay: 0ms }
+.event-card:nth-child(2)  { animation-delay: 50ms }
+.event-card:nth-child(3)  { animation-delay: 100ms }
+.event-card:nth-child(4)  { animation-delay: 150ms }
+.event-card:nth-child(5)  { animation-delay: 200ms }
+.event-card:nth-child(6)  { animation-delay: 250ms }
+.event-card:nth-child(n+7){ animation-delay: 280ms }
+
+
+@keyframes stat-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.stat-animated {
+  animation: stat-in 0.5s cubic-bezier(0.22,1,0.36,1) both;
+}
+
 </style>
 </head>
 <body>
@@ -1366,21 +1384,12 @@ const gridObserver = new MutationObserver(attachReveal);
 const grid = document.getElementById('events-grid');
 if (grid) gridObserver.observe(grid, { childList: true });
 
-// Hero stats — анимация ПОСЛЕ того как JS записал числа
+// Hero stats — простая CSS анимация, без JS-opacity
 document.addEventListener('DOMContentLoaded', () => {
-  // Ждём updateCounts() из основного скрипта, потом анимируем
-  setTimeout(() => {
-    document.querySelectorAll('.stat').forEach((el, i) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(16px)';
-      el.style.transition = 'none';
-      setTimeout(() => {
-        el.style.transition = 'all .55s cubic-bezier(0.22,1,0.36,1)';
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      }, i * 80);
-    });
-  }, 120); // после DOMContentLoaded основного скрипта
+  document.querySelectorAll('.stat').forEach((el, i) => {
+    el.style.animationDelay = (200 + i * 80) + 'ms';
+    el.classList.add('stat-animated');
+  });
 });
 </script>
 
