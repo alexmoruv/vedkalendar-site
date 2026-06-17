@@ -732,20 +732,68 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
 
 /* ── RESPONSIVE ─────────────────────────────────────────────────────────────── */
 @media(max-width:900px){
-  nav{margin:8px 12px 0;padding:0 16px;top:8px}
+  nav{margin:8px 12px 0;padding:0 16px;top:8px;width:calc(100% - 24px)}
+  .nav-links{display:none}
   .hero{padding:120px 20px 52px;margin-top:-64px;padding-top:120px}
   .hero-inner{grid-template-columns:1fr;gap:28px}
   .board{display:none}
-  .support-bar{padding:10px 20px}
-  .tabs-inner{padding:0 20px;overflow-x:auto}
-  .filters-wrap{padding:12px 20px}
-  main{padding:24px 20px 88px}
+  .support-bar{padding:8px 16px;overflow-x:auto;white-space:nowrap}
+  .support-bar-inner{flex-wrap:nowrap;gap:0}
+
+  /* Компактный скроллируемый таб-бар */
+  .tabs-bar{
+    border-bottom:none;
+    box-shadow:none;
+    background:transparent;
+    position:relative;
+    top:auto;
+    padding:8px 16px 0;
+  }
+  .tabs-inner{
+    padding:0;
+    gap:6px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+    background:transparent;
+  }
+  .tabs-inner::-webkit-scrollbar{display:none}
+  .tab{
+    padding:8px 16px;
+    font-size:12px;
+    border:1.5px solid var(--border);
+    border-radius:999px;
+    border-bottom:1.5px solid var(--border) !important;
+    background:var(--card);
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .tab.active{
+    background:var(--navy);
+    color:#fff;
+    border-color:var(--navy) !important;
+  }
+  .tab.active .tab-count{background:rgba(255,255,255,.15);color:#fff}
+  .tab-sep{display:none}
+
+  /* Фильтры */
+  .filters-wrap{padding:8px 16px}
+  .filters-inner{gap:6px}
+  .filter-search{min-width:0;flex:1}
+  .filter-select{min-width:0;flex:1}
+
+  main{padding:16px 16px 88px}
   .faq{padding:44px 20px}
   footer{padding:40px 20px}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .footer-grid{grid-template-columns:1fr;gap:24px}
   .mobile-cta{display:block}
   .scroll-top{bottom:90px}
-  .events-grid{grid-template-columns:1fr}
+  .events-grid{grid-template-columns:1fr;gap:16px}
+
+  /* Hero компактнее */
+  .hero-stats{gap:20px}
+  .stat-num{font-size:26px}
+  h1{font-size:clamp(26px,7vw,40px)}
 }
 </style>
 </head>
