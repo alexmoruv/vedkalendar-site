@@ -1318,17 +1318,21 @@ const gridObserver = new MutationObserver(attachReveal);
 const grid = document.getElementById('events-grid');
 if (grid) gridObserver.observe(grid, { childList: true });
 
-// Hero stats stagger
+// Hero stats — анимация ПОСЛЕ того как JS записал числа
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.stat').forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    setTimeout(() => {
-      el.style.transition = 'all .6s cubic-bezier(0.22,1,0.36,1)';
-      el.style.opacity = '1';
-      el.style.transform = 'translateY(0)';
-    }, 300 + i * 100);
-  });
+  // Ждём updateCounts() из основного скрипта, потом анимируем
+  setTimeout(() => {
+    document.querySelectorAll('.stat').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'none';
+      setTimeout(() => {
+        el.style.transition = 'all .55s cubic-bezier(0.22,1,0.36,1)';
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, i * 80);
+    });
+  }, 120); // после DOMContentLoaded основного скрипта
 });
 </script>
 
