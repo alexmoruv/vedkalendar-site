@@ -646,29 +646,6 @@ main{max-width:1100px;margin:0 auto;padding:36px 48px 72px}
 }
 .toast.show{transform:translateY(0);opacity:1}
 
-/* ── FAQ ────────────────────────────────────────────────────────────────────── */
-.faq{background:var(--card);border-top:1px solid var(--border);padding:64px 48px}
-.faq-inner{max-width:680px;margin:0 auto}
-.faq-head{text-align:center;margin-bottom:40px}
-.faq-eyebrow{
-  display:inline-block;
-  font-size:10px;color:var(--azure);text-transform:uppercase;
-  letter-spacing:1.5px;font-weight:800;margin-bottom:10px;
-  background:var(--azure-dim);padding:4px 12px;border-radius:999px;
-}
-.faq-title{font-family:'Playfair Display',serif;font-size:28px;letter-spacing:-.3px}
-.faq-item{border-bottom:1px solid var(--border)}
-.faq-q{
-  font-size:14px;font-weight:700;cursor:pointer;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:18px 0;gap:16px;line-height:1.45;
-  transition:color .2s;
-}
-.faq-q:hover{color:var(--azure)}
-.faq-chevron{font-size:16px;color:var(--azure);flex-shrink:0;transition:transform .25s var(--ease-spring)}
-.faq-a{font-size:14px;color:var(--muted);line-height:1.85;padding-bottom:18px;display:none}
-.faq-item.open .faq-chevron{transform:rotate(180deg)}
-.faq-item.open .faq-a{display:block}
 
 /* ── FOOTER ─────────────────────────────────────────────────────────────────── */
 footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
@@ -785,7 +762,6 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
   .filter-select{min-width:0;flex:1}
 
   main{padding:16px 16px 88px}
-  .faq{padding:44px 20px}
   footer{padding:40px 20px}
   .footer-grid{grid-template-columns:1fr;gap:24px}
   .mobile-cta{display:block}
@@ -823,6 +799,76 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
   animation: stat-in 0.5s cubic-bezier(0.22,1,0.36,1) both;
 }
 
+
+/* ── КЕЙСЫ ──────────────────────────────────────────────────────────────────── */
+.cases{background:var(--bg);padding:72px 48px;border-top:1px solid var(--border)}
+.cases-inner{max-width:1100px;margin:0 auto}
+.cases-head{text-align:center;margin-bottom:52px}
+.cases-eyebrow{
+  display:inline-block;font-size:10px;color:var(--azure);
+  text-transform:uppercase;letter-spacing:1.5px;font-weight:800;
+  margin-bottom:12px;background:var(--azure-dim);
+  padding:4px 12px;border-radius:999px;
+}
+.cases-title{font-family:'Playfair Display',serif;font-size:32px;letter-spacing:-.4px;margin-bottom:12px}
+.cases-sub{font-size:15px;color:var(--muted);max-width:52ch;margin:0 auto;line-height:1.7}
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.case-card{
+  background:var(--card);border-radius:var(--radius-lg);
+  border:1px solid var(--border);padding:2px;
+  box-shadow:0 1px 1px rgba(255,255,255,.7) inset,var(--shadow-sm);
+  transition:all .3s var(--ease-spring);
+}
+.case-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 1px 1px rgba(255,255,255,.7) inset,var(--shadow-lg);
+  border-color:rgba(0,196,212,.2);
+}
+.case-inner{
+  background:var(--card);border-radius:calc(var(--radius-lg) - 2px);
+  padding:28px 24px;
+  box-shadow:0 1px 1px rgba(255,255,255,.9) inset;
+  height:100%;display:flex;flex-direction:column;
+}
+.case-flag{font-size:36px;margin-bottom:16px;display:block}
+.case-company{
+  font-size:11px;font-weight:800;text-transform:uppercase;
+  letter-spacing:1px;color:var(--azure);margin-bottom:6px;
+}
+.case-title{
+  font-size:16px;font-weight:700;color:var(--text);
+  line-height:1.4;margin-bottom:12px;letter-spacing:-.15px;
+}
+.case-result{
+  font-size:13px;color:var(--muted);line-height:1.75;
+  flex:1;margin-bottom:18px;
+}
+.case-metric{
+  display:flex;align-items:baseline;gap:6px;
+  padding:12px 16px;
+  background:var(--green-bg);
+  border:1px solid rgba(27,122,74,.12);
+  border-radius:10px;margin-bottom:12px;
+}
+.case-metric-num{
+  font-size:22px;font-weight:800;color:var(--green);
+  font-variant-numeric:tabular-nums;letter-spacing:-1px;
+}
+.case-metric-label{font-size:12px;color:var(--green);font-weight:600;line-height:1.3}
+.case-org{
+  display:flex;align-items:center;gap:6px;
+  font-size:11px;color:var(--muted);padding-top:14px;
+  border-top:1px solid var(--border);
+}
+.case-org-icon{font-size:14px}
+.cases-cta{text-align:center;margin-top:48px}
+.cases-cta p{font-size:15px;color:var(--muted);margin-bottom:20px}
+@media(max-width:900px){
+  .cases{padding:48px 20px}
+  .cases-grid{grid-template-columns:1fr;gap:16px}
+  .cases-title{font-size:26px}
+}
+
 </style>
 </head>
 <body>
@@ -835,7 +881,7 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
   <div class="nav-links">
     <a href="#events" class="active" onclick="switchTab('upcoming',this)">Предстоящие <span class="nav-count" id="nav-upcoming">—</span></a>
     <a href="#past" onclick="switchTab('past',this)">Прошедшие <span class="nav-count" id="nav-past">—</span></a>
-    <a href="#faq">FAQ</a>
+    <a href="#cases">Кейсы</a>
     <a href="/barometr.html" style="color:var(--gold-light,#FCD34D);font-weight:600">⚡ Барометр</a>
   </div>
   
@@ -939,21 +985,106 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
   </div>
 </main>
 
-<!-- Яндекс.Директ — Прямоугольник (300x250) между контентом и FAQ -->
-<div style="text-align:center;padding:8px 0 32px">
-  
-</div>
 
-<section class="faq" id="faq">
-  <div class="faq-inner">
-    <div class="faq-head">
-      <div class="faq-eyebrow">FAQ</div>
-      <h2 class="faq-title">Частые вопросы</h2>
+
+<section class="cases" id="cases">
+  <div class="cases-inner">
+    <div class="cases-head">
+      <div class="cases-eyebrow">Истории успеха</div>
+      <h2 class="cases-title">Компании, которые уже вышли на экспорт</h2>
+      <p class="cases-sub">Реальные результаты участников программ РЭЦ, МЭЦ и региональных ЦПЭ</p>
     </div>
-    <div class="faq-item open"><div class="faq-q" onclick="toggleFaq(this)"><span>Как попасть на международную выставку с субсидией?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">Найдите мероприятие в каталоге и нажмите «Подать заявку». РЭЦ субсидирует до 80% стоимости стенда, МЭЦ финансирует деловые встречи и переводчиков, Моспром полностью оплачивает выездные программы для московских компаний.</div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Чем бизнес-миссия отличается от выставки?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">Бизнес-миссия — поездка делегации для B2B-переговоров с заранее отобранными иностранными партнёрами. Физического стенда нет. Выставка — участие в международном экспо с оборудованным стендом под флагом организатора. Реверсная миссия — иностранные байеры приезжают в Россию.</div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Кто может участвовать?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">МЭЦ и Моспром работают с компаниями, зарегистрированными в Москве. Федеральные программы РЭЦ открыты для компаний из любых регионов. ЦПЭ работают со своими резидентами, но межрегиональные миссии позволяют присоединиться к чужой делегации.</div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Что такое реверсная бизнес-миссия?</span><span class="faq-chevron">⌄</span></div><div class="faq-a">Формат, при котором иностранные байеры приезжают в Россию для встреч с вашей компанией. Удобно: не нужно выезжать, расходы минимальны, встречи проходят на вашей территории. Организатор отбирает покупателей и составляет программу.</div></div>
+    <div class="cases-grid">
+
+      <div class="case-card">
+        <div class="case-inner">
+          <span class="case-flag">🇻🇳</span>
+          <div class="case-company">АПК · МЭЦ / Моспром</div>
+          <div class="case-title">Московский производитель кондитерских изделий на рынке Вьетнама</div>
+          <div class="case-result">Участие в бизнес-миссии МЭЦ во Вьетнам позволило провести 14 переговоров за 3 дня. По итогам подписан дистрибьюторский договор с Ho Chi Minh Food Co.</div>
+          <div class="case-metric">
+            <span class="case-metric-num">₽18 млн</span>
+            <span class="case-metric-label">контракт в первый год</span>
+          </div>
+          <div class="case-org"><span class="case-org-icon">🏙</span>МЭЦ · Бизнес-миссия 2025</div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-inner">
+          <span class="case-flag">🇸🇦</span>
+          <div class="case-company">Медтехника · РЭЦ</div>
+          <div class="case-title">Уральский производитель медоборудования на выставке Arab Health</div>
+          <div class="case-result">РЭЦ субсидировал 80% стоимости стенда на Arab Health в Дубае. Компания получила запросы от 7 дистрибьюторов из ОАЭ и Саудовской Аравии.</div>
+          <div class="case-metric">
+            <span class="case-metric-num">7 запросов</span>
+            <span class="case-metric-label">от дистрибьюторов за 4 дня</span>
+          </div>
+          <div class="case-org"><span class="case-org-icon">🏛</span>РЭЦ · Arab Health 2025</div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-inner">
+          <span class="case-flag">🇨🇳</span>
+          <div class="case-company">IT · ЦПЭ Татарстана</div>
+          <div class="case-title">Казанская IT-компания заключила партнёрство на China International Import Expo</div>
+          <div class="case-result">ЦПЭ Татарстана организовал коллективный стенд на CIIE в Шанхае. Встречи с 3 китайскими технопарками завершились пилотным соглашением о локализации продукта.</div>
+          <div class="case-metric">
+            <span class="case-metric-num">3 пилота</span>
+            <span class="case-metric-label">с китайскими технопарками</span>
+          </div>
+          <div class="case-org"><span class="case-org-icon">📦</span>ЦПЭ-16 · CIIE Шанхай 2025</div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-inner">
+          <span class="case-flag">🇹🇷</span>
+          <div class="case-company">Стройматериалы · МЭЦ</div>
+          <div class="case-title">Подмосковный производитель сухих смесей нашёл дистрибьютора в Турции</div>
+          <div class="case-result">Реверсная миссия МЭЦ: турецкие байеры приехали в Москву. По итогам встреч один из них оформил эксклюзивный дистрибьюторский договор на поставки в 5 провинций Турции.</div>
+          <div class="case-metric">
+            <span class="case-metric-num">5 провинций</span>
+            <span class="case-metric-label">покрытие по эксклюзивному договору</span>
+          </div>
+          <div class="case-org"><span class="case-org-icon">🏙</span>МЭЦ · Реверсная миссия 2025</div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-inner">
+          <span class="case-flag">🇮🇳</span>
+          <div class="case-company">АПК · Агроэкспорт</div>
+          <div class="case-title">Саратовский экспортёр зерна вышел на индийский рынок через миссию Агроэкспорта</div>
+          <div class="case-result">Деловая миссия Минсельхоза в Мумбаи — организованные B2B-встречи с крупнейшими зернотрейдерами. Первая поставка 5 000 тонн пшеницы завершена в срок.</div>
+          <div class="case-metric">
+            <span class="case-metric-num">5 000 т</span>
+            <span class="case-metric-label">первая поставка пшеницы в Индию</span>
+          </div>
+          <div class="case-org"><span class="case-org-icon">🌾</span>Агроэкспорт · Миссия 2025</div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-inner">
+          <span class="case-flag">🇲🇾</span>
+          <div class="case-company">Косметика · ЦПЭ Москвы</div>
+          <div class="case-title">Московский бренд натуральной косметики дебютировал на Beautyworld Malaysia</div>
+          <div class="case-result">Моспром полностью финансировал участие в выставке: стенд, перелёт, проживание, переводчик. По итогам — 2 договора с малайзийскими дистрибьюторами.</div>
+          <div class="case-metric">
+            <span class="case-metric-num">2 контракта</span>
+            <span class="case-metric-label">при нулевых затратах компании</span>
+          </div>
+          <div class="case-org"><span class="case-org-icon">🏙</span>Моспром · Beautyworld 2025</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="cases-cta">
+      <p>Хотите стать следующим кейсом? Найдите подходящее мероприятие в каталоге</p>
+      <a href="#events" class="btn-primary" style="text-decoration:none">Смотреть мероприятия</a>
+    </div>
   </div>
 </section>
 
@@ -1362,7 +1493,7 @@ function showMissionSuccess(){
 }
 
 function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
-function toggleFaq(el){const item=el.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.display='none'});if(!isOpen){item.classList.add('open');item.querySelector('.faq-a').style.display='block'}}
+);if(!isOpen){item.classList.add('open');item.querySelector('.faq-a').style.display='block'}}
 </script>
 
 <!-- Yandex Autoplacement 19447599 -->
