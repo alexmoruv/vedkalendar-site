@@ -1,10 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /googlee247f68ade6a7ba9.html
+Disallow: /yandex_2cccdeedb50c11fa.html
 
-# Sitemap
 Sitemap: https://vedexpo.ru/sitemap.xml
 
-# Яндекс
 User-agent: Yandex
 Allow: /
 Crawl-delay: 1
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
