@@ -3,9 +3,10 @@ Allow: /
 Disallow: /googlee247f68ade6a7ba9.html
 Disallow: /yandex_2cccdeedb50c11fa.html
 
-Sitemap: https://vedexpo.ru/sitemap.xml
-
 User-agent: Yandex
 Allow: /
-Crawl-delay: 1
+Disallow: /googlee247f68ade6a7ba9.html
 Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
+Crawl-delay: 1
+
+Sitemap: https://vedexpo.ru/sitemap.xml
