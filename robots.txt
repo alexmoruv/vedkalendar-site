@@ -1,12 +1,31 @@
 User-agent: *
 Allow: /
-Disallow: /googlee247f68ade6a7ba9.html
-Disallow: /yandex_2cccdeedb50c11fa.html
+
+# AI краулеры — разрешены
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
 
 User-agent: Yandex
 Allow: /
-Disallow: /googlee247f68ade6a7ba9.html
-Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
 Crawl-delay: 1
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
 
 Sitemap: https://vedexpo.ru/sitemap.xml
