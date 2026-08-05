@@ -1929,12 +1929,9 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
 <div class="toast" id="toast"></div>
 
 <div class="cookie-banner" id="cookie-banner">
-  <div class="cookie-text">
-    Мы используем файлы cookie и сервисы аналитики (Яндекс.Метрика) для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с этим в соответствии с <a href="privacy.html">Политикой конфиденциальности</a>.
-  </div>
+  <div class="cookie-text">Продолжая пользоваться сайтом, вы соглашаетесь с <a href="privacy.html">Политикой конфиденциальности</a> и даёте согласие на обработку персональных данных с использованием сервиса аналитики Яндекс.Метрика. В случае несогласия вы можете отключить сохранение cookies в настройках вашего браузера.</div>
   <div class="cookie-actions">
-    <button class="cookie-btn-accept" onclick="acceptCookies()">Принять</button>
-    <button class="cookie-btn-decline" onclick="declineCookies()">Отклонить</button>
+    <button class="cookie-btn-accept" onclick="acceptCookies()">Ок</button>
   </div>
 </div>
 
@@ -2345,12 +2342,6 @@ function showCookieBanner(){
 function acceptCookies(){
   localStorage.setItem('cookie_consent','accepted');
   document.getElementById('cookie-banner')?.classList.remove('show');
-}
-function declineCookies(){
-  localStorage.setItem('cookie_consent','declined');
-  document.getElementById('cookie-banner')?.classList.remove('show');
-  // Отключаем Яндекс.Метрику если пользователь отказался
-  window['ym']=function(){};
 }
 document.addEventListener('DOMContentLoaded', showCookieBanner);
 </script>
