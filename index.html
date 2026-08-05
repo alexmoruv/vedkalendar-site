@@ -1887,6 +1887,10 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
       </div>
       <div class="form-group"><label>Ваш продукт / отрасль *</label><input class="form-input" id="m-product" type="text" placeholder="Например: оборудование для АПК, IT-решения для ЖКХ..."></div>
       <div class="form-group"><label>Интересующие рынки</label><input class="form-input" id="m-markets" type="text" placeholder="ОАЭ, Китай, Турция, Индия — или не знаю, нужен совет"></div>
+      <div class="consent-row">
+        <input type="checkbox" id="m-consent">
+        <label for="m-consent">Я согласен(а) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">Политикой конфиденциальности</a> *</label>
+      </div>
       <div class="modal-actions">
         <button class="btn-submit-gold" onclick="submitMission()">Обсудить программу →</button>
         <button class="btn-cancel" onclick="closeMissionModal()">Отмена</button>
@@ -2225,7 +2229,9 @@ function submitMission(){
   const contact=document.getElementById('m-contact')?.value.trim();
   const email=document.getElementById('m-email')?.value.trim();
   const product=document.getElementById('m-product')?.value.trim();
+  const consent=document.getElementById('m-consent')?.checked;
   if(!company||!contact||!email||!product){showToast("⚠️ Заполните обязательные поля");return;}
+  if(!consent){showToast("⚠️ Необходимо согласие на обработку данных");return;}
   const payload={
     token:"f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3",
     timestamp:new Date().toISOString(),
