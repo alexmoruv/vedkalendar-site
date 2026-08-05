@@ -24,6 +24,16 @@ a:hover{text-decoration:underline}
 .highlight{background:#E8F5E9;border-left:3px solid #2E7D32;padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0;font-size:14px;color:#1B5E20}
 footer{background:#0F1F3D;padding:24px 48px;text-align:center;color:rgba(255,255,255,.4);font-size:12px}
 @media(max-width:640px){nav{padding:0 16px}.wrapper{padding:32px 16px}}
+
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:3000;background:#080E20;color:#fff;padding:16px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,.2);transform:translateY(100%);transition:transform .4s cubic-bezier(0.32,0.72,0,1);font-family:system-ui,sans-serif}
+.cookie-banner.show{transform:translateY(0)}
+.cookie-text{flex:1;min-width:240px;font-size:12px;color:rgba(255,255,255,.75);line-height:1.6}
+.cookie-text a{color:#33D4E2;text-decoration:underline}
+.cookie-actions{display:flex;gap:8px;flex-shrink:0}
+.cookie-btn-accept{background:#00C4D4;color:#080E20;border:none;cursor:pointer;padding:9px 18px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.cookie-btn-decline{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.2);cursor:pointer;padding:9px 16px;border-radius:999px;font-size:12px;white-space:nowrap}
+@media(max-width:600px){.cookie-banner{padding:14px 16px}.cookie-actions{width:100%}.cookie-btn-accept,.cookie-btn-decline{flex:1}}
+
 </style>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -114,5 +124,18 @@ footer{background:#0F1F3D;padding:24px 48px;text-align:center;color:rgba(255,255
 
 <footer>© 2026 VedExpo · Политика конфиденциальности</footer>
 
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-text">Мы используем файлы cookie и сервисы аналитики (Яндекс.Метрика) для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с этим в соответствии с <a href="privacy.html">Политикой конфиденциальности</a>.</div>
+  <div class="cookie-actions">
+    <button class="cookie-btn-accept" onclick="acceptCookies()">Принять</button>
+    <button class="cookie-btn-decline" onclick="declineCookies()">Отклонить</button>
+  </div>
+</div>
+<script>
+function showCookieBanner(){if(!localStorage.getItem('cookie_consent')){setTimeout(()=>document.getElementById('cookie-banner')?.classList.add('show'),800);}}
+function acceptCookies(){localStorage.setItem('cookie_consent','accepted');document.getElementById('cookie-banner')?.classList.remove('show');}
+function declineCookies(){localStorage.setItem('cookie_consent','declined');document.getElementById('cookie-banner')?.classList.remove('show');window['ym']=function(){};}
+document.addEventListener('DOMContentLoaded', showCookieBanner);
+</script>
 </body>
 </html>
