@@ -906,17 +906,29 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
 @media(max-width:600px){.cookie-banner{padding:14px 16px}.cookie-actions{width:100%}.cookie-btn-accept,.cookie-btn-decline{flex:1}}
 
 </style>
-    <!-- Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter — загружается ТОЛЬКО после согласия на cookie-баннере (152-ФЗ ст.9) -->
     <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111129551', 'ym');
-        ym(111129551, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+        function loadYandexMetrika(){
+            if (window.__ymLoaded) return;
+            window.__ymLoaded = true;
+            (function(m,e,t,r,i,k,a){
+                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+            })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111129551', 'ym');
+            ym(111129551, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+            var img = document.createElement('img');
+            img.src = 'https://mc.yandex.ru/watch/111129551';
+            img.style = 'position:absolute; left:-9999px;';
+            img.alt = '';
+            document.body.appendChild(img);
+        }
+        // Если согласие уже было дано ранее — загружаем сразу
+        if (localStorage.getItem('cookie_consent') === 'accepted') {
+            document.addEventListener('DOMContentLoaded', loadYandexMetrika);
+        }
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/111129551" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 <script type="application/ld+json">
 {
@@ -2442,6 +2454,7 @@ function showCookieBanner(){
 function acceptCookies(){
   localStorage.setItem('cookie_consent','accepted');
   document.getElementById('cookie-banner')?.classList.remove('show');
+  if (typeof loadYandexMetrika === 'function') loadYandexMetrika();
 }
 document.addEventListener('DOMContentLoaded', showCookieBanner);
 </script>
