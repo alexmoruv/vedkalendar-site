@@ -2399,6 +2399,7 @@ function submitMission(){
   const consent=document.getElementById('m-consent')?.checked;
   if(!company||!contact||!email||!product){showToast("⚠️ Заполните обязательные поля");return;}
   if(!consent){showToast("⚠️ Необходимо согласие на обработку данных");return;}
+  const newsletter=document.getElementById('m-newsletter')?.checked||false;
   const payload={
     token:"f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3",
     timestamp:new Date().toISOString(),
@@ -2406,7 +2407,8 @@ function submitMission(){
     company,contact,email,
     phone:document.getElementById('m-phone')?.value.trim()||"",
     product,
-    markets:document.getElementById('m-markets')?.value.trim()||""
+    markets:document.getElementById('m-markets')?.value.trim()||"",
+    newsletter
   };
   const btn=document.querySelector('.btn-submit-gold');btn.textContent="Отправка...";btn.disabled=true;
   fetch(WEBHOOK,{method:"POST",body:JSON.stringify(payload)})
