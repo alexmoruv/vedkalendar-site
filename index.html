@@ -2343,6 +2343,14 @@ function openApplyModal(id){
       <div class="form-group"><label>Телефон</label><input class="form-input" id="f-phone" type="tel" placeholder="+7 (999) 000-00-00" autocomplete="tel"></div>
     </div>
     <div class="form-group"><label>Отрасль</label><input class="form-input" id="f-industry" type="text" placeholder="АПК, IT, промышленность..."></div>
+    <div class="consent-row">
+      <input type="checkbox" id="f-consent">
+      <label for="f-consent">Я согласен(а) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">Политикой конфиденциальности</a> *</label>
+    </div>
+    <div class="consent-row">
+      <input type="checkbox" id="f-newsletter">
+      <label for="f-newsletter">Хочу получать рассылку о мероприятиях и полезную информацию (<a href="newsletter-consent.html" target="_blank">подробнее</a>)</label>
+    </div>
     <div class="modal-actions">
       <button class="btn-submit" onclick="submitForm(${id||0})">Отправить заявку →</button>
       <button class="btn-cancel" onclick="closeModal()">Отмена</button>
