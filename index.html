@@ -2367,7 +2367,8 @@ function submitForm(eventId){
   if(!company||!name||!email){showToast("⚠️ Заполните обязательные поля");return;}
   if(!consent){showToast("⚠️ Необходимо согласие на обработку данных");return;}
   const e=eventId?EVENTS.find(x=>x.id===eventId):null;
-  const payload={token:"f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3",timestamp:new Date().toISOString(),event_id:eventId||"",event_title:e?e.title:"Общий запрос",event_org:e?e.org:"",event_country:e?e.country:"",event_date:e?e.dl:"",company,name,email,phone:document.getElementById('f-phone')?.value.trim()||"",industry:document.getElementById('f-industry')?.value.trim()||""};
+  const newsletter=document.getElementById('f-newsletter')?.checked||false;
+  const payload={token:"f13fcbc7e72cf642c394590abe3c758c36a6030bcd4c8eb3",timestamp:new Date().toISOString(),event_id:eventId||"",event_title:e?e.title:"Общий запрос",event_org:e?e.org:"",event_country:e?e.country:"",event_date:e?e.dl:"",company,name,email,phone:document.getElementById('f-phone')?.value.trim()||"",industry:document.getElementById('f-industry')?.value.trim()||"",newsletter};
   const btn=document.querySelector('.btn-submit');btn.textContent="Отправка...";btn.disabled=true;
   fetch(WEBHOOK,{method:"POST",body:JSON.stringify(payload)}).then(()=>showSuccess()).catch(()=>showSuccess());
 }
