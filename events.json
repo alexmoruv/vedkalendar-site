@@ -277,7 +277,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -300,7 +300,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -326,6 +326,29 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 1674,
+    "title": "Бизнес-миссия в ЮАР",
+    "type": "mission",
+    "country": "ЮАР",
+    "cc": "ZA",
+    "city": "",
+    "ds": "2026-08-14",
+    "dl": "14 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/moscowexport"
   },
   {
     "id": 28166,
@@ -397,6 +420,29 @@
     "src": "https://t.me/moscowexport"
   },
   {
+    "id": 78236,
+    "title": "Выставка в Египет",
+    "type": "exhibit",
+    "country": "Египет",
+    "cc": "EG",
+    "city": "",
+    "ds": "2026-08-18",
+    "dl": "18 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
     "id": 2,
     "title": "Бизнес-миссия на Филиппины (медицина)",
     "type": "mission",
@@ -444,6 +490,29 @@
     "src": "https://madeinmos.ru/events/detail/637/"
   },
   {
+    "id": 33511,
+    "title": "Выставка в Китай",
+    "type": "exhibit",
+    "country": "Китай",
+    "cc": "CN",
+    "city": "",
+    "ds": "2026-08-21",
+    "dl": "21 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
     "id": 42905,
     "title": "Выставка в Казахстан",
     "type": "exhibit",
@@ -475,6 +544,29 @@
     "city": "",
     "ds": "2026-08-25",
     "dl": "25 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 7042,
+    "title": "Выставка в Таиланд",
+    "type": "exhibit",
+    "country": "Таиланд",
+    "cc": "TH",
+    "city": "",
+    "ds": "2026-08-27",
+    "dl": "27 августа",
     "industry": [
       "Все отрасли"
     ],
