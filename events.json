@@ -323,7 +323,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -346,7 +346,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -369,7 +369,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -651,6 +651,29 @@
     "status": "upcoming",
     "desc": "Кенийские байеры приезжают в Москву. Удобный формат без выезда.",
     "src": "https://moscow-export.com/business_mission/"
+  },
+  {
+    "id": 50561,
+    "title": "Выставка в Нигерия",
+    "type": "exhibit",
+    "country": "Нигерия",
+    "cc": "NG",
+    "city": "",
+    "ds": "2026-09-02",
+    "dl": "2–3 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/moscowexport"
   },
   {
     "id": 3,
