@@ -392,7 +392,7 @@
     "support": "Онлайн B2B-встречи, без перелёта",
     "seats": 15,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Онлайн-миссия для промышленных компаний. Рынки Бразилии, Мексики, Аргентины.",
     "src": "https://madeinmos.ru/events/detail/833/"
   },
@@ -415,7 +415,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -438,7 +438,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -462,7 +462,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": 12,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Миссия для медицинских и фармацевтических компаний Москвы.",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -485,7 +485,7 @@
     "support": "Коллективный стенд, логистика",
     "seats": 20,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Единственная B2B-выставка детских товаров в Центральной Азии.",
     "src": "https://madeinmos.ru/events/detail/637/"
   },
@@ -508,7 +508,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -580,6 +580,29 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 33992,
+    "title": "Бизнес-миссия в Саудовская Аравия",
+    "type": "mission",
+    "country": "Саудовская Аравия",
+    "cc": "SA",
+    "city": "",
+    "ds": "2026-08-27",
+    "dl": "27 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/moscowexport"
   },
   {
     "id": 22,
@@ -817,6 +840,29 @@
     "status": "upcoming",
     "desc": "Реверсная миссия для компаний БПЛА и ВТ. Байеры из ЮВА приезжают в Москву.",
     "src": "https://moscow-export.com/business_mission/"
+  },
+  {
+    "id": 78296,
+    "title": "Выставка в Тунис",
+    "type": "exhibit",
+    "country": "Тунис",
+    "cc": "TN",
+    "city": "",
+    "ds": "2026-09-15",
+    "dl": "С 15 по 18 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/moscowexport"
   },
   {
     "id": 23,
@@ -1212,5 +1258,28 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://t.me/moiexport"
+  },
+  {
+    "id": 9486,
+    "title": "Бизнес-миссия в Оман",
+    "type": "mission",
+    "country": "Оман",
+    "cc": "OM",
+    "city": "",
+    "ds": "2027-04-01",
+    "dl": "1 апреля",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
   }
 ]
