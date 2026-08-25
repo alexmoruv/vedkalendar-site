@@ -531,7 +531,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -697,6 +697,29 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://t.me/moscowexport"
+  },
+  {
+    "id": 99284,
+    "title": "Выставка в Оман",
+    "type": "exhibit",
+    "country": "Оман",
+    "cc": "OM",
+    "city": "",
+    "ds": "2026-09-04",
+    "dl": "4–6 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 3,
@@ -978,7 +1001,7 @@
     "left": null,
     "status": "upcoming",
     "desc": "",
-    "src": "https://moscow-export.com#form-land"
+    "src": "https://moscow-export.com/business_mission/"
   },
   {
     "id": 24,
