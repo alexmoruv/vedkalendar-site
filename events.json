@@ -554,7 +554,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -590,6 +590,29 @@
     "city": "",
     "ds": "2026-08-27",
     "dl": "27 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/moscowexport"
+  },
+  {
+    "id": 75852,
+    "title": "Бизнес-миссия в Катар",
+    "type": "mission",
+    "country": "Катар",
+    "cc": "QA",
+    "city": "",
+    "ds": "2026-08-28",
+    "dl": "28 августа",
     "industry": [
       "Все отрасли"
     ],
