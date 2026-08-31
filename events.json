@@ -577,7 +577,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -600,7 +600,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -623,7 +623,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -657,6 +657,52 @@
     "type": "exhibit",
     "country": "Вьетнам",
     "cc": "VN",
+    "city": "",
+    "ds": "2026-08-31",
+    "dl": "31 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 34206,
+    "title": "Выставка в Таиланд",
+    "type": "exhibit",
+    "country": "Таиланд",
+    "cc": "TH",
+    "city": "",
+    "ds": "2026-08-31",
+    "dl": "31 августа",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 86988,
+    "title": "ИННОПРОМ. Индия",
+    "type": "exhibit",
+    "country": "Индия",
+    "cc": "IN",
     "city": "",
     "ds": "2026-08-31",
     "dl": "31 августа",
@@ -722,6 +768,29 @@
     "src": "https://t.me/moscowexport"
   },
   {
+    "id": 43026,
+    "title": "Выставка в Китай",
+    "type": "exhibit",
+    "country": "Китай",
+    "cc": "CN",
+    "city": "",
+    "ds": "2026-09-02",
+    "dl": "2 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/moscowexport"
+  },
+  {
     "id": 99284,
     "title": "Выставка в Оман",
     "type": "exhibit",
@@ -730,6 +799,29 @@
     "city": "",
     "ds": "2026-09-04",
     "dl": "4–6 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 9518,
+    "title": "Выставка в ОАЭ",
+    "type": "exhibit",
+    "country": "ОАЭ",
+    "cc": "AE",
+    "city": "",
+    "ds": "2026-09-04",
+    "dl": "4 сентября",
     "industry": [
       "Все отрасли"
     ],
@@ -888,8 +980,8 @@
     "src": "https://moscow-export.com/business_mission/"
   },
   {
-    "id": 78296,
-    "title": "Выставка в Тунис",
+    "id": 7592,
+    "title": "Виталия Степанова",
     "type": "exhibit",
     "country": "Тунис",
     "cc": "TN",
@@ -909,6 +1001,29 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://t.me/moscowexport"
+  },
+  {
+    "id": 12866,
+    "title": "Выставка в ОАЭ",
+    "type": "exhibit",
+    "country": "ОАЭ",
+    "cc": "AE",
+    "city": "",
+    "ds": "2026-09-17",
+    "dl": "17 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 23,
@@ -978,6 +1093,29 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://moscow-export.com#form-land"
+  },
+  {
+    "id": 50694,
+    "title": "Мой экспорт",
+    "type": "exhibit",
+    "country": "Узбекистан",
+    "cc": "UZ",
+    "city": "",
+    "ds": "2026-09-29",
+    "dl": "29 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 16,
@@ -1283,8 +1421,8 @@
     "src": "https://madeinmos.ru/events/detail/786/"
   },
   {
-    "id": 5342,
-    "title": "Выставка в ЮАР",
+    "id": 79788,
+    "title": "Египта Иссам Эль-Нагар",
     "type": "exhibit",
     "country": "ЮАР",
     "cc": "ZA",
