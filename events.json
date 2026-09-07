@@ -647,7 +647,7 @@
     "support": "Финансирование встреч, B2B-программа",
     "seats": 15,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Миссия в рамках выставки Beauty Eurasia.",
     "src": "https://madeinmos.ru/events/detail/777/"
   },
@@ -670,7 +670,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -693,7 +693,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -716,7 +716,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -740,7 +740,7 @@
     "support": "Организация встреч с кенийскими байерами",
     "seats": 10,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Кенийские байеры приезжают в Москву. Удобный формат без выезда.",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -763,7 +763,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -786,7 +786,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -809,7 +809,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -832,7 +832,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -856,7 +856,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": 15,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Миссия для высокотехнологичных компаний. Оман инвестирует в диверсификацию экономики.",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -930,6 +930,29 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
+  },
+  {
+    "id": 19391,
+    "title": "Выставка в Беларусь",
+    "type": "exhibit",
+    "country": "Беларусь",
+    "cc": "BY",
+    "city": "",
+    "ds": "2026-09-09",
+    "dl": "9 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 15,
