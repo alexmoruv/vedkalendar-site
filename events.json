@@ -881,7 +881,7 @@
     "support": "Организация B2B-встреч, переводчик, презентационная сессия",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Бизнес-миссия в рамках выставки Electra Mining Africa. Проведение переговоров с потенциальными покупателями и партнёрами, презентационная сессия продуктов московских компаний, персонализированные B2B-встречи.",
     "src": "https://madeinmos.ru/events/"
   },
@@ -904,7 +904,7 @@
     "support": "Финансирование встреч, переводчики",
     "seats": 15,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Миссия для промышленных компаний.",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -927,7 +927,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -950,7 +950,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -974,7 +974,7 @@
     "support": "Коллективный стенд, логистика",
     "seats": 30,
     "left": 14,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Ведущая продовольственная выставка Казахстана и ЕАЭС.",
     "src": "https://moscow-export.com/exhibition/"
   },
@@ -1024,6 +1024,52 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://t.me/moscowexport"
+  },
+  {
+    "id": 83448,
+    "title": "Выставка в Индонезия",
+    "type": "exhibit",
+    "country": "Индонезия",
+    "cc": "ID",
+    "city": "",
+    "ds": "2026-09-15",
+    "dl": "15 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 18072,
+    "title": "Юго-Восточной Азии",
+    "type": "exhibit",
+    "country": "Вьетнам",
+    "cc": "VN",
+    "city": "",
+    "ds": "2026-09-16",
+    "dl": "16 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 12866,
@@ -1115,7 +1161,7 @@
     "left": null,
     "status": "upcoming",
     "desc": "",
-    "src": "https://moscow-export.com#form-land"
+    "src": "https://moscow-export.com/business_mission/"
   },
   {
     "id": 50694,
