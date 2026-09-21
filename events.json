@@ -998,7 +998,7 @@
     "support": "Организация байерской программы",
     "seats": 10,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Реверсная миссия для компаний БПЛА и ВТ. Байеры из ЮВА приезжают в Москву.",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -1021,7 +1021,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/moscowexport"
   },
@@ -1044,7 +1044,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -1067,7 +1067,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -1090,7 +1090,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -1139,6 +1139,52 @@
     "status": "upcoming",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
+  },
+  {
+    "id": 49269,
+    "title": "Выставка в Узбекистан",
+    "type": "exhibit",
+    "country": "Узбекистан",
+    "cc": "UZ",
+    "city": "",
+    "ds": "2026-09-21",
+    "dl": "21 сентября 2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
+  },
+  {
+    "id": 46126,
+    "title": "Выставка в Бразилия",
+    "type": "exhibit",
+    "country": "Бразилия",
+    "cc": "BR",
+    "city": "",
+    "ds": "2026-09-23",
+    "dl": "23 сентября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 41905,
