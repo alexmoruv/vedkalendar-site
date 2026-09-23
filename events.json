@@ -1113,7 +1113,7 @@
     "support": "Финансирование встреч, переводчики",
     "seats": 15,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Пакистан — растущий рынок с 230+ млн населения.",
     "src": "https://madeinmos.ru/events/detail/779/"
   },
@@ -1136,7 +1136,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -1159,7 +1159,7 @@
     "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://t.me/rusexportnews"
   },
@@ -1257,27 +1257,27 @@
     "src": "https://www.exportcenter.ru/"
   },
   {
-    "id": 6561,
-    "title": "Бизнес-миссия в ЮАР 2026",
+    "id": 98779,
+    "title": "Gitex Nigeria",
     "type": "mission",
     "country": "ЮАР",
     "cc": "ZA",
     "city": "",
     "ds": "2026-10-06",
-    "dl": "06.10 – 08.10.2026",
+    "dl": "6–8 октября",
     "industry": [
       "Все отрасли"
     ],
-    "org": "Московский экспортный центр (МЭЦ)",
+    "org": "МЭЦ / Моспром",
     "org_s": "МЭЦ",
     "org_level": "Региональный",
     "org_icon": "🏙",
-    "support": "Финансирование встреч, переводчики, трансфер",
+    "support": "Уточняйте на сайте организатора",
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "",
-    "src": "https://moscow-export.com/business_mission/"
+    "desc": "🇳🇬 #Поддержка_бизнеса : Москва на Gitex Nigeria — 15 компаний, 125 встреч При поддержке Московского экспортного центра 15 столичных высокотехнологичных и ИТ-компаний представили разработки на выставке Gitex Nigeria в Лагосе — крупнейшем городе Нигерии 🌍 На стенде Made in Moscow показали: 🛸 разработк",
+    "src": "https://t.me/moscowexport"
   },
   {
     "id": 24,
@@ -1440,7 +1440,7 @@
     "left": null,
     "status": "upcoming",
     "desc": "",
-    "src": "https://moscow-export.com#form-land"
+    "src": "https://moscow-export.com/business_mission/"
   },
   {
     "id": 12,
@@ -1555,7 +1555,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "",
+    "desc": "Россия и Египет упрощают таможенные формальности 20 марта в Каире стороны подписали Протокол об административном сотрудничестве, обмене информацией и взаимопомощи в рамках единой системы тарифных преференций ЕАЭС. Документ скрепили подписями замруководителя ФТС России Владимир Ивин и председатель Ге",
     "src": "https://t.me/moiexport"
   },
   {
