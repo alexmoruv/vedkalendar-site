@@ -144,29 +144,6 @@
     "src": "https://moscow-export.com/business_mission/"
   },
   {
-    "id": 3883,
-    "title": "Выставка в Индия",
-    "type": "exhibit",
-    "country": "Индия",
-    "cc": "IN",
-    "city": "",
-    "ds": "2026-08-05",
-    "dl": "5 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
     "id": 19,
     "title": "Viet Food & Beverage 2026",
     "type": "exhibit",
@@ -188,52 +165,6 @@
     "status": "past",
     "desc": "Значимое мероприятие для производителей АПК в Юго-Восточной Азии.",
     "src": "https://madeinmos.ru/events/detail/663/"
-  },
-  {
-    "id": 43040,
-    "title": "Бизнес-миссия в Пакистан",
-    "type": "mission",
-    "country": "Пакистан",
-    "cc": "PK",
-    "city": "",
-    "ds": "2026-08-06",
-    "dl": "6 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 92421,
-    "title": "Выставка в Беларусь",
-    "type": "exhibit",
-    "country": "Беларусь",
-    "cc": "BY",
-    "city": "",
-    "ds": "2026-08-06",
-    "dl": "6 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 50056,
@@ -259,121 +190,6 @@
     "src": "https://t.me/moscowexport"
   },
   {
-    "id": 48024,
-    "title": "Выставка в Вьетнам",
-    "type": "exhibit",
-    "country": "Вьетнам",
-    "cc": "VN",
-    "city": "",
-    "ds": "2026-08-12",
-    "dl": "12 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 61751,
-    "title": "Выставка в ОАЭ",
-    "type": "exhibit",
-    "country": "ОАЭ",
-    "cc": "AE",
-    "city": "",
-    "ds": "2026-08-13",
-    "dl": "С 13 по 16 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 4966,
-    "title": "Выставка в Азербайджан",
-    "type": "exhibit",
-    "country": "Азербайджан",
-    "cc": "AZ",
-    "city": "",
-    "ds": "2026-08-14",
-    "dl": "14 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 1674,
-    "title": "Бизнес-миссия в ЮАР",
-    "type": "mission",
-    "country": "ЮАР",
-    "cc": "ZA",
-    "city": "",
-    "ds": "2026-08-14",
-    "dl": "14 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 28166,
-    "title": "Выставка в Китай",
-    "type": "exhibit",
-    "country": "Китай",
-    "cc": "CN",
-    "city": "",
-    "ds": "2026-08-15",
-    "dl": "С 15 по 19 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
     "id": 21,
     "title": "Бизнес-миссия в Латинскую Америку",
     "type": "mission",
@@ -395,52 +211,6 @@
     "status": "past",
     "desc": "Онлайн-миссия для промышленных компаний. Рынки Бразилии, Мексики, Аргентины.",
     "src": "https://madeinmos.ru/events/detail/833/"
-  },
-  {
-    "id": 43827,
-    "title": "Бизнес-миссия в ЮАР",
-    "type": "mission",
-    "country": "ЮАР",
-    "cc": "ZA",
-    "city": "",
-    "ds": "2026-08-17",
-    "dl": "17 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 78236,
-    "title": "Выставка в Египет",
-    "type": "exhibit",
-    "country": "Египет",
-    "cc": "EG",
-    "city": "",
-    "ds": "2026-08-18",
-    "dl": "18 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 2,
@@ -490,144 +260,6 @@
     "src": "https://madeinmos.ru/events/detail/637/"
   },
   {
-    "id": 33511,
-    "title": "Выставка в Китай",
-    "type": "exhibit",
-    "country": "Китай",
-    "cc": "CN",
-    "city": "",
-    "ds": "2026-08-21",
-    "dl": "21 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 42905,
-    "title": "Выставка в Казахстан",
-    "type": "exhibit",
-    "country": "Казахстан",
-    "cc": "KZ",
-    "city": "",
-    "ds": "2026-08-24",
-    "dl": "24 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 98074,
-    "title": "Выставка в Китай",
-    "type": "exhibit",
-    "country": "Китай",
-    "cc": "CN",
-    "city": "",
-    "ds": "2026-08-25",
-    "dl": "25 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 7042,
-    "title": "Выставка в Таиланд",
-    "type": "exhibit",
-    "country": "Таиланд",
-    "cc": "TH",
-    "city": "",
-    "ds": "2026-08-27",
-    "dl": "27 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 33992,
-    "title": "Бизнес-миссия в Саудовская Аравия",
-    "type": "mission",
-    "country": "Саудовская Аравия",
-    "cc": "SA",
-    "city": "",
-    "ds": "2026-08-27",
-    "dl": "27 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 75852,
-    "title": "Бизнес-миссия в Катар",
-    "type": "mission",
-    "country": "Катар",
-    "cc": "QA",
-    "city": "",
-    "ds": "2026-08-28",
-    "dl": "28 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
     "id": 22,
     "title": "Бизнес-миссия в Турцию (Beauty Eurasia)",
     "type": "mission",
@@ -650,52 +282,6 @@
     "status": "past",
     "desc": "Миссия в рамках выставки Beauty Eurasia.",
     "src": "https://madeinmos.ru/events/detail/777/"
-  },
-  {
-    "id": 9783,
-    "title": "Выставка в Вьетнам",
-    "type": "exhibit",
-    "country": "Вьетнам",
-    "cc": "VN",
-    "city": "",
-    "ds": "2026-08-31",
-    "dl": "31 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 34206,
-    "title": "Выставка в Таиланд",
-    "type": "exhibit",
-    "country": "Таиланд",
-    "cc": "TH",
-    "city": "",
-    "ds": "2026-08-31",
-    "dl": "31 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 86988,
@@ -743,98 +329,6 @@
     "status": "past",
     "desc": "Кенийские байеры приезжают в Москву. Удобный формат без выезда.",
     "src": "https://moscow-export.com/business_mission/"
-  },
-  {
-    "id": 50561,
-    "title": "Выставка в Нигерия",
-    "type": "exhibit",
-    "country": "Нигерия",
-    "cc": "NG",
-    "city": "",
-    "ds": "2026-09-02",
-    "dl": "2–3 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 43026,
-    "title": "Выставка в Китай",
-    "type": "exhibit",
-    "country": "Китай",
-    "cc": "CN",
-    "city": "",
-    "ds": "2026-09-02",
-    "dl": "2 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 99284,
-    "title": "Выставка в Оман",
-    "type": "exhibit",
-    "country": "Оман",
-    "cc": "OM",
-    "city": "",
-    "ds": "2026-09-04",
-    "dl": "4–6 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 9518,
-    "title": "Выставка в ОАЭ",
-    "type": "exhibit",
-    "country": "ОАЭ",
-    "cc": "AE",
-    "city": "",
-    "ds": "2026-09-04",
-    "dl": "4 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 3,
@@ -932,29 +426,6 @@
     "src": "https://moscow-export.com/business_mission/"
   },
   {
-    "id": 19391,
-    "title": "Выставка в Беларусь",
-    "type": "exhibit",
-    "country": "Беларусь",
-    "cc": "BY",
-    "city": "",
-    "ds": "2026-09-09",
-    "dl": "9 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
     "id": 15,
     "title": "FoodExpo Qazaqstan 2026",
     "type": "exhibit",
@@ -1026,29 +497,6 @@
     "src": "https://t.me/moscowexport"
   },
   {
-    "id": 83448,
-    "title": "Выставка в Индонезия",
-    "type": "exhibit",
-    "country": "Индонезия",
-    "cc": "ID",
-    "city": "",
-    "ds": "2026-09-15",
-    "dl": "15 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
     "id": 18072,
     "title": "Юго-Восточной Азии",
     "type": "exhibit",
@@ -1057,29 +505,6 @@
     "city": "",
     "ds": "2026-09-16",
     "dl": "16 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 12866,
-    "title": "Выставка в ОАЭ",
-    "type": "exhibit",
-    "country": "ОАЭ",
-    "cc": "AE",
-    "city": "",
-    "ds": "2026-09-17",
-    "dl": "17 сентября",
     "industry": [
       "Все отрасли"
     ],
@@ -1116,75 +541,6 @@
     "status": "past",
     "desc": "Пакистан — растущий рынок с 230+ млн населения.",
     "src": "https://madeinmos.ru/events/detail/779/"
-  },
-  {
-    "id": 75995,
-    "title": "Бизнес-миссия в Оман 2026",
-    "type": "mission",
-    "country": "Оман",
-    "cc": "OM",
-    "city": "",
-    "ds": "2026-09-21",
-    "dl": "21.09 – 23.09.2026",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "Московский экспортный центр (МЭЦ)",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Финансирование встреч, переводчики, трансфер",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://moscow-export.com/business_mission/"
-  },
-  {
-    "id": 49269,
-    "title": "Выставка в Узбекистан",
-    "type": "exhibit",
-    "country": "Узбекистан",
-    "cc": "UZ",
-    "city": "",
-    "ds": "2026-09-21",
-    "dl": "21 сентября 2026",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
-    "id": 46126,
-    "title": "Выставка в Бразилия",
-    "type": "exhibit",
-    "country": "Бразилия",
-    "cc": "BR",
-    "city": "",
-    "ds": "2026-09-23",
-    "dl": "23 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "upcoming",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 41905,
@@ -1420,29 +776,6 @@
     "src": "https://madeinmos.ru/events/detail/783/"
   },
   {
-    "id": 74762,
-    "title": "Бизнес-миссия в Китай 2026",
-    "type": "mission",
-    "country": "Китай",
-    "cc": "CN",
-    "city": "",
-    "ds": "2026-11-04",
-    "dl": "04.11 – 06.11.2026",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "Московский экспортный центр (МЭЦ)",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Финансирование встреч, переводчики, трансфер",
-    "seats": null,
-    "left": null,
-    "status": "upcoming",
-    "desc": "",
-    "src": "https://moscow-export.com/business_mission/"
-  },
-  {
     "id": 12,
     "title": "CIIE 2026 — Шанхайское импортное ЭКСПО",
     "type": "exhibit",
@@ -1557,28 +890,5 @@
     "status": "upcoming",
     "desc": "Россия и Египет упрощают таможенные формальности 20 марта в Каире стороны подписали Протокол об административном сотрудничестве, обмене информацией и взаимопомощи в рамках единой системы тарифных преференций ЕАЭС. Документ скрепили подписями замруководителя ФТС России Владимир Ивин и председатель Ге",
     "src": "https://t.me/moiexport"
-  },
-  {
-    "id": 9486,
-    "title": "Бизнес-миссия в Оман",
-    "type": "mission",
-    "country": "Оман",
-    "cc": "OM",
-    "city": "",
-    "ds": "2027-04-01",
-    "dl": "1 апреля",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "upcoming",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
   }
 ]
