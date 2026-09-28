@@ -167,29 +167,6 @@
     "src": "https://madeinmos.ru/events/detail/663/"
   },
   {
-    "id": 50056,
-    "title": "Основные нормативные аспекты экспорта пищевой продукции в Китай",
-    "type": "exhibit",
-    "country": "Китай",
-    "cc": "CN",
-    "city": "",
-    "ds": "2026-08-10",
-    "dl": "10 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
     "id": 21,
     "title": "Бизнес-миссия в Латинскую Америку",
     "type": "mission",
@@ -282,29 +259,6 @@
     "status": "past",
     "desc": "Миссия в рамках выставки Beauty Eurasia.",
     "src": "https://madeinmos.ru/events/detail/777/"
-  },
-  {
-    "id": 86988,
-    "title": "ИННОПРОМ. Индия",
-    "type": "exhibit",
-    "country": "Индия",
-    "cc": "IN",
-    "city": "",
-    "ds": "2026-08-31",
-    "dl": "31 августа",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
   },
   {
     "id": 7,
@@ -474,52 +428,6 @@
     "src": "https://moscow-export.com/business_mission/"
   },
   {
-    "id": 7592,
-    "title": "Виталия Степанова",
-    "type": "exhibit",
-    "country": "Тунис",
-    "cc": "TN",
-    "city": "",
-    "ds": "2026-09-15",
-    "dl": "С 15 по 18 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/moscowexport"
-  },
-  {
-    "id": 18072,
-    "title": "Юго-Восточной Азии",
-    "type": "exhibit",
-    "country": "Вьетнам",
-    "cc": "VN",
-    "city": "",
-    "ds": "2026-09-16",
-    "dl": "16 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "past",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
     "id": 23,
     "title": "Бизнес-миссия в Пакистан",
     "type": "mission",
@@ -566,29 +474,6 @@
     "src": "https://moscow-export.com/business_mission/"
   },
   {
-    "id": 50694,
-    "title": "Мой экспорт",
-    "type": "exhibit",
-    "country": "Узбекистан",
-    "cc": "UZ",
-    "city": "",
-    "ds": "2026-09-29",
-    "dl": "29 сентября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "РЭЦ",
-    "org_s": "РЭЦ",
-    "org_level": "Федеральный",
-    "org_icon": "🏛",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "upcoming",
-    "desc": "",
-    "src": "https://t.me/rusexportnews"
-  },
-  {
     "id": 16,
     "title": "ГорПром Узбекистан 2026",
     "type": "exhibit",
@@ -611,29 +496,6 @@
     "status": "upcoming",
     "desc": "Промышленная выставка горного оборудования в Узбекистане.",
     "src": "https://www.exportcenter.ru/"
-  },
-  {
-    "id": 98779,
-    "title": "Gitex Nigeria",
-    "type": "mission",
-    "country": "ЮАР",
-    "cc": "ZA",
-    "city": "",
-    "ds": "2026-10-06",
-    "dl": "6–8 октября",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "upcoming",
-    "desc": "🇳🇬 #Поддержка_бизнеса : Москва на Gitex Nigeria — 15 компаний, 125 встреч При поддержке Московского экспортного центра 15 столичных высокотехнологичных и ИТ-компаний представили разработки на выставке Gitex Nigeria в Лагосе — крупнейшем городе Нигерии 🌍 На стенде Made in Moscow показали: 🛸 разработк",
-    "src": "https://t.me/moscowexport"
   },
   {
     "id": 24,
@@ -867,28 +729,5 @@
     "status": "upcoming",
     "desc": "Развивающийся рынок Юго-Восточной Азии.",
     "src": "https://madeinmos.ru/events/detail/786/"
-  },
-  {
-    "id": 79788,
-    "title": "Египта Иссам Эль-Нагар",
-    "type": "exhibit",
-    "country": "ЮАР",
-    "cc": "ZA",
-    "city": "",
-    "ds": "2027-03-20",
-    "dl": "20 марта",
-    "industry": [
-      "Все отрасли"
-    ],
-    "org": "МЭЦ / Моспром",
-    "org_s": "МЭЦ",
-    "org_level": "Региональный",
-    "org_icon": "🏙",
-    "support": "Уточняйте на сайте организатора",
-    "seats": null,
-    "left": null,
-    "status": "upcoming",
-    "desc": "Россия и Египет упрощают таможенные формальности 20 марта в Каире стороны подписали Протокол об административном сотрудничестве, обмене информацией и взаимопомощи в рамках единой системы тарифных преференций ЕАЭС. Документ скрепили подписями замруководителя ФТС России Владимир Ивин и председатель Ге",
-    "src": "https://t.me/moiexport"
   }
 ]
