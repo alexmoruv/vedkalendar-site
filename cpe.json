@@ -1,0 +1,1397 @@
+{
+ "updated": "2026-09-28",
+ "source": "сайты региональных ЦПЭ",
+ "centers": [
+  {
+   "fd": "ЦФО",
+   "region": "Белгородская область",
+   "name": "Центр поддержки экспорта — Белгородская область",
+   "site": "https://export31.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Брянская область",
+   "name": "ГАУ «Брянский областной центр оказания услуг «Мой бизнес» — Центр поддержки экспорта",
+   "site": "https://www.32export.ru/",
+   "address": "241023, г. Брянск, ул. Бежицкая, 54, оф. 013",
+   "phone": [
+    "+7 (4832) 58-92-78"
+   ],
+   "email": [
+    "centr-eksporta@mybiz32.ru"
+   ],
+   "telegram": "https://t.me/exporter32",
+   "vk": "https://vk.com/32export",
+   "events_url": "https://www.32export.ru/meroprijatija/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Владимирская область",
+   "name": "АНО «Центр поддержки экспорта Владимирской области»",
+   "site": "https://export33.ru/",
+   "address": "г. Владимир, ул. Сакко и Ванцетти, д. 50, офис 13",
+   "phone": [
+    "+7 (904) 650-03-19"
+   ],
+   "email": [
+    "info@export33.ru"
+   ],
+   "telegram": "https://t.me/export33ru",
+   "vk": "https://vk.com/club145994743",
+   "events_url": "https://export33.ru/meropriyatiya/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Воронежская область",
+   "name": "Центр поддержки экспорта Воронежской области",
+   "site": "https://export36.ru/",
+   "address": "394018, г. Воронеж, ул. Свободы, 21",
+   "phone": [
+    "+7 (473) 207-10-92"
+   ],
+   "email": [
+    "info@export36.ru"
+   ],
+   "telegram": "",
+   "vk": "",
+   "events_url": "https://export36.ru/meropriyatiya/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Ивановская область",
+   "name": "Центр поддержки экспорта — Ивановская область",
+   "site": "https://xn--37-9kcqjffxnf3b.xn--p1ai/mery-gospodderzhki/eksport",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Калужская область",
+   "name": "Центр поддержки экспорта Калужской области",
+   "site": "https://kalugaexport.ru/",
+   "address": "248000, г. Калуга, ул. Театральная, д. 38а",
+   "phone": [
+    "+7 (910) 860-01-60"
+   ],
+   "email": [
+    "exportcentr40@admoblkaluga.ru"
+   ],
+   "telegram": "https://t.me/export40",
+   "vk": "https://vk.com/export40",
+   "events_url": "https://kalugaexport.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Костромская область",
+   "name": "Центр поддержки экспорта Костромской области",
+   "site": "https://exportcentr44.ru/",
+   "address": "156019, г. Кострома, ул. Локомотивная, д. 2, офис 2",
+   "phone": [
+    "+7 (4942) 32-52-51"
+   ],
+   "email": [
+    "info@exportcentr44.ru"
+   ],
+   "telegram": "https://t.me/exportcentr44",
+   "vk": "https://vk.com/exportcenter44",
+   "events_url": "https://exportcentr44.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Курская область",
+   "name": "Центр поддержки экспорта Курской области",
+   "site": "https://export46.ru/",
+   "address": "г. Курск, ул. Горького, д. 34",
+   "phone": [
+    "+7 (4712) 54-07-06, доб. 3"
+   ],
+   "email": [
+    "info@cpp46.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/ric46com",
+   "events_url": "https://export46.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Липецкая область",
+   "name": "Центр поддержки экспорта Липецкой области",
+   "site": "https://export48.ru/",
+   "address": "398001, г. Липецк, ул. Кузнечная, д. 8",
+   "phone": [
+    "+7 (4742) 37-13-48",
+    "8 800 301-76-75"
+   ],
+   "email": [
+    "sda@liptpp.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/export48",
+   "events_url": "https://export48.ru/calendar/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Москва",
+   "name": "Московский экспортный центр (МЭЦ)",
+   "site": "https://moscow-export.com/",
+   "address": "125047, Москва, ул. 4-я Тверская-Ямская, д. 14, стр. 1",
+   "phone": [
+    "+7 (499) 288-85-01"
+   ],
+   "email": [
+    "info@export.mos.ru"
+   ],
+   "telegram": "https://t.me/moscowexport",
+   "vk": "https://vk.com/moscowexport",
+   "events_url": "https://moscow-export.com/business_mission/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Московская область",
+   "name": "Центр поддержки экспорта Московской области (Фонд ВЭД МО)",
+   "site": "https://exportmo.ru/",
+   "address": "143401, Московская обл., г. Красногорск, бульвар Строителей, д. 4, корп. 1, секция В, 11 этаж",
+   "phone": [
+    "+7 (495) 150-39-41"
+   ],
+   "email": [
+    "info@exportmo.ru"
+   ],
+   "telegram": "https://t.me/fondvedmo",
+   "vk": "https://vk.com/club156177065",
+   "events_url": "https://exportmo.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Орловская область",
+   "name": "Орловский региональный центр поддержки экспорта",
+   "site": "https://export57.ru/",
+   "address": "302028, г. Орёл, ул. Салтыкова-Щедрина, д. 34, офис 209–210",
+   "phone": [
+    "+7 (4862) 44-02-65"
+   ],
+   "email": [
+    "info@export57.ru"
+   ],
+   "telegram": "https://t.me/export57",
+   "vk": "https://vk.com/export57",
+   "events_url": "https://export57.ru/calendar.html",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Рязанская область",
+   "name": "Рязанский центр экспорта",
+   "site": "https://www.exportcenter62.ru/",
+   "address": "г. Рязань, ул. Каширина, 1Б",
+   "phone": [
+    "+7 (4912) 600-517"
+   ],
+   "email": [
+    "info@exportcenter62.ru"
+   ],
+   "telegram": "https://t.me/export62",
+   "vk": "https://vk.com/exportcenter62",
+   "events_url": "https://www.exportcenter62.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Смоленская область",
+   "name": "АНО «Центр поддержки экспорта Смоленской области»",
+   "site": "https://export67.com/",
+   "address": "214014, г. Смоленск, ул. Энгельса, д. 23",
+   "phone": [
+    "+7 (4812) 67-20-90"
+   ],
+   "email": [
+    "info@export67.com"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/export67",
+   "events_url": "https://export67.com/meropriyatiya-centra/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Тамбовская область",
+   "name": "Центр поддержки экспорта — Тамбовская область",
+   "site": "https://xn---68-9cdulgg0aog6b.xn--p1ai/napravleniya/czentr-podderzhki-eksporta/informacziya-o-czentre.html",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Тверская область",
+   "name": "Центр поддержки экспорта Тверской области",
+   "site": "https://export-69.ru/",
+   "address": "",
+   "phone": [
+    "+7 (4822) 36-11-69"
+   ],
+   "email": [
+    "export@mybusiness69.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/cpetver",
+   "events_url": "https://export-69.ru/meropriyatiya",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Тульская область",
+   "name": "Центр поддержки экспорта Тульской области",
+   "site": "https://export71.ru/",
+   "address": "г. Тула, ул. Кирова, д. 135, к. 1, оф. 426",
+   "phone": [
+    "+7 (4872) 25-98-33"
+   ],
+   "email": [
+    "info@export71.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/tulaexport71",
+   "events_url": "https://export71.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЦФО",
+   "region": "Ярославская область",
+   "name": "АНО «Центр экспорта Ярославской области»",
+   "site": "https://exportcenter76.ru/",
+   "address": "г. Ярославль, ул. Свердлова, д. 25Д, этаж 3",
+   "phone": [
+    "+7 (4852) 59-58-35"
+   ],
+   "email": [
+    "info@ric76.ru"
+   ],
+   "telegram": "https://t.me/export76",
+   "vk": "https://vk.com/ric76",
+   "events_url": "https://exportcenter76.ru/meropriyatiya/",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Республика Карелия",
+   "name": "Центр поддержки экспорта Республики Карелия",
+   "site": "https://export10.ru/",
+   "address": "185000, г. Петрозаводск, наб. Гюллинга, д. 11, 2 этаж, офис 2",
+   "phone": [
+    "+7 (960) 215-18-48"
+   ],
+   "email": [
+    "info@export10.ru"
+   ],
+   "telegram": "https://t.me/export_10",
+   "vk": "https://vk.com/export10",
+   "events_url": "https://export10.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Республика Коми",
+   "name": "Центр поддержки экспорта Республики Коми",
+   "site": "https://export-komi.ru/",
+   "address": "",
+   "phone": [
+    "+7 (8212) 44-60-25"
+   ],
+   "email": [
+    "cpe@minek.rkomi.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/export11",
+   "events_url": "https://export-komi.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Архангельская область",
+   "name": "Центр поддержки экспорта — Архангельская область",
+   "site": "https://export29.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Ненецкий автономный округ",
+   "name": "Центр поддержки экспорта Ненецкого автономного округа",
+   "site": "https://fond83.ru/centers/centers-export/",
+   "address": "г. Нарьян-Мар, ул. Ненецкая, д. 3",
+   "phone": [
+    "+7 (81853) 2-14-46"
+   ],
+   "email": [
+    "exportnao@gmail.com"
+   ],
+   "telegram": "https://t.me/business_nao",
+   "vk": "https://vk.com/fond83",
+   "events_url": "",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Вологодская область",
+   "name": "Центр поддержки экспорта Вологодской области",
+   "site": "https://export35.ru/",
+   "address": "г. Вологда, ул. Маршала Конева, д. 15",
+   "phone": [
+    "8 (8172) 500-112"
+   ],
+   "email": [
+    "export@mb35.ru"
+   ],
+   "telegram": "https://t.me/export35",
+   "vk": "https://vk.com/export35",
+   "events_url": "https://export35.ru/meropriyatiya/",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Калининградская область",
+   "name": "Центр поддержки экспорта Центра «Мой бизнес» Калининградской области",
+   "site": "https://exportkld.ru/",
+   "address": "236022, г. Калининград, ул. Уральская, д. 18, каб. 442",
+   "phone": [
+    "+7 (4012) 994-588"
+   ],
+   "email": [
+    "export@mbkaliningrad.ru"
+   ],
+   "telegram": "https://t.me/exportkld",
+   "vk": "https://vk.com/mbkaliningrad39",
+   "events_url": "https://exportkld.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Ленинградская область",
+   "name": "Центр поддержки экспорта Ленинградской области (АНО «ЦРП ЛО»)",
+   "site": "https://crplo.ru/export",
+   "address": "",
+   "phone": [
+    "+7 (812) 644-01-22"
+   ],
+   "email": [
+    "exportlo@crplo.ru"
+   ],
+   "telegram": "https://t.me/clubexporterovlo",
+   "vk": "",
+   "events_url": "https://crplo.ru/export/events",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Мурманская область",
+   "name": "Центр поддержки экспорта Мурманской области",
+   "site": "https://www.export51.ru/",
+   "address": "г. Мурманск, ул. Генерала Журбы, д. 6, каб. 505",
+   "phone": [
+    "+7 (8152) 56-79-97"
+   ],
+   "email": [
+    "info@export51.ru"
+   ],
+   "telegram": "https://t.me/export51",
+   "vk": "https://vk.com/export51",
+   "events_url": "https://www.export51.ru/meropriyatiya/",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Новгородская область",
+   "name": "Новгородский центр поддержки экспорта",
+   "site": "https://ncpe.ru/",
+   "address": "г. Великий Новгород, ул. Кочетова, д. 30",
+   "phone": [
+    "+7 (8162) 67-02-83"
+   ],
+   "email": [
+    "info@ncpe.ru"
+   ],
+   "telegram": "https://t.me/ncpe53",
+   "vk": "https://vk.com/53ncpe",
+   "events_url": "https://ncpe.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Псковская область",
+   "name": "Центр поддержки экспорта Центра «Мой бизнес» Псковской области",
+   "site": "https://export60.ru/",
+   "address": "180000, г. Псков, ул. Гоголя, д. 14",
+   "phone": [
+    "+7 (8112) 331-337, доб. 108/109"
+   ],
+   "email": [
+    "export@msp60.ru"
+   ],
+   "telegram": "https://t.me/export60",
+   "vk": "https://vk.com/export60",
+   "events_url": "https://export60.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "СЗФО",
+   "region": "Санкт-Петербург",
+   "name": "АНО «Санкт-Петербургский центр поддержки экспорта»",
+   "site": "https://spbexport.ru/",
+   "address": "196006, Санкт-Петербург, Московский пр., д. 129, 4 этаж",
+   "phone": [
+    "+7 (812) 246-0-246"
+   ],
+   "email": [
+    "info@spbexport.ru"
+   ],
+   "telegram": "https://t.me/spbcpe",
+   "vk": "https://vk.com/spbexport",
+   "events_url": "https://spbexport.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Республика Адыгея",
+   "name": "Центр поддержки экспорта Республики Адыгея",
+   "site": "https://export01.ru/",
+   "address": "385000, г. Майкоп, ул. Пионерская, д. 324",
+   "phone": [
+    "+7 (8772) 57-97-90"
+   ],
+   "email": [
+    "info@export01.ru"
+   ],
+   "telegram": "https://t.me/exportadygea",
+   "vk": "https://vk.com/adygea_export01",
+   "events_url": "https://export01.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Республика Калмыкия",
+   "name": "Центр поддержки экспорта — Республика Калмыкия",
+   "site": "https://www.export08.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Республика Крым",
+   "name": "Центр поддержки экспорта — Республика Крым",
+   "site": "https://exporteram.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Краснодарский край",
+   "name": "Фонд «Центр поддержки экспорта Краснодарского края»",
+   "site": "https://kubanexport.ru/",
+   "address": "350911, г. Краснодар, ул. Трамвайная, 2/6, БЦ «Меркурий», офис 407",
+   "phone": [
+    "+7 (861) 231-10-60"
+   ],
+   "email": [
+    "info@kubanexport.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/kubanexport",
+   "events_url": "https://kubanexport.ru/events-calendar/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Астраханская область",
+   "name": "Центр поддержки экспорта Астраханской области",
+   "site": "https://centerexport30.ru/",
+   "address": "",
+   "phone": [
+    "+7 (8512) 48-34-04"
+   ],
+   "email": [
+    "ackpe@30fond.ru"
+   ],
+   "telegram": "",
+   "vk": "",
+   "events_url": "https://centerexport30.ru/events/?param_type=future",
+   "status": "ok"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Волгоградская область",
+   "name": "Центр поддержки экспорта Волгоградской области",
+   "site": "https://export34.ru/",
+   "address": "г. Волгоград, пр. Жукова, д. 3, оф. 109",
+   "phone": [
+    "+7 (8442) 32-00-03"
+   ],
+   "email": [
+    "export@volganet.ru"
+   ],
+   "telegram": "https://t.me/export_34",
+   "vk": "https://vk.com/export_vlg",
+   "events_url": "https://export34.ru/news/calendar-of-events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Ростовская область",
+   "name": "АНО «Центр поддержки экспорта» Ростовской области",
+   "site": "https://export161.com/",
+   "address": "г. Ростов-на-Дону, ул. Максима Горького, д. 120, офис 24",
+   "phone": [
+    "+7 (863) 201-82-40"
+   ],
+   "email": [
+    "info@export161.com"
+   ],
+   "telegram": "https://t.me/export161",
+   "vk": "https://vk.com/exportrnd",
+   "events_url": "https://export161.com/events",
+   "status": "ok"
+  },
+  {
+   "fd": "ЮФО",
+   "region": "Севастополь",
+   "name": "Центр поддержки экспорта города Севастополя",
+   "site": "https://export.mb92.ru/",
+   "address": "г. Севастополь, пр. Октябрьской революции, 42-Б, корп. 6",
+   "phone": [
+    "+7 (8692) 22-90-09"
+   ],
+   "email": [
+    "export@mb92.ru"
+   ],
+   "telegram": "",
+   "vk": "",
+   "events_url": "https://export.mb92.ru/meropriyatiya",
+   "status": "ok"
+  },
+  {
+   "fd": "СКФО",
+   "region": "Республика Дагестан",
+   "name": "Центр поддержки экспорта — Республика Дагестан",
+   "site": "https://export05.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СКФО",
+   "region": "Республика Ингушетия",
+   "name": "Центр поддержки экспорта — Республика Ингушетия",
+   "site": "https://ingexport.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СКФО",
+   "region": "Кабардино-Балкарская Республика",
+   "name": "Центр поддержки экспорта — Кабардино-Балкарская Республика",
+   "site": "https://exportkbr.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СКФО",
+   "region": "Карачаево-Черкесская Республика",
+   "name": "Центр поддержки экспорта — Карачаево-Черкесская Республика",
+   "site": "https://exportkchr.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СКФО",
+   "region": "Республика Северная Осетия — Алания",
+   "name": "Центр поддержки экспорта РСО-Алания",
+   "site": "https://fpprso.ru/czentr-podderzhki-eksporta/",
+   "address": "362019, г. Владикавказ, ул. Шмулевича, 8Б",
+   "phone": [
+    "+7 (8672) 700-174"
+   ],
+   "email": [
+    "fpp-alania@yandex.ru"
+   ],
+   "telegram": "https://t.me/fpprsoa",
+   "vk": "https://vk.com/fpprsoa",
+   "events_url": "https://fpprso.ru/czentr-podderzhki-eksporta/plan-meropriyatij/",
+   "status": "ok"
+  },
+  {
+   "fd": "СКФО",
+   "region": "Чеченская Республика",
+   "name": "Центр поддержки экспорта Чеченской Республики",
+   "site": "https://export95.com/",
+   "address": "г. Грозный, ул. Жуковского, 20Б",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "https://vk.com/cpe095",
+   "events_url": "",
+   "status": "ok"
+  },
+  {
+   "fd": "СКФО",
+   "region": "Ставропольский край",
+   "name": "Центр поддержки экспорта в Ставропольском крае (Фонд поддержки предпринимательства)",
+   "site": "https://export.fppsk26.ru/",
+   "address": "г. Ставрополь, ул. Голенева, д. 73А",
+   "phone": [
+    "+7 (8652) 23-56-20"
+   ],
+   "email": [
+    "ved@fppsk26.ru"
+   ],
+   "telegram": "https://t.me/export_fppsk26",
+   "vk": "https://vk.com/exportfppsk26",
+   "events_url": "https://export.fppsk26.ru/ru/advertisements/",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Республика Башкортостан",
+   "name": "АНО «Центр поддержки экспорта Республики Башкортостан»",
+   "site": "https://bashexport.com/",
+   "address": "г. Уфа, ул. Пушкина, д. 95",
+   "phone": [
+    "+7 (347) 246-68-15"
+   ],
+   "email": [
+    "exportcenter@bashkortostan.ru"
+   ],
+   "telegram": "https://t.me/bashexport",
+   "vk": "https://vk.com/bashexport",
+   "events_url": "https://bashexport.com/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Республика Марий Эл",
+   "name": "АНО «Агентство экспортного развития Республики Марий Эл»",
+   "site": "https://export12.com/",
+   "address": "г. Йошкар-Ола, ул. Эшкинина, 10Б",
+   "phone": [
+    "+7 (8362) 34-19-19"
+   ],
+   "email": [
+    "invest.export12@mail.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/exportinvest12",
+   "events_url": "https://export12.com/meropriyatiya/",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Республика Мордовия",
+   "name": "Центр поддержки экспорта Республики Мордовия",
+   "site": "https://mordoviaexport.ru/",
+   "address": "430009, г. Саранск, ул. Псковская, 2а, офис 315",
+   "phone": [
+    "+7 (8342) 27-04-36"
+   ],
+   "email": [
+    "consult@mordoviaexport.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/consultmordoviaexport",
+   "events_url": "https://mordoviaexport.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Республика Татарстан",
+   "name": "Центр поддержки экспорта Республики Татарстан",
+   "site": "https://export-rt.ru/",
+   "address": "",
+   "phone": [],
+   "email": [
+    "info@export-rt.ru"
+   ],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Удмуртская Республика",
+   "name": "Центр поддержки экспорта Удмуртской Республики",
+   "site": "https://madeinudmurtia.ru/export/",
+   "address": "426008, г. Ижевск, ул. Пушкинская, 247а",
+   "phone": [
+    "+7 (3412) 22-00-00"
+   ],
+   "email": [
+    "info@madeinudmurtia.ru"
+   ],
+   "telegram": "https://t.me/mb_udm",
+   "vk": "https://vk.com/mb_udm",
+   "events_url": "https://madeinudmurtia.ru/export/actions/",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Чувашская Республика",
+   "name": "Центр поддержки экспорта Чувашской Республики",
+   "site": "https://ved21.ru/",
+   "address": "428000, г. Чебоксары, пр. Ленина, 12Б, оф. 317",
+   "phone": [
+    "+7 (8352) 65-52-05"
+   ],
+   "email": [
+    "mail@ved21.ru"
+   ],
+   "telegram": "https://t.me/export_21",
+   "vk": "https://vk.com/ved21club",
+   "events_url": "https://ved21.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Пермский край",
+   "name": "Центр поддержки экспорта Пермского края",
+   "site": "https://perm-export.ru/",
+   "address": "г. Пермь, ул. Ленина, 68, оф. 211",
+   "phone": [
+    "+7 (342) 270-06-77"
+   ],
+   "email": [
+    "info@perm-export.ru"
+   ],
+   "telegram": "https://t.me/permexport",
+   "vk": "https://vk.com/permexport",
+   "events_url": "https://perm-export.ru/event-calendar",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Кировская область",
+   "name": "Центр поддержки экспорта — Кировская область",
+   "site": "https://exportkirov.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Нижегородская область",
+   "name": "Центр поддержки экспорта Нижегородской области",
+   "site": "https://www.export-nn.ru/",
+   "address": "",
+   "phone": [
+    "+7 (831) 435-18-48"
+   ],
+   "email": [
+    "info@export-nn.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/public.exportnn",
+   "events_url": "https://www.export-nn.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Оренбургская область",
+   "name": "Центр поддержки экспорта — Оренбургская область",
+   "site": "https://vk.com/orbexport",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Пензенская область",
+   "name": "Центр поддержки экспорта — Пензенская область",
+   "site": "http://export.mbpenza.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Самарская область",
+   "name": "Центр поддержки экспорта Самарской области",
+   "site": "https://mybiz63.ru/organizations/3",
+   "address": "г. Самара, ул. Молодогвардейская, д. 211, оф. 211",
+   "phone": [
+    "+7 (846) 262-00-62",
+    "8 800 300-63-63"
+   ],
+   "email": [
+    "cpesamara163@mail.ru"
+   ],
+   "telegram": "https://t.me/samaraexportcenter",
+   "vk": "",
+   "events_url": "",
+   "status": "ok"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Саратовская область",
+   "name": "Центр поддержки экспорта — Саратовская область",
+   "site": "http://export64.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ПФО",
+   "region": "Ульяновская область",
+   "name": "Центр поддержки экспорта — Ульяновская область",
+   "site": "https://www.ved73.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "УФО",
+   "region": "Курганская область",
+   "name": "Центр поддержки экспорта Курганской области",
+   "site": "https://export45.com/",
+   "address": "г. Курган, ул. Бурова-Петрова, 112А, 3 этаж, офис 328",
+   "phone": [
+    "8 800 250-47-31, доб. 5"
+   ],
+   "email": [
+    "export@invest45.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/export45",
+   "events_url": "https://export45.com/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "УФО",
+   "region": "Свердловская область",
+   "name": "Центр поддержки экспорта — Свердловская область",
+   "site": "https://sofp.ru/o-nas/nashi-podrazdeleniya/czentr-podderzhki-eksporta/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "УФО",
+   "region": "Тюменская область",
+   "name": "Центр поддержки экспорта Тюменской области",
+   "site": "https://export72.ru/",
+   "address": "г. Тюмень, ул. Республики, 142",
+   "phone": [
+    "+7 (922) 002-45-20"
+   ],
+   "email": [
+    "export@obl72.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/export.tyumen",
+   "events_url": "https://export72.ru/projects/",
+   "status": "ok"
+  },
+  {
+   "fd": "УФО",
+   "region": "Ханты-Мансийский автономный округ — Югра",
+   "name": "Центр поддержки экспорта Фонда «Мой бизнес» Югры",
+   "site": "https://export-ugra.ru/",
+   "address": "",
+   "phone": [
+    "8 (3467) 388-400, доб. 121, 123"
+   ],
+   "email": [],
+   "telegram": "https://t.me/exportugra",
+   "vk": "https://vk.com/ugraexport",
+   "events_url": "https://export-ugra.ru/exporter/business_missions/",
+   "status": "ok"
+  },
+  {
+   "fd": "УФО",
+   "region": "Ямало-Ненецкий автономный округ",
+   "name": "Центр поддержки экспорта — Ямало-Ненецкий автономный округ",
+   "site": "https://export.yanao.ru/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "УФО",
+   "region": "Челябинская область",
+   "name": "Центр поддержки экспорта — Челябинская область",
+   "site": "https://ica74.com/napravleniya-raboty/eksport/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СФО",
+   "region": "Республика Алтай",
+   "name": "Центр поддержки экспорта Республики Алтай",
+   "site": "https://www.export04.ru/",
+   "address": "649000, г. Горно-Алтайск, ул. Комсомольская, 9",
+   "phone": [
+    "8 800 2500-128"
+   ],
+   "email": [
+    "centex.04@yandex.ru"
+   ],
+   "telegram": "https://t.me/export04",
+   "vk": "https://vk.com/export04",
+   "events_url": "https://www.export04.ru/meropriyatiya/aktivnye",
+   "status": "ok"
+  },
+  {
+   "fd": "СФО",
+   "region": "Республика Тыва",
+   "name": "Центр поддержки экспорта — Республика Тыва",
+   "site": "http://mert.tuva.ru/directions/entrepreneurship/support/cpe/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СФО",
+   "region": "Республика Хакасия",
+   "name": "Центр поддержки экспорта — Республика Хакасия",
+   "site": "https://xn--19-9kcqjffxnf3b.xn--p1ai/export_support",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СФО",
+   "region": "Алтайский край",
+   "name": "Центр поддержки экспорта — Алтайский край",
+   "site": "https://xn--22-9kcqjffxnf3b.xn--p1ai/tsentr-podderzhki-eksporta/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СФО",
+   "region": "Красноярский край",
+   "name": "Центр поддержки экспорта — Красноярский край",
+   "site": "https://xn---24-9cdulgg0aog6b.xn--p1ai/sections/podderzhka-eksporta/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "СФО",
+   "region": "Иркутская область",
+   "name": "Центр поддержки экспорта Иркутской области",
+   "site": "https://export38.com/",
+   "address": "664011, г. Иркутск, ул. Рабочая, 2А/4, 1 этаж, каб. 130",
+   "phone": [
+    "+7 (3952) 202-102"
+   ],
+   "email": [
+    "info@fondirk.ru"
+   ],
+   "telegram": "https://t.me/export_irk",
+   "vk": "",
+   "events_url": "https://export38.com/meropriyatiyaexport/",
+   "status": "ok"
+  },
+  {
+   "fd": "СФО",
+   "region": "Кемеровская область — Кузбасс",
+   "name": "АНО «Центр поддержки экспорта Кузбасса»",
+   "site": "https://export42.ru/",
+   "address": "г. Кемерово, бульвар академика Л. С. Барбараша, зд. 1, офис 218/2",
+   "phone": [
+    "+7 (3842) 77-88-60"
+   ],
+   "email": [
+    "team@export42.ru"
+   ],
+   "telegram": "https://t.me/exportkuzbass",
+   "vk": "",
+   "events_url": "https://export42.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "СФО",
+   "region": "Новосибирская область",
+   "name": "Центр поддержки экспорта Новосибирской области (Центр «Мой бизнес»)",
+   "site": "https://mbnso.ru/company/services/exportnso/",
+   "address": "г. Новосибирск, ул. Сибревкома, 9",
+   "phone": [
+    "8 800 600-34-07"
+   ],
+   "email": [
+    "info@mbnso.ru"
+   ],
+   "telegram": "https://t.me/mbnso",
+   "vk": "https://vk.com/mbnso",
+   "events_url": "",
+   "status": "ok"
+  },
+  {
+   "fd": "СФО",
+   "region": "Омская область",
+   "name": "Центр поддержки экспорта Омской области",
+   "site": "https://ved55.ru/",
+   "address": "644074, г. Омск, пр. Комарова, д. 21, корп. 1, офис 228–229",
+   "phone": [
+    "+7 (3812) 95-77-75"
+   ],
+   "email": [
+    "export@ved55.ru"
+   ],
+   "telegram": "https://t.me/ved55_omsk",
+   "vk": "https://vk.com/ved55_omsk",
+   "events_url": "https://ved55.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "СФО",
+   "region": "Томская область",
+   "name": "Центр поддержки экспорта Томской области",
+   "site": "https://mb.tomsk.ru/poluchit-podderzhku/tsentr-podderzhki-eksporta/",
+   "address": "г. Томск, ул. Студенческая, 2а, 1 этаж",
+   "phone": [
+    "+7 (3822) 901-000"
+   ],
+   "email": [
+    "tomsk.cpp@mb.tomsk.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/frb_tomsk",
+   "events_url": "",
+   "status": "ok"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Республика Бурятия",
+   "name": "Центр поддержки экспорта Республики Бурятия",
+   "site": "https://export03.ru/",
+   "address": "670000, г. Улан-Удэ, ул. Смолина, 65",
+   "phone": [
+    "8 800 30-30-123"
+   ],
+   "email": [
+    "export@msp03.ru"
+   ],
+   "telegram": "https://t.me/export_03",
+   "vk": "https://vk.com/export03",
+   "events_url": "https://export03.ru/meropriyatiya/",
+   "status": "ok"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Республика Саха (Якутия)",
+   "name": "Центр поддержки экспорта — Республика Саха (Якутия)",
+   "site": "https://yakutiaexport.com/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Забайкальский край",
+   "name": "Центр поддержки экспорта — Забайкальский край",
+   "site": "https://xn--75-9kcqjffxnf3b.xn--p1ai/get_supports/esc/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Камчатский край",
+   "name": "Центр поддержки экспорта Камчатского края",
+   "site": "https://kamexport41.ru/",
+   "address": "г. Петропавловск-Камчатский, пр. Карла Маркса, 23, БЦ «Атом», оф. 508",
+   "phone": [
+    "+7 (4152) 215-052"
+   ],
+   "email": [
+    "kamexport@kamexpocenter.ru"
+   ],
+   "telegram": "https://t.me/kamexport",
+   "vk": "https://vk.com/kamexportcenter",
+   "events_url": "https://kamexport41.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Приморский край",
+   "name": "Центр поддержки экспорта — Приморский край",
+   "site": "https://xn--25-9kcqjffxnf3b.xn--p1ai/structure/cpe/",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "site_only"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Хабаровский край",
+   "name": "АНО «Центр поддержки экспорта Хабаровского края»",
+   "site": "https://khabexport.com/",
+   "address": "680000, г. Хабаровск, ул. Истомина, 51а, оф. 705",
+   "phone": [
+    "+7 (4212) 35-84-45"
+   ],
+   "email": [
+    "info@khabexport.com"
+   ],
+   "telegram": "https://t.me/exportkhv",
+   "vk": "https://vk.com/forexporters",
+   "events_url": "https://khabexport.com/activity/index.php?all=1",
+   "status": "ok"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Амурская область",
+   "name": "Центр поддержки экспорта Амурской области",
+   "site": "https://amurexport.ru/",
+   "address": "675002, г. Благовещенск, ул. Амурская, д. 38, 2 эт., каб. 212–213",
+   "phone": [
+    "+7 (4162) 772-609"
+   ],
+   "email": [
+    "info@amurexport.ru"
+   ],
+   "telegram": "https://t.me/amurexport",
+   "vk": "https://vk.com/amurexport28",
+   "events_url": "https://amurexport.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Магаданская область",
+   "name": "",
+   "site": "",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "unknown"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Сахалинская область",
+   "name": "Центр поддержки экспортной деятельности Сахалинской области",
+   "site": "https://export65.ru/",
+   "address": "г. Южно-Сахалинск, ул. Емельянова, 6",
+   "phone": [
+    "8 800 222-01-23"
+   ],
+   "email": [
+    "export65@sakhalin.gov.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/mybusiness65",
+   "events_url": "https://export65.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Еврейская автономная область",
+   "name": "Центр поддержки экспорта ЕАО",
+   "site": "https://jarexport.ru/",
+   "address": "г. Биробиджан, пр. 60-летия СССР, 12а, оф. 1",
+   "phone": [
+    "8 800 550-85-79"
+   ],
+   "email": [
+    "cpe@apieao.ru"
+   ],
+   "telegram": "",
+   "vk": "https://vk.com/moi_biz79",
+   "events_url": "https://jarexport.ru/events",
+   "status": "ok"
+  },
+  {
+   "fd": "ДФО",
+   "region": "Чукотский автономный округ",
+   "name": "Центр поддержки экспорта Чукотского автономного округа (Фонд развития Чукотки)",
+   "site": "https://chukotkaexport.ru/",
+   "address": "689000, г. Анадырь, ул. Тевлянто, д. 1",
+   "phone": [
+    "8 800 201-08-00"
+   ],
+   "email": [
+    "mail@fond87.ru"
+   ],
+   "telegram": "",
+   "vk": "",
+   "events_url": "https://chukotkaexport.ru/events/",
+   "status": "ok"
+  },
+  {
+   "fd": "Новые регионы",
+   "region": "Донецкая Народная Республика",
+   "name": "Центр поддержки экспорта ДНР (Центр «Мой бизнес»)",
+   "site": "https://mb180.ru/tsentry-podderzhki/tsentr-podderzhki-eksporta.php",
+   "address": "г. Донецк, пр. Дзержинского, 13, 1 этаж",
+   "phone": [
+    "+7 (949) 568-44-53"
+   ],
+   "email": [
+    "inform@mb180.ru"
+   ],
+   "telegram": "https://t.me/exportdnr",
+   "vk": "https://vk.com/mb180ru",
+   "events_url": "",
+   "status": "ok"
+  },
+  {
+   "fd": "Новые регионы",
+   "region": "Луганская Народная Республика",
+   "name": "",
+   "site": "",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "unknown"
+  },
+  {
+   "fd": "Новые регионы",
+   "region": "Запорожская область",
+   "name": "",
+   "site": "",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "unknown"
+  },
+  {
+   "fd": "Новые регионы",
+   "region": "Херсонская область",
+   "name": "",
+   "site": "",
+   "address": "",
+   "phone": [],
+   "email": [],
+   "telegram": "",
+   "vk": "",
+   "events_url": "",
+   "status": "unknown"
+  }
+ ]
+}
