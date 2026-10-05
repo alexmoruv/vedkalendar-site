@@ -492,7 +492,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -515,7 +515,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -538,7 +538,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная промышленная выставка в Беларуси для экспортно ориентированных компаний Удмуртии.",
     "src": "https://madeinudmurtia.ru/export/actions/center/mezhdunarodnaya-vystavka-innoprom-belarus/"
   },
@@ -562,7 +562,7 @@
     "support": "Субсидия на стенд, логистика",
     "seats": 20,
     "left": 9,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Промышленная выставка горного оборудования в Узбекистане.",
     "src": "https://www.exportcenter.ru/"
   },
@@ -683,6 +683,29 @@
     "src": "https://www.exportcenter.ru/"
   },
   {
+    "id": 42434,
+    "title": "Бизнес-миссия в Саудовскую Аравию (Эр-Рияд)",
+    "type": "mission",
+    "country": "Саудовская Аравия",
+    "cc": "SA",
+    "city": "Эр-Рияд",
+    "ds": "2026-10-20",
+    "dl": "20-24 октября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "АНО «Центр поддержки экспорта Республики Башкортостан»",
+    "org_s": "ЦПЭ Башкортостан",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия в Саудовскую Аравию для башкирских компаний, нацеленных на ближневосточные рынки.",
+    "src": "https://bashexport.com/events/"
+  },
+  {
     "id": 96596,
     "title": "Калининградских производителей стройматериалов и оборудования приглашают на выставку «TajBuild 2026» в Таджикистане",
     "type": "exhibit",
@@ -702,7 +725,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная строительная выставка в Таджикистане для производителей стройматериалов и оборудования.",
+    "desc": "Международная строительная выставка в Таджикистане для калининградских производителей стройматериалов и оборудования.",
     "src": "https://exportkld.ru/events/kaliningradskikh_proizvoditeley_stroymaterialov_i_oborudovaniya_priglashayut_na_vystavku_tajbuild_20/"
   },
   {
@@ -841,7 +864,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Крупнейшая международная выставка в Китае для экспортеров, ищущих выход на азиатские рынки.",
+    "desc": "Международная выставка в Китае для экспортеров, желающих представить продукцию и найти партнеров в Азии.",
     "src": "https://madeinudmurtia.ru/export/actions/center/canton-fair-2026/"
   },
   {
@@ -887,7 +910,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка товаров под собственной торговой маркой на Ближнем Востоке для экспортёров.",
+    "desc": "Международная выставка товаров под собственной торговой маркой на Ближнем Востоке для российских экспортёров.",
     "src": "https://exportkld.ru/events/priglashaem_na_vystavku_private_label_middle_east_plme_2026/"
   },
   {
@@ -980,7 +1003,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка продуктов питания в Казахстане для экспортёров пищевой продукции.",
+    "desc": "Международная выставка продуктов питания в Казахстане для российских экспортёров.",
     "src": "https://exportkld.ru/events/vystavka_foodexpo_qazaqstan_2026_v_kazakhstane/"
   },
   {
@@ -1049,7 +1072,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка продуктов питания в Казахстане для экспортеров АПК.",
+    "desc": "Международная выставка продуктов питания в Казахстане для экспортеров АПК и пищевой промышленности.",
     "src": "https://madeinudmurtia.ru/export/actions/center/foodexpo-qazaqstan-2026/"
   },
   {
@@ -1141,7 +1164,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия омских экспортёров в Минск для установления деловых контактов с белорусскими партнёрами.",
+    "desc": "Бизнес-миссия омских экспортно ориентированных компаний МСП в Минск для установления деловых контактов с белорусскими партнёрами.",
     "src": "https://ved55.ru/event/priglashaem-omskij-biznes-prinyat-uchastie-v-vizite-v-gorod-minsk-respubliki-belarus/"
   },
   {
@@ -1233,7 +1256,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калининградских компаний в Циндао для установления контактов с китайскими партнёрами.",
+    "desc": "Бизнес-миссия в Циндао для калининградских компаний, выходящих на китайский рынок.",
     "src": "https://exportkld.ru/events/biznes_missiya_v_kitayskuyu_narodnuyu_respubliku_g_tsindao/"
   },
   {
