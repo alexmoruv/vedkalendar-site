@@ -654,7 +654,7 @@
     "support": "Финансирование участия под брендом Made in Moscow",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://madeinmos.ru/events/detail/781/"
   },
@@ -677,7 +677,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная строительная выставка в Баку для экспортно-ориентированных компаний Чувашии.",
     "src": "https://ved21.ru/events/1210-bakubuild-2026.html"
   },
@@ -700,7 +700,7 @@
     "support": "Субсидия до 80%, логистика, байерская программа",
     "seats": 50,
     "left": 22,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Крупнейший торговый форум мира. Стенд «Сделано в России».",
     "src": "https://www.exportcenter.ru/"
   },
@@ -735,7 +735,7 @@
     "cc": "KZ",
     "city": "",
     "ds": "2026-10-21",
-    "dl": "21.10 выставка 24-ая Казахстанская Международная выставка «Энергетика, электроника и энергетическое машиностроение»",
+    "dl": "21.10 выставка 24-ая Казахстанская Международная выставка",
     "industry": [
       "Все отрасли"
     ],
@@ -747,7 +747,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Казахстанская международная выставка энергетики и электроники для компаний, выходящих на рынок Казахстана.",
+    "desc": "Казахстанская международная выставка энергетики и энергомашиностроения для экспортёров оборудования.",
     "src": "https://kalugaexport.ru/events/24-aya-kazahstanskaya-mezhdunarodnaya-vystavka-energetika-elektronika-i-energeticheskoe-mashinostroenie/"
   },
   {
@@ -920,7 +920,7 @@
     "cc": "UZ",
     "city": "",
     "ds": "2026-10-27",
-    "dl": "27.10 выставка 20-я юбилейная Международная выставка «Горное дело, металлургия и металлобработка» MiningMetals Uzbekistan 2026",
+    "dl": "27.10 выставка 20-я юбилейная Международная выставка",
     "industry": [
       "Все отрасли"
     ],
@@ -932,7 +932,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка горного дела и металлургии в Узбекистане для профильных экспортеров.",
+    "desc": "Международная выставка горного дела и металлургии в Узбекистане для экспортёров отрасли.",
     "src": "https://kalugaexport.ru/events/20-ya-yubilejnaya-mezhdunarodnaya-vystavka-gornoe-delo-metallurgiya-i-metalloobrabotka-miningmetals-uzbekistan-2026/"
   },
   {
@@ -943,7 +943,7 @@
     "cc": "CN",
     "city": "Циндао",
     "ds": "2026-10-28",
-    "dl": "Дата проведения выставки с 28 по 30 октября 2026 г.",
+    "dl": "с 28 по 30 октября 2026 г.",
     "industry": [
       "Все отрасли"
     ],
@@ -987,7 +987,7 @@
     "type": "exhibit",
     "country": "Китай",
     "cc": "CN",
-    "city": "Гуанчжоу",
+    "city": "",
     "ds": "2026-10-30",
     "dl": "с: 30.10.2026 по: 04.11.2026",
     "industry": [
@@ -1001,7 +1001,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка в Китае для экспортеров, желающих представить продукцию и найти партнеров в Азии.",
+    "desc": "Крупнейшая международная выставка-ярмарка в Китае для экспортеров, ищущих зарубежные рынки и партнеров.",
     "src": "https://madeinudmurtia.ru/export/actions/center/canton-fair-2026/"
   },
   {
@@ -1185,7 +1185,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка продуктов питания в Казахстане для калининградских производителей.",
+    "desc": "Международная выставка продуктов питания в Казахстане для калининградских экспортёров пищевой продукции.",
     "src": "https://exportkld.ru/events/vystavka_foodexpo_qazaqstan_2026_v_kazakhstane/"
   },
   {
@@ -1208,8 +1208,31 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка продуктов питания во Вьетнаме для калининградских экспортёров.",
+    "desc": "Международная выставка продуктов питания во Вьетнаме для калининградских экспортёров продовольствия.",
     "src": "https://exportkld.ru/events/vystavka_produktov_pitaniya_vietnam_foodexpo_2026/"
+  },
+  {
+    "id": 51636,
+    "title": "Ювелирная выставка China International Jewelry Expo (CIJE) 2026",
+    "type": "exhibit",
+    "country": "Китай",
+    "cc": "CN",
+    "city": "",
+    "ds": "2026-11-13",
+    "dl": "с 13.11.2026 по 16.11.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Центра «Мой бизнес» Калининградской области",
+    "org_s": "ЦПЭ Калининградская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Международная ювелирная выставка в Китае для калининградских производителей и экспортёров ювелирной продукции.",
+    "src": "https://exportkld.ru/events/priglashaem_na_yuvelirnuyu_vystavku_china_international_jewelry_expo_cije_2026/"
   },
   {
     "id": 39993,
@@ -1254,7 +1277,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка продуктов питания в Казахстане для экспортеров АПК и пищевой промышленности.",
+    "desc": "Международная выставка пищевой промышленности в Алматы для экспортеров продукции АПК.",
     "src": "https://madeinudmurtia.ru/export/actions/center/foodexpo-qazaqstan-2026/"
   },
   {
@@ -1304,6 +1327,29 @@
     "src": "https://madeinmos.ru/events/detail/785/"
   },
   {
+    "id": 13352,
+    "title": "Бизнес-миссия в г. Баку (Азербайджан)",
+    "type": "mission",
+    "country": "Азербайджан",
+    "cc": "AZ",
+    "city": "Баку",
+    "ds": "2026-11-16",
+    "dl": "16.11 бизнес-миссия Бизнес-миссия в г. Баку (Азербайджан)",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Калужской области",
+    "org_s": "ЦПЭ Калужская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия калужских экспортёров в Баку для установления контактов с азербайджанскими партнёрами.",
+    "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-baku-azerbajdzhan-2/"
+  },
+  {
     "id": 56947,
     "title": "Многопрофильные бизнес-миссии в Алжир и Азербайджан",
     "type": "mission",
@@ -1323,7 +1369,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Многопрофильные бизнес-миссии калининградских компаний в Алжир и Азербайджан.",
+    "desc": "Многопрофильные бизнес-миссии калининградских компаний в Алжир и Азербайджан для поиска зарубежных партнёров.",
     "src": "https://exportkld.ru/events/mnogoprofilnye_biznes_missii_v_alzhir_i_azerbaydzhan/"
   },
   {
@@ -1347,7 +1393,53 @@
     "left": null,
     "status": "upcoming",
     "desc": "",
-    "src": "https://moscow-export.com#form-land"
+    "src": "https://moscow-export.com/business_mission/"
+  },
+  {
+    "id": 90028,
+    "title": "Международная бизнес-миссия в Индию",
+    "type": "mission",
+    "country": "Индия",
+    "cc": "IN",
+    "city": "",
+    "ds": "2026-11-18",
+    "dl": "с: 18.11.2026 по: 20.11.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Удмуртской Республики",
+    "org_s": "ЦПЭ Удмуртская Республика",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия в Индию для установления деловых контактов и выхода на индийский рынок.",
+    "src": "https://madeinudmurtia.ru/export/actions/center/mezhdunarodnaya-biznes-missiya-v-indiyu/"
+  },
+  {
+    "id": 1114,
+    "title": "Реверсная бизнес-миссия с участием представителей компаний из Республики Казахстан",
+    "type": "mission",
+    "country": "Казахстан",
+    "cc": "KZ",
+    "city": "",
+    "ds": "2026-11-20",
+    "dl": "20.11 бизнес-миссия Реверсная бизнес-миссия",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Калужской области",
+    "org_s": "ЦПЭ Калужская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия с казахстанскими покупателями для калужских экспортёров.",
+    "src": "https://kalugaexport.ru/events/reversnaya-biznes-missiya-s-uchastiem-predstavitelej-kompanij-iz-respubliki-kazahstan/"
   },
   {
     "id": 72713,
@@ -1357,7 +1449,7 @@
     "cc": "BY",
     "city": "Минск",
     "ds": "2026-11-22",
-    "dl": "22.11.2026",
+    "dl": "22.11.2026 в",
     "industry": [
       "Все отрасли"
     ],
@@ -1419,27 +1511,50 @@
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-bishkek-kirgiziya-2/"
   },
   {
-    "id": 4359,
-    "title": "Реверсная бизнес-миссия из Казахстана",
-    "type": "mission",
+    "id": 81101,
+    "title": "Казахстан: выставка Non‑Food Asia Expo ждёт участников",
+    "type": "exhibit",
     "country": "Казахстан",
     "cc": "KZ",
-    "city": "",
+    "city": "Алматы",
     "ds": "2026-11-25",
-    "dl": "с 25.11.2026 по 27.11.2026",
+    "dl": "25.11.2026 в",
     "industry": [
       "Все отрасли"
     ],
-    "org": "Центр поддержки экспорта Центра «Мой бизнес» Калининградской области",
-    "org_s": "ЦПЭ Калининградская обл.",
+    "org": "Центр поддержки экспорта Омской области",
+    "org_s": "ЦПЭ Омская обл.",
     "org_level": "Региональный",
     "org_icon": "📦",
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Реверсная бизнес-миссия с казахстанскими покупателями для калининградских экспортёров.",
-    "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_kazakhstana/"
+    "desc": "Международная выставка Non-Food Asia Expo в Алматы для экспортёров непродовольственных товаров, желающих выйти на рынок Казахстана.",
+    "src": "https://ved55.ru/event/kazahstan-vystavka-non-food-asia-expo-zhdyot-uchastnikov/"
+  },
+  {
+    "id": 64579,
+    "title": "Реверсная бизнес-миссия покупателей из Беларуси и Казахстана",
+    "type": "mission",
+    "country": "Беларусь",
+    "cc": "BY",
+    "city": "",
+    "ds": "2026-11-25",
+    "dl": "с: 25.11.2026 по: 27.11.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Удмуртской Республики",
+    "org_s": "ЦПЭ Удмуртская Республика",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия с приездом покупателей из Беларуси и Казахстана для переговоров с экспортерами.",
+    "src": "https://madeinudmurtia.ru/export/actions/center/reversnaya-biznes-missiya-pokupateley-iz-belarusi-i-kazakhstana/"
   },
   {
     "id": 28769,
@@ -1511,6 +1626,98 @@
     "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_uzbekistana/"
   },
   {
+    "id": 12078,
+    "title": "Реверсная бизнес-миссия с участием представителей компаний из Египта",
+    "type": "mission",
+    "country": "Египет",
+    "cc": "EG",
+    "city": "",
+    "ds": "2026-12-04",
+    "dl": "04.12 бизнес-миссия Реверсная бизнес-миссия",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Калужской области",
+    "org_s": "ЦПЭ Калужская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия с египетскими покупателями для калужских экспортёров.",
+    "src": "https://kalugaexport.ru/events/reversnaya-biznes-missiya-s-uchastiem-predstavitelej-kompanij-iz-egipta/"
+  },
+  {
+    "id": 84023,
+    "title": "Бизнес-миссия в г. Каир (Египет)",
+    "type": "mission",
+    "country": "Египет",
+    "cc": "EG",
+    "city": "Каир",
+    "ds": "2026-12-05",
+    "dl": "05.12 бизнес-миссия Бизнес-миссия в г. Каир (Египет)",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Калужской области",
+    "org_s": "ЦПЭ Калужская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия калужских экспортёров в Каир для поиска египетских партнёров.",
+    "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-kair-egipet/"
+  },
+  {
+    "id": 52908,
+    "title": "Бизнес-миссия в г. Шанхай (Китай)",
+    "type": "mission",
+    "country": "Китай",
+    "cc": "CN",
+    "city": "Шанхай",
+    "ds": "2026-12-07",
+    "dl": "07.12 бизнес-миссия Бизнес-миссия в г. Шанхай (Китай)",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Калужской области",
+    "org_s": "ЦПЭ Калужская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия калужских экспортёров в Шанхай для выхода на китайский рынок.",
+    "src": "https://kalugaexport.ru/events/biznes-missiya-v-kitaj-2/"
+  },
+  {
+    "id": 93207,
+    "title": "Международная бизнес-миссия в Саудовскую Аравию и Бахрейн",
+    "type": "mission",
+    "country": "Саудовская Аравия",
+    "cc": "SA",
+    "city": "",
+    "ds": "2026-12-07",
+    "dl": "с: 07.12.2026 по: 09.12.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Удмуртской Республики",
+    "org_s": "ЦПЭ Удмуртская Республика",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия в Саудовскую Аравию и Бахрейн для выхода на рынки Ближнего Востока.",
+    "src": "https://madeinudmurtia.ru/export/actions/center/mezhdunarodnaya-biznes-missiya-v-saudovskuyu-araviyu-i-bakhreyn/"
+  },
+  {
     "id": 6314,
     "title": "Бизнес-миссия в г. Улан-Батор (Монголия)",
     "type": "mission",
@@ -1532,6 +1739,29 @@
     "status": "upcoming",
     "desc": "Бизнес-миссия в Улан-Батор для установления контактов с монгольскими партнерами.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-ulan-bator-mongoliya/"
+  },
+  {
+    "id": 37699,
+    "title": "Бизнес-миссия в Киргизию 2026",
+    "type": "mission",
+    "country": "Киргизия",
+    "cc": "KG",
+    "city": "",
+    "ds": "2026-12-15",
+    "dl": "15.12 – 17.12.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Московский экспортный центр (МЭЦ)",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Финансирование встреч, переводчики, трансфер",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "",
+    "src": "https://moscow-export.com#form-land"
   },
   {
     "id": 86840,
