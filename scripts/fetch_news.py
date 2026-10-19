@@ -23,6 +23,8 @@ CHANNEL = os.environ.get("TG_CHANNEL", "businessVSworld")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEWS_JSON = os.path.join(ROOT, "news.json")
 NEWS_HTML = os.path.join(ROOT, "news.html")
+INDEX_HTML = os.path.join(ROOT, "index.html")
+HOME_COUNT = 3
 SITEMAP = os.path.join(ROOT, "sitemap.xml")
 PAGES = int(os.environ.get("TG_PAGES", "4"))      # ~20 постов на страницу
 MAX_KEEP = 300
@@ -236,6 +238,29 @@ def prerender(posts):
         open(NEWS_HTML, "w", encoding="utf-8").write(new)
 
 
+def home_card(p):
+    lines = [l.strip() for l in (p.get("text") or "").split("\n") if l.strip()]
+    rest = " ".join(lines[1:]) if len(lines) > 1 else ""
+    if len(rest) > 260:
+        rest = rest[:260].rsplit(" ", 1)[0] + "…"
+    excerpt = f'<div class="hn-excerpt">{html.escape(rest)}</div>' if rest else ""
+    return (f'<a class="hn-card" href="/news.html#post-{p["id"]}">'
+            f'<time class="hn-date" datetime="{p["date"]}">{ru_date(p["date"])}</time>'
+            f'<div class="hn-title">{html.escape(p["title"])}</div>{excerpt}'
+            '<span class="hn-more">Читать →</span></a>')
+
+
+def prerender_home(posts):
+    if not os.path.exists(INDEX_HTML):
+        return
+    src = open(INDEX_HTML, encoding="utf-8").read()
+    block = "\n".join(home_card(p) for p in posts[:HOME_COUNT])
+    new = re.sub(r"(<!--HOMENEWS:START-->).*?(<!--HOMENEWS:END-->)",
+                 lambda m: m.group(1) + "\n" + block + "\n" + m.group(2), src, flags=re.S)
+    if new != src:
+        open(INDEX_HTML, "w", encoding="utf-8").write(new)
+
+
 def touch_sitemap():
     if not os.path.exists(SITEMAP):
         return
@@ -254,6 +279,12 @@ def main():
             old = json.load(open(NEWS_JSON, encoding="utf-8")).get("posts", [])
         except Exception:  # noqa: BLE001
             old = []
+    if "--render-only" in sys.argv:
+        posts = sorted(old, key=lambda p: p["id"], reverse=True)
+        prerender(posts)
+        prerender_home(posts)
+        print(f"перерисовано из news.json: {len(posts)} постов")
+        return 0
     fresh = scrape()
     if not fresh:
         print("Telegram вернул 0 постов — ничего не меняю")
@@ -273,6 +304,7 @@ def main():
         with open(NEWS_JSON, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=1)
         prerender(posts)
+        prerender_home(posts)
         if new_ids:
             touch_sitemap()
     print(f"собрано {len(fresh)}, новых {len(new_ids)}, всего {len(posts)}")

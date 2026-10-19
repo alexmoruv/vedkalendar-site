@@ -811,6 +811,27 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
 }
 
 
+/* ── НОВОСТИ НА ГЛАВНОЙ ─────────────────────────────────────────────────── */
+.home-news{background:var(--card);padding:64px 48px;border-top:1px solid var(--border)}
+.home-news-inner{max-width:1100px;margin:0 auto}
+.home-news-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.home-news-eyebrow{display:inline-block;font-size:10px;color:var(--azure);text-transform:uppercase;letter-spacing:1.5px;font-weight:800;margin-bottom:10px;background:var(--azure-dim);padding:4px 12px;border-radius:999px}
+.home-news-title{font-family:'Playfair Display',serif;font-size:30px;letter-spacing:-.4px;line-height:1.15}
+.home-news-all{font-size:14px;font-weight:700;color:var(--text);text-decoration:none;border:1.5px solid var(--border);padding:10px 18px;border-radius:999px;transition:all .25s var(--ease-spring);white-space:nowrap}
+.home-news-all:hover{border-color:var(--azure);color:#0089A8}
+.home-news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hn-card{display:flex;flex-direction:column;gap:10px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:22px 22px 18px;text-decoration:none;color:inherit;transition:all .3s var(--ease-spring)}
+.hn-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(0,196,212,.25);background:var(--card)}
+.hn-date{font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:#C98200}
+.hn-title{font-size:16px;font-weight:700;line-height:1.4;color:var(--text);letter-spacing:-.15px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hn-excerpt{font-size:13px;line-height:1.7;color:var(--muted);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.hn-more{font-size:12px;font-weight:700;color:#0089A8;margin-top:auto}
+@media(max-width:900px){
+  .home-news{padding:44px 20px}
+  .home-news-grid{grid-template-columns:1fr;gap:12px}
+  .home-news-title{font-size:24px}
+}
+
 /* ── КЕЙСЫ ──────────────────────────────────────────────────────────────────── */
 .cases{background:var(--bg);padding:72px 48px;border-top:1px solid var(--border)}
 .cases-inner{max-width:1100px;margin:0 auto}
@@ -863,7 +884,7 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
 }
 .case-metric-num{
   font-size:22px;font-weight:800;color:var(--green);
-  font-variant-numeric:tabular-nums;letter-spacing:-1px;
+  font-variant-numeric:tabular-nums;letter-spacing:-1px;white-space:nowrap;
 }
 .case-metric-label{font-size:12px;color:var(--green);font-weight:600;line-height:1.3}
 .case-org{
@@ -3472,7 +3493,24 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
   </div>
 </main>
 
-
+<section class="home-news" id="news">
+  <div class="home-news-inner">
+    <div class="home-news-head">
+      <div>
+        <div class="home-news-eyebrow">Новости ВЭД</div>
+        <h2 class="home-news-title">Что происходит в экспорте</h2>
+      </div>
+      <a class="home-news-all" href="/news.html">Все новости →</a>
+    </div>
+    <div class="home-news-grid">
+<!--HOMENEWS:START-->
+<a class="hn-card" href="/news.html#post-902"><time class="hn-date" datetime="2026-10-19T17:03:51+00:00">19 октября 2026</time><div class="hn-title">14 окт Dubai Jewellery Group подписала меморандум с Gold Association of Guangdong Province.</div><div class="hn-excerpt">Dubai Jewellery Group объединяет около 600 компаний, председатель Tawhid Abdullah. Цели: выход на рынки материкового Китая, Гонконга и Макао и использование производственной базы Гуандуна.</div><span class="hn-more">Читать →</span></a>
+<a class="hn-card" href="/news.html#post-901"><time class="hn-date" datetime="2026-10-19T15:20:24+00:00">19 октября 2026</time><div class="hn-title">🧭 Дилер в Коста-Рике подписался, не приехав на завод</div><div class="hn-excerpt">«СиСорт» — барнаульский производитель фотосепараторов SmartSort и транспортного оборудования: машины оптической сортировки, которые отбраковывают зерно, кофе и крупу по цвету и форме. В сентябре завод отправил три сепаратора для кофе в Саудовскую Арабию, а…</div><span class="hn-more">Читать →</span></a>
+<a class="hn-card" href="/news.html#post-900"><time class="hn-date" datetime="2026-10-19T14:10:21+00:00">19 октября 2026</time><div class="hn-title">🌍 1,7 млрд руб. на то, чтобы искать покупателей за рубеж за государственный счёт</div><div class="hn-excerpt">Правительство 17 октября опубликовало распоряжение Мишустина: больше 1,7 млрд руб. на региональные программы развития экспорта. Решение приняли на заседании 15 октября. Деньги идут через региональные центры поддержки экспорта — с апреля этого года их…</div><span class="hn-more">Читать →</span></a>
+<!--HOMENEWS:END-->
+    </div>
+  </div>
+</section>
 
 <section class="cases" id="cases">
   <div class="cases-inner">
@@ -3482,6 +3520,20 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
       <p class="cases-sub">Реальные результаты участников программ РЭЦ, МЭЦ и региональных ЦПЭ</p>
     </div>
     <div class="cases-grid">
+
+      <div class="case-card">
+        <div class="case-inner">
+          <span class="case-flag">🇨🇷</span>
+          <div class="case-company">Машиностроение · «СиСорт», Барнаул</div>
+          <div class="case-title">Дилер в Коста-Рике подписался, не приехав на завод</div>
+          <div class="case-result">Барнаульский производитель фотосепараторов SmartSort впервые отгрузил оборудование через Атлантику: шесть машин для сортировки кофе ушли нескольким заказчикам в Коста-Рике и Панаме. Дилером стал местный предприниматель с опытом в кофейной отрасли, раньше работавший с немецким производителем сепараторов. Переговоры с июня шли в мессенджерах и по видеосвязи, а вместо визита на производство завод присылал видео сборки и сортировки. Пусконаладка и обучение пройдут на месте в ноябре.</div>
+          <div class="case-metric">
+            <span class="case-metric-num">36 стран</span>
+            <span class="case-metric-label">импортёров — против 33 в начале 2026</span>
+          </div>
+          <div class="case-org"><span class="case-org-icon">☕</span>Дилерская сеть · 2026 · <a href="/news.html#post-901" style="color:inherit">подробнее</a></div>
+        </div>
+      </div>
 
       <div class="case-card">
         <div class="case-inner">
@@ -3593,7 +3645,7 @@ footer{background:linear-gradient(140deg,#060C1C,var(--navy));padding:52px 48px}
     <div class="footer-grid">
       <div class="footer-logo-wrap"><div class="footer-logo">ВЭДкалендарь</div><p class="footer-desc">Единый агрегатор международных мероприятий с господдержкой — и не только для российских экспортёров.</p></div>
       <div class="footer-col"><h5>Мероприятия</h5><a href="#">Выставки за рубежом</a><a href="#">Бизнес-миссии</a><a href="#">Реверсные миссии</a></div>
-      <div class="footer-col"><h5>О проекте</h5><a href="#events">Мероприятия</a><a href="#cases">Кейсы</a><a href="mailto:export@businessei.ru">Контакты</a></div>
+      <div class="footer-col"><h5>О проекте</h5><a href="#events">Мероприятия</a><a href="#cases">Кейсы</a><a href="/news.html">Новости</a><a href="mailto:export@businessei.ru">Контакты</a></div>
       <div class="footer-col"><h5>Реквизиты</h5>
         <p style="font-size:12px;color:rgba(255,255,255,.4);line-height:1.7;margin:0">
           Оператор сайта:<br>Морозов Александр Игоревич<br>
