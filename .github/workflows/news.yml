@@ -1,0 +1,42 @@
+name: Новости из Telegram
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"   # каждые 2 часа
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Собрать посты @businessVSworld
+        run: python scripts/fetch_news.py
+
+      - name: Закоммитить, если есть изменения
+        run: |
+          git config user.name "vedexpo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add news.json news.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Новых постов нет"; exit 0
+          fi
+          git commit -m "news: обновлена лента из Telegram"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 10
+          done
+          exit 1
