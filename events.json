@@ -816,7 +816,7 @@
     "support": "Финансирование встреч, переводчики",
     "seats": 12,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Миссия для медицинских компаний. КСА реализует Vision 2030.",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -839,7 +839,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Бизнес-миссия калужских экспортеров в Баку для установления деловых контактов с азербайджанскими партнерами.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-baku-azerbajdzhan-2/"
   },
@@ -862,7 +862,7 @@
     "support": "Финансирование встреч, переводчики",
     "seats": 15,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Ключевой партнёр в Закавказье.",
     "src": "https://madeinmos.ru/events/detail/782/"
   },
@@ -885,7 +885,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -908,7 +908,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная выставка энергетики и экологии для экспортеров энергетического оборудования.",
     "src": "https://kalugaexport.ru/events/30-ya-mezhdunarodnaya-speczializirovannaya-vystavka-energetika-ekologiya-energosnabzhenie/"
   },
@@ -931,7 +931,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная выставка горного дела, металлургии и металлообработки в Узбекистане для экспортёров соответствующей продукции.",
     "src": "https://kalugaexport.ru/events/20-ya-yubilejnaya-mezhdunarodnaya-vystavka-gornoe-delo-metallurgiya-i-metallobrabotka-miningmetals-uzbekistan-2026/"
   },
@@ -954,7 +954,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная выставка рыбной отрасли в Циндао с коллективным стендом Камчатского края для рыбопромышленников.",
     "src": "https://kamexport41.ru/events/"
   },
@@ -977,7 +977,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная медицинская выставка для производителей и поставщиков медицинского оборудования и услуг.",
     "src": "https://kalugaexport.ru/events/united-medical-expo-2026/"
   },
@@ -1000,7 +1000,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Крупнейшая международная выставка-ярмарка в Китае для экспортеров, ищущих выход на азиатские и мировые рынки.",
     "src": "https://madeinudmurtia.ru/export/actions/center/canton-fair-2026/"
   },
@@ -1047,7 +1047,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка товаров под собственной торговой маркой на Ближнем Востоке для калининградских компаний.",
+    "desc": "Международная выставка товаров под собственной торговой маркой на Ближнем Востоке для экспортёров.",
     "src": "https://exportkld.ru/events/priglashaem_na_vystavku_private_label_middle_east_plme_2026/"
   },
   {
@@ -1208,12 +1208,12 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка продуктов питания во Вьетнаме для калининградских экспортёров продовольствия.",
+    "desc": "Международная выставка продуктов питания во Вьетнаме для российских экспортёров продовольствия.",
     "src": "https://exportkld.ru/events/vystavka_produktov_pitaniya_vietnam_foodexpo_2026/"
   },
   {
-    "id": 51636,
-    "title": "Ювелирная выставка China International Jewelry Expo (CIJE) 2026",
+    "id": 10712,
+    "title": "Приглашаем на ювелирную выставку China International Jewelry Expo (CIJE) 2026",
     "type": "exhibit",
     "country": "Китай",
     "cc": "CN",
@@ -1231,7 +1231,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная ювелирная выставка в Китае для калининградских производителей и экспортёров ювелирной продукции.",
+    "desc": "Международная ювелирная выставка в Китае для производителей и экспортёров ювелирной продукции.",
     "src": "https://exportkld.ru/events/priglashaem_na_yuvelirnuyu_vystavku_china_international_jewelry_expo_cije_2026/"
   },
   {
@@ -1346,7 +1346,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортёров в Баку для установления деловых контактов с азербайджанскими партнёрами.",
+    "desc": "Бизнес-миссия калужских экспортеров в Баку для установления контактов с азербайджанскими партнерами.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-baku-azerbajdzhan-2/"
   },
   {
@@ -1369,7 +1369,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Многопрофильные бизнес-миссии калининградских компаний в Алжир и Азербайджан для выхода на зарубежные рынки.",
+    "desc": "Многопрофильные бизнес-миссии российских экспортёров в Алжир и Азербайджан.",
     "src": "https://exportkld.ru/events/mnogoprofilnye_biznes_missii_v_alzhir_i_azerbaydzhan/"
   },
   {
@@ -1645,8 +1645,31 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калининградских компаний в Циндао для установления контактов с китайскими партнёрами.",
+    "desc": "Бизнес-миссия калининградских экспортёров в Циндао для поиска партнёров на китайском рынке.",
     "src": "https://exportkld.ru/events/biznes_missiya_v_kitayskuyu_narodnuyu_respubliku_g_tsindao/"
+  },
+  {
+    "id": 43185,
+    "title": "Реверсная бизнес-миссия из Узбекистана",
+    "type": "mission",
+    "country": "Узбекистан",
+    "cc": "UZ",
+    "city": "",
+    "ds": "2026-12-01",
+    "dl": "с 01.12.2026 по 02.12.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Центра «Мой бизнес» Калининградской области",
+    "org_s": "ЦПЭ Калининградская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия узбекских покупателей в регион для установления экспортных контактов.",
+    "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_uzbekistana/"
   },
   {
     "id": 71464,
@@ -1670,6 +1693,29 @@
     "status": "upcoming",
     "desc": "Реверсная бизнес-миссия с участием узбекских покупателей для калининградских экспортёров.",
     "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_uzbekistana/"
+  },
+  {
+    "id": 89578,
+    "title": "Реверсная бизнес-миссия из Казахстана",
+    "type": "mission",
+    "country": "Казахстан",
+    "cc": "KZ",
+    "city": "",
+    "ds": "2026-12-03",
+    "dl": "с 03.12.2026 по 04.12.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Центра «Мой бизнес» Калининградской области",
+    "org_s": "ЦПЭ Калининградская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия казахстанских покупателей в Калининградскую область для переговоров с экспортёрами.",
+    "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_kazakhstana/"
   },
   {
     "id": 12078,
@@ -1714,7 +1760,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортёров в Каир для установления деловых контактов с египетскими партнёрами.",
+    "desc": "Бизнес-миссия калужских экспортеров в Каир для установления контактов с египетскими партнерами.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-kair-egipet/"
   },
   {
@@ -1737,7 +1783,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортёров в Шанхай для установления деловых контактов с китайскими партнёрами.",
+    "desc": "Бизнес-миссия калужских экспортеров в Шанхай для установления контактов с китайскими партнерами.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-kitaj-2/"
   },
   {
@@ -1760,7 +1806,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия в Саудовскую Аравию и Бахрейн для выхода на рынки Ближнего Востока.",
+    "desc": "Бизнес-миссия для удмуртских экспортеров в Саудовскую Аравию и Бахрейн с деловыми встречами и поиском партнеров.",
     "src": "https://madeinudmurtia.ru/export/actions/center/mezhdunarodnaya-biznes-missiya-v-saudovskuyu-araviyu-i-bakhreyn/"
   },
   {
@@ -1879,6 +1925,29 @@
     "src": "https://ved21.ru/events/1113-power-uzbekistan-2026.html"
   },
   {
+    "id": 1783,
+    "title": "Выставка EXPO EURASIA VIETNAM 2027",
+    "type": "exhibit",
+    "country": "Вьетнам",
+    "cc": "VN",
+    "city": "",
+    "ds": "2027-06-23",
+    "dl": "с 23.06.2027 по 27.06.2027",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Центра «Мой бизнес» Калининградской области",
+    "org_s": "ЦПЭ Калининградская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Многоотраслевая международная выставка во Вьетнаме для российских компаний-экспортёров.",
+    "src": "https://exportkld.ru/events/vystavka_expo_eurasia_vietnam_2027/"
+  },
+  {
     "id": 8836,
     "title": "Международная выставка «EXPO EURASIA AGRI VIETNAM 2027»",
     "type": "exhibit",
@@ -1898,7 +1967,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная агропромышленная выставка во Вьетнаме для калининградских экспортёров сельхозпродукции и оборудования.",
+    "desc": "Международная агропромышленная выставка во Вьетнаме для экспортёров сельхозпродукции и оборудования.",
     "src": "https://exportkld.ru/events/mezhdunarodnaya_vystavka_expo_eurasia_agri_vietnam_2027/"
   },
   {
