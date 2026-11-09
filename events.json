@@ -1023,7 +1023,7 @@
     "support": "Финансирование встреч, переводчики",
     "seats": 15,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Главный торговый хаб Ближнего Востока.",
     "src": "https://madeinmos.ru/events/detail/783/"
   },
@@ -1046,7 +1046,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная выставка товаров под собственной торговой маркой на Ближнем Востоке для экспортёров.",
     "src": "https://exportkld.ru/events/priglashaem_na_vystavku_private_label_middle_east_plme_2026/"
   },
@@ -1069,7 +1069,7 @@
     "support": "Финансирование встреч, переводчики, трансфер",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://moscow-export.com/business_mission/"
   },
@@ -1092,7 +1092,7 @@
     "support": "Субсидия до 80%, логистика, байерская программа",
     "seats": 40,
     "left": 18,
-    "status": "upcoming",
+    "status": "past",
     "desc": "China International Import Expo. Национальный стенд РЭЦ в Шанхае.",
     "src": "https://www.exportcenter.ru/"
   },
@@ -1350,6 +1350,29 @@
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-baku-azerbajdzhan-2/"
   },
   {
+    "id": 76970,
+    "title": "Форум «Сделано в России»",
+    "type": "forum",
+    "country": "Россия",
+    "cc": "🌍",
+    "city": "",
+    "ds": "2026-11-16",
+    "dl": "16 ноября",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "РЭЦ",
+    "org_s": "РЭЦ",
+    "org_level": "Федеральный",
+    "org_icon": "🏛",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "🤖 Что зарубежный ИИ знает о «Сделано в России»? Мы проанализировали 27 000 ответов 7 ИИ-сервисов в США, ОАЭ, Индии, Казахстане, Узбекистане и Китае. Нейросетям задавали вопрос, с какими товарами у них ассоциируется знак «Сделано в России». Что получилось: 🔵 водка в 70% ответов; 🔵 шоколад в 67%; 🔵 ко",
+    "src": "https://t.me/rusexportnews/16209"
+  },
+  {
     "id": 56947,
     "title": "Многопрофильные бизнес-миссии в Алжир и Азербайджан",
     "type": "mission",
@@ -1369,7 +1392,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Многопрофильные бизнес-миссии российских экспортёров в Алжир и Азербайджан.",
+    "desc": "Многопрофильные бизнес-миссии в Алжир и Азербайджан для экспортно ориентированных компаний региона.",
     "src": "https://exportkld.ru/events/mnogoprofilnye_biznes_missii_v_alzhir_i_azerbaydzhan/"
   },
   {
@@ -1417,6 +1440,29 @@
     "status": "upcoming",
     "desc": "Бизнес-миссия в Индию для установления деловых контактов и выхода на индийский рынок.",
     "src": "https://madeinudmurtia.ru/export/actions/center/mezhdunarodnaya-biznes-missiya-v-indiyu/"
+  },
+  {
+    "id": 57295,
+    "title": "Деловая миссия российских экспортёров АПК в Узбекистане",
+    "type": "mission",
+    "country": "Узбекистан",
+    "cc": "UZ",
+    "city": "Ташкент",
+    "ds": "2026-11-18",
+    "dl": "С 18 по 20 ноября 2026 года",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "👍 👍 👍 👍 👍 👍 «Агроэкспорт» проведет деловую миссию в Узбекистане в ноябре С 18 по 20 ноября 2026 года в Ташкенте Федеральный центр «Агроэкспорт» совместно с Минсельхозом России проводит деловую миссию российских компаний-экспортеров продукции АПК в Узбекистане. В состав российской делегации войдут ру",
+    "src": "https://t.me/moscowexport/4628"
   },
   {
     "id": 1114,
@@ -1534,6 +1580,29 @@
     "src": "https://t.me/rusexportnews/16054"
   },
   {
+    "id": 26616,
+    "title": "Бизнес-миссия в Республику Узбекистан",
+    "type": "mission",
+    "country": "Узбекистан",
+    "cc": "UZ",
+    "city": "",
+    "ds": "2026-11-23",
+    "dl": "с 23.11.2026 по 25.11.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Центра «Мой бизнес» Калининградской области",
+    "org_s": "ЦПЭ Калининградская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия в Узбекистан для поиска партнёров и продвижения продукции на местном рынке.",
+    "src": "https://exportkld.ru/events/biznes_missiya_v_respubliku_uzbekistan/"
+  },
+  {
     "id": 81101,
     "title": "Казахстан: выставка Non‑Food Asia Expo ждёт участников",
     "type": "exhibit",
@@ -1622,7 +1691,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Многоотраслевая бизнес-миссия хабаровских экспортеров в Харбин и Чанчунь для установления контактов с китайскими партнерами.",
+    "desc": "Многоотраслевая бизнес-миссия хабаровских экспортёров в Харбин и Чанчунь для установления контактов с китайскими партнёрами.",
     "src": "https://khabexport.com/activity/mnogootraslevaya-biznes-missiya-v-kitay-kharbin-i-chanchun/"
   },
   {
@@ -1645,7 +1714,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калининградских экспортёров в Циндао для поиска партнёров на китайском рынке.",
+    "desc": "Бизнес-миссия в Циндао для калининградских компаний, выходящих на китайский рынок.",
     "src": "https://exportkld.ru/events/biznes_missiya_v_kitayskuyu_narodnuyu_respubliku_g_tsindao/"
   },
   {
@@ -1668,7 +1737,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Реверсная бизнес-миссия узбекских покупателей в регион для установления экспортных контактов.",
+    "desc": "Реверсная бизнес-миссия с узбекскими покупателями для установления экспортных контактов.",
     "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_uzbekistana/"
   },
   {
@@ -1714,7 +1783,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Реверсная бизнес-миссия казахстанских покупателей в Калининградскую область для переговоров с экспортёрами.",
+    "desc": "Реверсная бизнес-миссия с участием казахстанских покупателей для калининградских экспортёров.",
     "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_kazakhstana/"
   },
   {
@@ -1760,7 +1829,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортеров в Каир для установления контактов с египетскими партнерами.",
+    "desc": "Бизнес-миссия калужских экспортеров в Каир для поиска партнеров в Египте.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-kair-egipet/"
   },
   {
@@ -1783,7 +1852,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортеров в Шанхай для установления контактов с китайскими партнерами.",
+    "desc": "Бизнес-миссия калужских экспортеров в Шанхай для выхода на китайский рынок.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-kitaj-2/"
   },
   {
@@ -1879,6 +1948,29 @@
     "src": "https://moscow-export.com#form-land"
   },
   {
+    "id": 91774,
+    "title": "Бизнес-миссия в г. Баку (Азербайджан)",
+    "type": "mission",
+    "country": "Азербайджан",
+    "cc": "AZ",
+    "city": "Баку",
+    "ds": "2027-03-15",
+    "dl": "15.03 бизнес-миссия Бизнес-миссия в г. Баку (Азербайджан)",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Калужской области",
+    "org_s": "ЦПЭ Калужская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия калужских экспортеров в Баку для поиска партнеров в Азербайджане.",
+    "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-baku-azerbajdzhan-2/"
+  },
+  {
     "id": 86840,
     "title": "Строительная выставка \"KyrgyzBuild-2026\"",
     "type": "exhibit",
@@ -1967,7 +2059,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная агропромышленная выставка во Вьетнаме для экспортёров сельхозпродукции и оборудования.",
+    "desc": "Международная сельскохозяйственная выставка во Вьетнаме для экспортёров агропродукции и оборудования.",
     "src": "https://exportkld.ru/events/mezhdunarodnaya_vystavka_expo_eurasia_agri_vietnam_2027/"
   },
   {
