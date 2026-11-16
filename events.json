@@ -1115,7 +1115,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Бизнес-миссия калужских компаний в Шанхай для развития экспорта в Китай.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-kitaj-2/"
   },
@@ -1138,7 +1138,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Бизнес-миссия в Каир для установления контактов с египетскими покупателями.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-kair-egipet/"
   },
@@ -1161,7 +1161,7 @@
     "support": "Финансирование участия под брендом Made in Moscow",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "",
     "src": "https://madeinmos.ru/events/detail/784/"
   },
@@ -1184,7 +1184,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная выставка продуктов питания в Алматы для экспортеров пищевой продукции, выходящих на рынок Центральной Азии.",
     "src": "https://madeinudmurtia.ru/export/actions/center/foodexpo-qazaqstan-2026/"
   },
@@ -1207,7 +1207,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная выставка продуктов питания во Вьетнаме для российских экспортёров продовольствия.",
     "src": "https://exportkld.ru/events/vystavka_produktov_pitaniya_vietnam_foodexpo_2026/"
   },
@@ -1230,7 +1230,7 @@
     "support": "Уточняйте в центре поддержки экспорта региона",
     "seats": null,
     "left": null,
-    "status": "upcoming",
+    "status": "past",
     "desc": "Международная ювелирная выставка в Китае для производителей и экспортёров ювелирной продукции.",
     "src": "https://exportkld.ru/events/priglashaem_na_yuvelirnuyu_vystavku_china_international_jewelry_expo_cije_2026/"
   },
@@ -1392,7 +1392,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Многопрофильные бизнес-миссии в Алжир и Азербайджан для экспортно ориентированных компаний региона.",
+    "desc": "Многопрофильные бизнес-миссии в Алжир и Азербайджан для калининградских экспортёров.",
     "src": "https://exportkld.ru/events/mnogoprofilnye_biznes_missii_v_alzhir_i_azerbaydzhan/"
   },
   {
@@ -1419,6 +1419,29 @@
     "src": "https://moscow-export.com/business_mission/"
   },
   {
+    "id": 25035,
+    "title": "Принимаем заявки на участие в международной выставке PRODEXPO-2026 в Минске!",
+    "type": "exhibit",
+    "country": "Беларусь",
+    "cc": "BY",
+    "city": "Минск",
+    "ds": "2026-11-17",
+    "dl": "17.11.2026 в",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Омской области",
+    "org_s": "ЦПЭ Омская обл.",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Международная выставка PRODEXPO-2026 в Минске для омских экспортёров пищевой продукции.",
+    "src": "https://ved55.ru/event/prinimaem-zayavki-na-uchastie-v-mezhdunarodnoj-vystavke-prodexpo-2026-v-minske/"
+  },
+  {
     "id": 90028,
     "title": "Международная бизнес-миссия в Индию",
     "type": "mission",
@@ -1438,7 +1461,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия в Индию для установления деловых контактов и выхода на индийский рынок.",
+    "desc": "Бизнес-миссия для удмуртских экспортеров в Индию с деловыми встречами и поиском партнеров.",
     "src": "https://madeinudmurtia.ru/export/actions/center/mezhdunarodnaya-biznes-missiya-v-indiyu/"
   },
   {
@@ -1507,7 +1530,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия омских предпринимателей в Минск для установления партнёрских связей и выхода на рынок Беларуси.",
+    "desc": "Бизнес-миссия омских предпринимателей в Минск для установления партнёрских связей.",
     "src": "https://ved55.ru/event/priglashaem-omskij-biznes-prinyat-uchastie-v-vizite-v-gorod-minsk-respubliki-belarus/"
   },
   {
@@ -1599,8 +1622,31 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия в Узбекистан для поиска партнёров и продвижения продукции на местном рынке.",
+    "desc": "Бизнес-миссия в Узбекистан для калининградских экспортёров, ищущих партнёров на местном рынке.",
     "src": "https://exportkld.ru/events/biznes_missiya_v_respubliku_uzbekistan/"
+  },
+  {
+    "id": 44605,
+    "title": "Реверсная бизнес-миссия из Республики Таджикистан",
+    "type": "mission",
+    "country": "Таджикистан",
+    "cc": "TJ",
+    "city": "Майкоп",
+    "ds": "2026-11-24",
+    "dl": "24.11.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Республики Адыгея",
+    "org_s": "ЦПЭ Адыгея",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия с покупателями из Таджикистана для экспортёров Адыгеи.",
+    "src": "https://export01.ru/events/reversnaya-biznes-missiya-iz-respubliki-tadzhikistan-2026"
   },
   {
     "id": 81101,
@@ -1622,7 +1668,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная выставка Non-Food Asia Expo в Алматы для экспортёров непродовольственных товаров, желающих выйти на рынок Казахстана.",
+    "desc": "Международная выставка Non-Food Asia Expo в Алматы для экспортёров непродовольственных товаров.",
     "src": "https://ved55.ru/event/kazahstan-vystavka-non-food-asia-expo-zhdyot-uchastnikov/"
   },
   {
@@ -1631,7 +1677,7 @@
     "type": "mission",
     "country": "Беларусь",
     "cc": "BY",
-    "city": "",
+    "city": "Ижевск",
     "ds": "2026-11-25",
     "dl": "с: 25.11.2026 по: 27.11.2026",
     "industry": [
@@ -1645,7 +1691,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Реверсная бизнес-миссия с приездом покупателей из Беларуси и Казахстана для переговоров с региональными экспортерами.",
+    "desc": "Реверсная бизнес-миссия: покупатели из Беларуси и Казахстана приезжают в Ижевск для переговоров с экспортерами.",
     "src": "https://madeinudmurtia.ru/export/actions/center/reversnaya-biznes-missiya-pokupateley-iz-belarusi-i-kazakhstana/"
   },
   {
@@ -1714,7 +1760,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия в Циндао для калининградских компаний, выходящих на китайский рынок.",
+    "desc": "Бизнес-миссия в Циндао для калининградских компаний, развивающих экспорт в Китай.",
     "src": "https://exportkld.ru/events/biznes_missiya_v_kitayskuyu_narodnuyu_respubliku_g_tsindao/"
   },
   {
@@ -1737,7 +1783,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Реверсная бизнес-миссия с узбекскими покупателями для установления экспортных контактов.",
+    "desc": "Реверсная бизнес-миссия с узбекскими покупателями для калининградских экспортёров.",
     "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_uzbekistana/"
   },
   {
@@ -1764,8 +1810,31 @@
     "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_uzbekistana/"
   },
   {
-    "id": 89578,
-    "title": "Реверсная бизнес-миссия из Казахстана",
+    "id": 49991,
+    "title": "Деловая миссия экспортёров АПК в Таиланд",
+    "type": "mission",
+    "country": "Таиланд",
+    "cc": "TH",
+    "city": "Бангкок",
+    "ds": "2026-12-02",
+    "dl": "2 – 4 декабря в Бангкоке",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "МЭЦ / Моспром",
+    "org_s": "МЭЦ",
+    "org_level": "Региональный",
+    "org_icon": "🏙",
+    "support": "Уточняйте на сайте организатора",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "👍 👍 👍 👍 👍 👍 «Агроэкспорт» совместно с Минсельхозом России организует деловую миссию российских экспортеров продукции АПК в Таиланд ✅ 2 – 4 декабря в Бангкоке пройдет деловая миссия российских компаний-экспортеров продукции АПК. Мероприятие организовано «Агроэкспортом» совместно с Минсельхозом России",
+    "src": "https://t.me/moscowexport/4639"
+  },
+  {
+    "id": 84951,
+    "title": "Калининградские производители смогут найти новых партнёров из Казахстана",
     "type": "mission",
     "country": "Казахстан",
     "cc": "KZ",
@@ -1783,8 +1852,8 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Реверсная бизнес-миссия с участием казахстанских покупателей для калининградских экспортёров.",
-    "src": "https://exportkld.ru/events/reversnaya_biznes_missiya_iz_kazakhstana/"
+    "desc": "Бизнес-миссия с казахстанскими партнёрами для калининградских производителей-экспортёров.",
+    "src": "https://exportkld.ru/events/kaliningradskie_proizvoditeli_smogut_nayti_novykh_partnyerov_iz_kazakhstana/"
   },
   {
     "id": 12078,
@@ -1829,7 +1898,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортеров в Каир для поиска партнеров в Египте.",
+    "desc": "Бизнес-миссия калужских экспортёров в Каир для установления контактов с египетскими партнёрами.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-kair-egipet/"
   },
   {
@@ -1852,7 +1921,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортеров в Шанхай для выхода на китайский рынок.",
+    "desc": "Бизнес-миссия калужских экспортёров в Шанхай для выхода на китайский рынок.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-kitaj-2/"
   },
   {
@@ -1898,8 +1967,77 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "🇪🇬 Ваш билет на новый рынок — заявите о себе на выставке в Египте! 🤝 Приглашаем компании из Москвы принять участие в выставке Food Africa 2026 📍 Каир 📆 7–10 декабря 💼 Это возможность для производителей пищевой продукции представить товары на международной площадке, найти новых партнеров и провести б",
-    "src": "https://t.me/moscowexport/4606"
+    "desc": "💬 Что скрывают египетские символы? Московский экспортный центр знает ответ! 🇪🇬 Совсем скоро в Каире пройдет международная выставка продуктов питания и напитков Food Africa 2026 — именно это и зашифровано на каменной плите. Московский экспортный центр приглашает столичных производителей пищевой проду",
+    "src": "https://t.me/moscowexport/4647"
+  },
+  {
+    "id": 86872,
+    "title": "Бизнес-миссия в Республику Казахстан (г. Атырау, г. Астана) Нефтегазовая отрасль",
+    "type": "mission",
+    "country": "Казахстан",
+    "cc": "KZ",
+    "city": "Атырау, Астана",
+    "ds": "2026-12-07",
+    "dl": "с: 07.12.2026 по: 09.12.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Удмуртской Республики",
+    "org_s": "ЦПЭ Удмуртская Республика",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия в Казахстан для компаний нефтегазовой отрасли с посещением Атырау и Астаны.",
+    "src": "https://madeinudmurtia.ru/export/actions/center/biznes-missiya-v-respubliku-kazakhstan-g-atyrau-g-astana-neftegazovaya-otrasl/"
+  },
+  {
+    "id": 23171,
+    "title": "Реверсная бизнес-миссия из Грузии",
+    "type": "mission",
+    "country": "Грузия",
+    "cc": "GE",
+    "city": "Майкоп",
+    "ds": "2026-12-08",
+    "dl": "08.12.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Республики Адыгея",
+    "org_s": "ЦПЭ Адыгея",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия с грузинскими покупателями для экспортёров Адыгеи.",
+    "src": "https://export01.ru/events/reversnaya-biznes-missiya-iz-gruzii-2026"
+  },
+  {
+    "id": 70299,
+    "title": "10-я Международная Специализированная Выставка Материнства и Детства \"KinderExpo Uzbekistan 2026\"",
+    "type": "exhibit",
+    "country": "Узбекистан",
+    "cc": "UZ",
+    "city": "Ташкент",
+    "ds": "2026-12-09",
+    "dl": "с: 09.12.2026 по: 11.12.2026",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Удмуртской Республики",
+    "org_s": "ЦПЭ Удмуртская Республика",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Международная выставка товаров для материнства и детства в Ташкенте для экспортеров соответствующей продукции.",
+    "src": "https://madeinudmurtia.ru/export/actions/center/10-ya-mezhdunarodnaya-spetsializirovannaya-vystavka-materinstva-i-detstva-kinderexpo-uzbekistan-2026/"
   },
   {
     "id": 6314,
@@ -1948,6 +2086,52 @@
     "src": "https://moscow-export.com#form-land"
   },
   {
+    "id": 75833,
+    "title": "Международная бизнес-миссия в Республику Беларусь",
+    "type": "mission",
+    "country": "Беларусь",
+    "cc": "BY",
+    "city": "Минск",
+    "ds": "2027-01-26",
+    "dl": "26.01.2027",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Республики Адыгея",
+    "org_s": "ЦПЭ Адыгея",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия в Минск для выхода на белорусский рынок.",
+    "src": "https://export01.ru/events/mezhdunarodnaya-biznes-missiya-v-respubliku-belarus-2027"
+  },
+  {
+    "id": 83289,
+    "title": "Международная бизнес-миссия в Турецкую Республику",
+    "type": "mission",
+    "country": "Турция",
+    "cc": "TR",
+    "city": "Стамбул",
+    "ds": "2027-03-02",
+    "dl": "02.03.2027",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Республики Адыгея",
+    "org_s": "ЦПЭ Адыгея",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Бизнес-миссия в Стамбул для установления контактов с турецкими партнёрами.",
+    "src": "https://export01.ru/events/mezhdunarodnaya-biznes-missiya-v-tureckuyu-respubliku-2027"
+  },
+  {
     "id": 91774,
     "title": "Бизнес-миссия в г. Баку (Азербайджан)",
     "type": "mission",
@@ -1967,8 +2151,31 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Бизнес-миссия калужских экспортеров в Баку для поиска партнеров в Азербайджане.",
+    "desc": "Бизнес-миссия калужских экспортёров в Баку для развития сотрудничества с азербайджанскими компаниями.",
     "src": "https://kalugaexport.ru/events/biznes-missiya-v-g-baku-azerbajdzhan-2/"
+  },
+  {
+    "id": 77919,
+    "title": "Реверсная бизнес-миссия из Королевства Саудовская Аравия",
+    "type": "mission",
+    "country": "Саудовская Аравия",
+    "cc": "SA",
+    "city": "Майкоп",
+    "ds": "2027-03-16",
+    "dl": "16.03.2027",
+    "industry": [
+      "Все отрасли"
+    ],
+    "org": "Центр поддержки экспорта Республики Адыгея",
+    "org_s": "ЦПЭ Адыгея",
+    "org_level": "Региональный",
+    "org_icon": "📦",
+    "support": "Уточняйте в центре поддержки экспорта региона",
+    "seats": null,
+    "left": null,
+    "status": "upcoming",
+    "desc": "Реверсная бизнес-миссия с покупателями из Саудовской Аравии для экспортёров Адыгеи.",
+    "src": "https://export01.ru/events/reversnaya-biznes-missiya-iz-korolevstva-saudovskaya-araviya-2027"
   },
   {
     "id": 86840,
@@ -2036,7 +2243,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Многоотраслевая международная выставка во Вьетнаме для российских компаний-экспортёров.",
+    "desc": "Многоотраслевая международная выставка во Вьетнаме для компаний региона, выходящих на зарубежные рынки.",
     "src": "https://exportkld.ru/events/vystavka_expo_eurasia_vietnam_2027/"
   },
   {
@@ -2059,7 +2266,7 @@
     "seats": null,
     "left": null,
     "status": "upcoming",
-    "desc": "Международная сельскохозяйственная выставка во Вьетнаме для экспортёров агропродукции и оборудования.",
+    "desc": "Международная агропромышленная выставка во Вьетнаме для калининградских экспортёров продукции АПК.",
     "src": "https://exportkld.ru/events/mezhdunarodnaya_vystavka_expo_eurasia_agri_vietnam_2027/"
   },
   {
